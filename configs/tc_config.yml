@@ -1,0 +1,45 @@
+---------------dataset params---------------
+
+train_data_folder: datasets/train-articles
+#test_data_folder: datasets/train-articles
+test_data_folder: datasets/dev-articles
+#test_data_folder: datasets/test/test-articles
+labels_path: datasets/train-task2-TC.labels
+#test_template_labels_path: datasets/train-task2-TC.labels
+test_template_labels_path: datasets/dev-task-TC-template.out
+#test_template_labels_path: datasets/test/test-task-TC-template.out
+data_dir: cached_datasets/TC/
+train_file: train.tsv
+dev_file: dev.tsv
+#test_file: eval_tc_new.tsv
+test_file: test.tsv
+split_by_ids: True
+dev_size: 0.18
+balance: False
+shuffle: True
+overwrite_cache: False
+
+
+----------------model params----------------
+
+output_file: TC_output_dev.txt
+predicted_logits_files: [model_checkpoints/tc_roberta_large_cased_transfer_3500/predicted_logits, model_checkpoints/tc_roberta_large_cased_transfer_joined/predicted_logits]
+weights: [0.6, 0.4]
+
+
+-------------transformers params------------
+
+task_name: prop
+model_type: roberta
+#model_name_or_path: model_checkpoints/tc_roberta_large_cased_transfer_joined
+model_name_or_path: model_checkpoints/tc_roberta_large_cased_transfer_3500
+max_seq_length: 256
+per_gpu_train_batch_size: 8
+per_gpu_eval_batch_size: 8
+learning_rate: 2e-5
+save_steps: 700
+warmup_steps: 500
+num_train_epochs: 27
+#output_dir: model_checkpoints/tc_roberta_large_cased_transfer_joined
+output_dir: model_checkpoints/tc_roberta_large_cased_transfer_3500
+do_lower_case: False

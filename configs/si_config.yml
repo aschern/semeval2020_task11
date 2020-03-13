@@ -1,0 +1,36 @@
+---------------dataset params---------------
+
+train_data_folder: datasets/train-articles
+test_data_folder: datasets/test-articles
+labels_path: datasets/train-task1-SI.labels
+propaganda_techniques_file: tools/data/propaganda-techniques-names-semeval2020task11.txt
+data_dir: cached_datasets/SI/
+train_file: train.tsv
+dev_file: dev.tsv
+test_file: test.tsv
+split_by_ids: True
+dev_size: 0.18
+overwrite_cache: False
+
+
+----------------model params----------------
+
+use_crf: True
+output_file: SI_output_test.txt
+predicted_labels_files: [model_checkpoints/ner_roberta_large_uncased_crf_7700/test_predictions.txt, model_checkpoints/ner_roberta_large_uncased_crf_9800/test_predictions.txt]
+
+
+-------------transformers params------------
+
+model_type: roberta
+config_name: roberta-large
+model_name_or_path: model_checkpoints/ner_roberta_large_uncased_crf_7700
+max_seq_length: 256
+per_gpu_train_batch_size: 8
+per_gpu_eval_batch_size: 1
+learning_rate: 2e-5
+save_steps: 700
+warmup_steps: 500
+num_train_epochs: 27
+output_dir: model_checkpoints/ner_roberta_large_uncased_crf_7700/
+do_lower_case: True
