@@ -5,7 +5,7 @@ This repository provides code for the SemEval-2020 Task 11 competition (Detectio
 
 The competition webpage: https://propaganda.qcri.org/semeval2020-task11/
 
-The description of the architecture of models can be found in [paper]().
+The description of the architecture of models can be found in our paper [aschern at SemEval-2020 Task 11: It Takes Three to Tango: RoBERTa, CRF, and Transfer Learning]().
 
 ## Requirements
 ```
@@ -31,13 +31,13 @@ All commands are run from the root directory of the repository.
 
 ### Span Identification
 
-1. Configure `configs/si_config.yml` file, if it is needed. data_dir is the path to the cache of original train/eval sub-datasets and their BIO versions. In addition to using the config, it is also possible to submit arguments through the command line.
+1. Configure `configs/si_config.yml` file, if it is needed. data_dir is the path to the cache of original train/eval sub-datasets and their BIO versions. In addition to using the config, it is also possible to specify arguments through the command line.
 
-2. Split the dataset for local evaluation (if `--overwrite_cache`, previous files will be replaced). It will produce files with the BIO-format tagging for spans (B-PROP, I-PROP, O).
+2. Split the dataset for local evaluation (if `--overwrite_cache`, previous files will be replaced). It will produce files with the BIO-format tagging for spans (B-PROP, I-PROP, O) in your `--data_dir`.
     ```bash
     python -m span_identification --config configs/si_config.yml --split_dataset --overwrite_cache
     ```
-3. Train and eval model (the model parameters are specified in the config, you need to change the paths). The use of CRF is regulated by the flag `--use_crf`.
+3. Train and eval model (the model parameters are specified in the config, you need to change the paths). The use of CRF is regulated by the flag `--use_crf`. For the first run you can use `--model_name_or_path roberta-large`.
     ```bash
     python -m span_identification --config configs/si_config.yml --do_train --do_eval
     ```
@@ -45,11 +45,11 @@ All commands are run from the root directory of the repository.
     ```bash
     python -m span_identification --config configs/si_config.yml --do_predict
     ```
-5. Create the submission file `output_file`. It will obtain spans from the result files with the token labeling specified in `predicted_labels_files`. At the aggregation stage, the span prediction results are simply joined.
+5. Create the submission file `output_file` in the `result` folder. It will obtain spans from the result files with the token labeling specified in `predicted_labels_files`. At the aggregation stage, the span prediction results are simply joined.
     ```bash
     python -m span_identification --config configs/si_config.yml --create_submission_file
     ```
-6. In case you have the correct markup in the `test_file`, you can run the evaluation competition script.
+6. In case you have the correct markup in the `test_file` or have gold `--gold_annot_file` (source competition format), you can run the evaluation competition script.
     ```bash
     python -m span_identification --config configs/si_config.yml --do_eval_spans
     ```
@@ -65,7 +65,7 @@ Here you need almost the same commands and settings as in the SI task.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --split_dataset --overwrite_cache
     ```
-3. Train and eval model. We used two setups with and without flags `--join_embeddings --use_length`.
+3. Train and eval model. We used two setups with and without flags `--join_embeddings --use_length` (to get our RoBERTa-Joined). For the first run you can use `--model_name_or_path roberta-large`.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --do_train --do_eval
     ```
@@ -77,8 +77,10 @@ Here you need almost the same commands and settings as in the SI task.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --create_submission_file
     ```
-6. In case you have the correct markup in the `test_file`, you can check your accuracy (micro f1-score) and f1-score per classes.
+6. In case you have the correct markup in the `test_file` or have gold `--test_labels_path` (source competition format), you can check your accuracy (micro f1-score) and f1-score per classes.
     ```bash
     python -m technique_classification --config configs/tc_config.yml  --eval_submission
     ```
 7. Use `visualization_example/visualization.ipynb` if you want to visualize labels.
+
+Our pretrained RoBERTa-CRF (SI task) and RoBERTa-Joined (TC task) models are available in [google drive](https://vk.com/away.php?to=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1Gph7FKMaxOBJdkrk0nM72uFpCGgn-2kC%3Fusp%3Dsharing).
