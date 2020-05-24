@@ -1,5 +1,5 @@
 """
-based on https://github.com/michael-wzhu/transformers/tree/master/examples/bert_crf
+Conditional random field
 """
 from typing import List, Tuple, Dict, Union, Optional
 

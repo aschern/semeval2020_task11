@@ -9,6 +9,7 @@ from sklearn.metrics import accuracy_score, f1_score
 from nltk.corpus import stopwords
 import string
 import pickle
+import os
 from unidecode import unidecode
 from joblib import dump, load
 
@@ -17,14 +18,16 @@ def get_insides(data):
     insides = defaultdict(dict)
     spans_coords = list(zip(data['span_start'].values, data['span_end'].values))
     labels = data['label'].values
+    article_ids = data['article_id'].values
     for i in range(len(spans_coords)):
         for j in range(i):
-            if spans_coords[i][0] >= spans_coords[j][0] and spans_coords[i][1] <= spans_coords[j][1]:
-                if spans_coords[i][0] != spans_coords[j][0] or spans_coords[i][1] != spans_coords[j][1]:
-                    insides[labels[i]][labels[j]] = insides[labels[i]].get(labels[j], 0) + 1
-            if spans_coords[j][0] >= spans_coords[i][0] and spans_coords[j][1] <= spans_coords[i][1]:
-                if spans_coords[j][0] != spans_coords[i][0] or spans_coords[j][1] != spans_coords[i][1]:
-                    insides[labels[j]][labels[i]] = insides[labels[j]].get(labels[i], 0) + 1
+            if article_ids[i] == article_ids[j]:
+                if spans_coords[i][0] >= spans_coords[j][0] and spans_coords[i][1] <= spans_coords[j][1]:
+                    if spans_coords[i][0] != spans_coords[j][0] or spans_coords[i][1] != spans_coords[j][1]:
+                        insides[labels[i]][labels[j]] = insides[labels[i]].get(labels[j], 0) + 1
+                if spans_coords[j][0] >= spans_coords[i][0] and spans_coords[j][1] <= spans_coords[i][1]:
+                    if spans_coords[j][0] != spans_coords[i][0] or spans_coords[j][1] != spans_coords[i][1]:
+                        insides[labels[j]][labels[i]] = insides[labels[j]].get(labels[i], 0) + 1
     return insides
 
 
@@ -33,18 +36,26 @@ def correct_preds_for_insides(preds, spans_coords, logits, insides, mapping, inv
         for j in range(len(preds)):
             if spans_coords[j][0] >= spans_coords[i][0] and spans_coords[j][1] <= spans_coords[i][1]:
                 if spans_coords[j][0] != spans_coords[i][0] or spans_coords[j][1] != spans_coords[i][1]:
+                    def_i = preds[i]
+                    def_j = preds[j]
                     log = softmax([logits[i]])[0]
                     login = softmax([logits[j]])[0]
+                    def_prob_i = log[inverse_mapping[preds[i]]]
+                    def_prob_j = login[inverse_mapping[preds[j]]]
                     while preds[j] not in insides.get(preds[i], []):
                         if log[inverse_mapping[preds[i]]] > login[inverse_mapping[preds[j]]]:
                             values = np.sort(login)[-2:]
-                            if values[1] / (values[0] + 1e-6) > 2:
+                            if values[1] / (values[0] + 1e-6) > 1.4:
+                                preds[i] = def_i
+                                preds[j] = def_j
                                 break
                             login[inverse_mapping[preds[j]]] = 0
                             preds[j] = mapping[np.argmax(login)]
                         else:
                             values = np.sort(log)[-2:]
-                            if values[1] / (values[0] + 1e-6) > 2:
+                            if values[1] / (values[0] + 1e-6) > 1.4:
+                                preds[i] = def_i
+                                preds[j] = def_j
                                 break
                             log[inverse_mapping[preds[i]]] = 0
                             preds[i] = mapping[np.argmax(log)]
@@ -61,7 +72,7 @@ def stem_spans(spans):
     return res
 
 
-def get_train_instances(data):
+def get_train_instances(data, data_dir, save=True):
     train_instances = dict()
     stemmed_spans = stem_spans(data.span.values)
     labels = data.label.values
@@ -70,6 +81,9 @@ def get_train_instances(data):
             span = stemmed_spans[i]
             train_instances.setdefault(span, set())
             train_instances[span].add(labels[i])
+    if save:
+        with open(os.path.join(data_dir, 'train_instances_train'), 'wb') as f:
+            pickle.dump(train_instances, f)
     return train_instances
                             
     
@@ -96,12 +110,13 @@ def postprocess(x, mapping, inverse_mapping, insides, stop_words, ps, train_inst
             log[inverse_mapping["Repetition"]] = 100
         
         if counts[spans[i]] == 1 and (logits[i][inverse_mapping["Repetition"]] < 0.99 or len(spans[i].split()) <= 1):
-            log[inverse_mapping["Repetition"]] = -10
-            
+            log[inverse_mapping["Repetition"]] = 0
+        
         for prediction in train_instances.get(spans_text[i], set()):
             log[inverse_mapping[prediction]] += 0.5
-            if spans_source[i][0] == '#':
-                log[inverse_mapping['Slogans']] = 20
+        if spans_source[i].startswith('#'):
+            log[inverse_mapping['Slogans']] = 20
+         
         
         prev_same = []
         for j in range(i):
@@ -109,12 +124,13 @@ def postprocess(x, mapping, inverse_mapping, insides, stop_words, ps, train_inst
                 prev_same.append(j)
         if len(prev_same) > 0:
             for prediction in preds[prev_same]:
-                log[inverse_mapping[prediction]] = -10
+                log[inverse_mapping[prediction]] = 0
         
         logits[i] = log
         preds[i] = mapping[np.argmax(log)]
-    
+        
     x["pred"] = correct_preds_for_insides(preds, spans_coords, logits, insides, mapping, inverse_mapping)
+    #x["pred"] = preds
     return x
 
 
@@ -146,13 +162,13 @@ def softmax_with_temperature(z, T):
 
 
 def create_submission_file(predicted_logits_files, train_file_path, dev_file_path, test_file_path, 
-                        article_ids, span_starts, span_ends, output_file, weights=None, agg_model=None): 
+                        article_ids, span_starts, span_ends, output_file, weights=None, data_dir=None, agg_model=None): 
     data_train = pd.read_csv(train_file_path, sep='\t')
     data_eval = pd.read_csv(dev_file_path, sep='\t')
-    data_train = pd.concat([data_train, data_eval], ignore_index=True)
+    #data_train = pd.concat([data_train, data_eval], ignore_index=True)
     
     insides = get_insides(data_train)
-    train_instances = get_train_instances(data_train)
+    train_instances = get_train_instances(data_train, data_dir)
     
     data = pd.read_csv(test_file_path, sep='\t')
     

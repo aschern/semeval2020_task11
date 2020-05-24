@@ -23,6 +23,8 @@ import logging
 import os
 import random
 
+from unidecode import unidecode
+
 import pickle
 import numpy as np
 import torch
@@ -37,10 +39,13 @@ from .utils_ner import convert_examples_to_features, get_labels, read_examples_f
 
 from transformers import AdamW, get_linear_schedule_with_warmup
 from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer
-from transformers import RobertaConfig, RobertaForTokenClassification, RobertaTokenizer
+from transformers import RobertaConfig, RobertaTokenizer
 from transformers import DistilBertConfig, DistilBertForTokenClassification, DistilBertTokenizer
+from transformers import XLNetConfig, XLNetForTokenClassification, XLNetTokenizer
 from transformers import CamembertConfig, CamembertForTokenClassification, CamembertTokenizer
 from scipy.special import softmax
+
+from .modeling_roberta import RobertaForTokenClassification
 
 logger = logging.getLogger(__name__)
 
@@ -53,6 +58,7 @@ MODEL_CLASSES = {
     "roberta": (RobertaConfig, RobertaForTokenClassification, RobertaTokenizer),
     "distilbert": (DistilBertConfig, DistilBertForTokenClassification, DistilBertTokenizer),
     "camembert": (CamembertConfig, CamembertForTokenClassification, CamembertTokenizer),
+    "xlnet": (XLNetConfig, XLNetForTokenClassification, XLNetTokenizer)
 }
 
 
@@ -131,7 +137,8 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
                       "labels": batch[3]}
             if args.model_type != "distilbert":
                 inputs["token_type_ids"] = batch[2] if args.model_type in ["bert", "xlnet"] else None  # XLM and RoBERTa don"t use segment_ids
-
+            if args.use_quotes:
+                inputs['quotes'] = batch[4]
             outputs = model(**inputs)
             loss = outputs[0]  # model outputs are always tuple in pytorch-transformers (see doc)
 
@@ -221,6 +228,8 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
                       "labels": batch[3]}
             if args.model_type != "distilbert":
                 inputs["token_type_ids"] = batch[2] if args.model_type in ["bert", "xlnet"] else None  # XLM and RoBERTa don"t use segment_ids
+            if args.use_quotes:
+                inputs['quotes'] = batch[4]
             outputs = model(**inputs)
             tmp_eval_loss, logits = outputs[:2]
 
@@ -298,6 +307,20 @@ def load_and_cache_examples(args, tokenizer, labels, pad_token_label_id, mode):
                                                 pad_token_segment_id=4 if args.model_type in ["xlnet"] else 0,
                                                 pad_token_label_id=pad_token_label_id
                                                 )
+        if args.use_quotes:
+            assert len(features) == len(examples)            
+            for i in range(len(features)):
+                tokens = []
+                for word in examples[i].words:
+                    word_tokens = tokenizer.tokenize(word)
+                    tokens.extend(word_tokens)
+                tokens = ['cls_token'] + tokens
+                quotes = np.zeros(args.max_seq_length, dtype=np.float32)
+                for j in range(1, min(len(tokens), args.max_seq_length)):
+                    if unidecode(tokens[j]) == '"':
+                        quotes[j] = 1
+                features[i].quotes = quotes[:, None]
+                
         if args.local_rank in [-1, 0]:
             logger.info("Saving features into cached file %s", cached_features_file)
             torch.save(features, cached_features_file)
@@ -310,8 +333,11 @@ def load_and_cache_examples(args, tokenizer, labels, pad_token_label_id, mode):
     all_input_mask = torch.tensor([f.input_mask for f in features], dtype=torch.long)
     all_segment_ids = torch.tensor([f.segment_ids for f in features], dtype=torch.long)
     all_label_ids = torch.tensor([f.label_ids for f in features], dtype=torch.long)
-
-    dataset = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
+    if args.use_quotes:
+        all_quotes = torch.tensor([f.quotes for f in features], dtype=torch.long)
+        dataset = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids, all_quotes)
+    else:
+        dataset = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
     return dataset
 
 
@@ -363,9 +389,11 @@ def transformers_ner(args):
 
     args.model_type = args.model_type.lower()
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
+    
     config = config_class.from_pretrained(args.config_name if args.config_name else args.model_name_or_path,
                                           num_labels=num_labels,
                                           cache_dir=args.cache_dir if args.cache_dir else None)
+    config.use_quotes = args.use_quotes
     tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name if args.tokenizer_name else args.model_name_or_path,
                                                 do_lower_case=args.do_lower_case,
                                                 cache_dir=args.cache_dir if args.cache_dir else None)

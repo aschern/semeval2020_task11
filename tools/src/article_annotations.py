@@ -128,10 +128,11 @@ class Articles_annotations(object):
                 self.swap_annotations(j1, i)
             if j2>i:
                 second_annotations.swap_annotations(j2, i)
-            i+=1
+            #i+=1
             if j1==-1: # no match, can forward i skipping all annotations with same span
                 while i+1<len(self) and self[i].is_span_equal_to(self[i+1]):
                     i+=1
+            i+=1
 
 
     def _get_annotation_offset_excluding_chars(self, article_content:str, fragment_index:int, is_starting_fragment:bool):

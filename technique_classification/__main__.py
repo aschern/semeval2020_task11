@@ -1,10 +1,16 @@
-from .transformers_classifier import transformers_clf
-from .dataset import load_data, get_train_dev_files, get_test_file
-from .submission import create_submission_file, eval_submission
-
+try:
+    from .transformers_classifier import transformers_clf
+    from .dataset import load_data, get_train_dev_files, get_test_file
+    from .submission import create_submission_file, eval_submission
+except:
+    from transformers_classifier import transformers_clf
+    from dataset import load_data, get_train_dev_files, get_test_file
+    from submission import create_submission_file, eval_submission
+    
 import configargparse
 import logging
 import os
+import subprocess
 
 
 logger = logging.getLogger(__name__)
@@ -42,14 +48,19 @@ def Main(args):
         output_file = os.path.join('results', args.output_file)
         logger.info("Creating the submission file: %s", output_file)        
         create_submission_file(args.predicted_logits_files, train_file_path, dev_file_path, test_file_path, 
-                            test_articles_id, test_span_starts, test_span_ends, output_file, args.weights)
+                            test_articles_id, test_span_starts, test_span_ends, output_file, args.weights, args.data_dir)
         
     if args.eval_submission:
         output_file = os.path.join('results', args.output_file)
-        logger.info("Evaluating the submission file: %s", output_file) 
-        acc, f1 = eval_submission(output_file, test_file_path)
-        logger.info('accuracy: %f', acc)
-        print('f1-macro:', f1)
+        logger.info("Evaluating the submission file: %s", output_file)
+        if args.test_labels_path is None:
+            acc, f1 = eval_submission(output_file, test_file_path)
+            logger.info('accuracy: %f', acc)
+            print('f1-macro:', f1)
+        else:
+            cmd = "python tools/task-TC_scorer.py -s {} -r {} -p {}".format(output_file, args.test_labels_path,
+                                                                          args.propaganda_techniques_file)
+            subprocess.run(cmd, shell=True)
 
 
 def main(): 
@@ -60,6 +71,8 @@ def main():
                         help="Source directory with the train articles.")
     parser.add_argument("--test_data_folder", default=None, type=str, required=True,
                         help="Source directory with the test articles.")
+    parser.add_argument("--propaganda_techniques_file", default=None, type=str, required=True,
+                    help="The file with propaganda techniques.")
     parser.add_argument("--labels_path", default=None, type=str, required=True,
                         help="The file with train labels.")
     parser.add_argument("--test_template_labels_path", default=None, type=str, required=True,
@@ -74,7 +87,7 @@ def main():
                         help="The filename for cached preprocessed test data.")
     parser.add_argument("--predicted_logits_files", default=None, nargs='*', required=True,
                         help="The predicted filenames of logits that will be used to obtain the final result")
-    parser.add_argument("--weights", default=None, nargs='*', required=True,
+    parser.add_argument("--weights", default=None, nargs='*', required=False,
                         help="The list of weights for predicted logits at the aggregation stage")
     parser.add_argument("--output_file", default=None, type=str, required=True,
                         help="The submission filename")
@@ -103,6 +116,7 @@ def main():
                         help="The name of the task to train.")
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
+    parser.add_argument("--test_labels_path", default=None, type=str, required=False)
 
     ## Other parameters
     parser.add_argument("--config_name", default="", type=str,

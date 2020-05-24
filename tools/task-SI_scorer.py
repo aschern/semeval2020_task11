@@ -373,7 +373,7 @@ def compute_score_pr(submission_annotations, gold_annotations, technique_names, 
     f1_articles = []
 
     for article_id in submission_annotations.keys():
-        gold_data = gold_annotations[article_id]
+        gold_data = gold_annotations.get(article_id, [])
         logger.debug("Computing contribution to the score of article id %s\nand tuples %s\n%s\n"
                      % (article_id, str(submission_annotations[article_id]), str(gold_data)))
 
@@ -404,7 +404,7 @@ def compute_score_pr(submission_annotations, gold_annotations, technique_names, 
         p_article, r_article, f1_article =compute_prec_rec_f1(article_cumulative_Spr_prec,
                                                               len(submission_annotations[article_id]),
                                                               article_cumulative_Spr_rec,
-                                                              len(gold_annotations[article_id]), False)
+                                                              len(gold_annotations.get(article_id, [])), False)
         f1_articles.append(f1_article)
 
     p,r,f1 = compute_prec_rec_f1(cumulative_Spr_prec, prec_denominator, cumulative_Spr_rec, rec_denominator)

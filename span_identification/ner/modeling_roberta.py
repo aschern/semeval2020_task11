@@ -515,12 +515,15 @@ class RobertaForTokenClassification(BertPreTrainedModel):
 
         self.roberta = RobertaModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.classifier = nn.Linear(config.hidden_size, config.num_labels)
+        if config.use_quotes:
+            self.classifier = nn.Linear(config.hidden_size + 1, config.num_labels)
+        else:
+            self.classifier = nn.Linear(config.hidden_size, config.num_labels)
 
         self.init_weights()
 
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None,
-                position_ids=None, head_mask=None, inputs_embeds=None, labels=None):
+                position_ids=None, head_mask=None, inputs_embeds=None, labels=None, quotes=None):
 
         outputs = self.roberta(input_ids,
                                attention_mask=attention_mask,
@@ -530,7 +533,8 @@ class RobertaForTokenClassification(BertPreTrainedModel):
                                inputs_embeds=inputs_embeds)
 
         sequence_output = outputs[0]
-
+        if quotes is not None:
+            sequence_output = torch.cat((sequence_output, quotes.type(torch.FloatTensor).cuda()), dim=-1)
         sequence_output = self.dropout(sequence_output)
         logits = self.classifier(sequence_output)
 
@@ -549,169 +553,3 @@ class RobertaForTokenClassification(BertPreTrainedModel):
             outputs = (loss,) + outputs
 
         return outputs  # (loss), scores, (hidden_states), (attentions)
-
-
-class RobertaClassificationHead(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHead, self).__init__()
-        self.dense = nn.Linear(config.hidden_size, config.hidden_size)
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features, **kwargs):
-        x = features[:, 0, :]  # take <s> token (equiv. to [CLS])
-        x = self.dropout(x)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
-    
-    
-class RobertaClassificationHeadLength(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHeadLength, self).__init__()
-        self.dense = nn.Linear(config.hidden_size + 1, config.hidden_size)
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features, sent_a_length=None, **kwargs):
-        x = features[:, 0, :]  # take <s> token (equiv. to [CLS])
-        x = torch.cat((x, sent_a_length), dim=1)
-        x = self.dropout(x)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
-    
-    
-
-class RobertaClassificationHeadMatchings(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHeadMatchings, self).__init__()
-        self.dense = nn.Linear(config.hidden_size + 14, config.hidden_size)
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features, matchings=None, **kwargs):
-        x = features[:, 0, :]  # take <s> token (equiv. to [CLS])
-        x = torch.cat((x, matchings), dim=1)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
-
-
-    
-class RobertaClassificationHeadJoinedLenght(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHeadJoinedLenght, self).__init__()
-        self.dense = nn.Linear(config.hidden_size * 2 + 1, config.hidden_size)
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features,  sent_a_length=None, attention_mask=None, **kwargs):
-        x = features[:, 0, :]  # take <s> token (equiv. to [CLS])
-        x = torch.cat((x, sent_a_length), dim=1)
-        #mask = attention_mask.reshape(features.shape[0], features.shape[1], 1).type(torch.FloatTensor).cuda()
-        #embs = (features * mask)[:, 1:, :].sum(dim=1) / sent_a_length
-        embs = features[:, 1:, :].mean(dim=1)
-        x = torch.cat((x, embs), dim=1)
-        x = self.dropout(x)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
-
-
-class RobertaClassificationHeadJoined(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHeadJoined, self).__init__()
-        self.dense = nn.Linear(config.hidden_size * 2, config.hidden_size)
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features,  sent_a_length=None, attention_mask=None, **kwargs):
-        x = features[:, 0, :]  # take <s> token (equiv. to [CLS])
-        mask = attention_mask.reshape(features.shape[0], features.shape[1], 1).type(torch.FloatTensor).cuda()
-        embs = (features * mask)[:, 1:, :].sum(dim=1) / mask.sum(dim=1)
-        #embs, _ = (features * mask)[:, 1:, :].max(dim=1)
-        x = torch.cat((x, embs), dim=1)
-        x = self.dropout(x)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
-
-    
-    
-class RobertaClassificationHeadJoinedAtt(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHeadJoinedAtt, self).__init__()
-        self.dense = nn.Linear(config.hidden_size * 2 + 1, config.hidden_size)
-        self.att_weights = nn.Sequential(
-            nn.Linear(config.hidden_size, config.hidden_size),
-            nn.Tanh(),
-            nn.Linear(config.hidden_size, 1)
-        )
-        
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features,  sent_a_length, attention_mask, **kwargs):
-        x = features[:, 0, :]  # take <s> token (equiv. to [CLS])
-        x = torch.cat((x, sent_a_length), dim=1)
-        mask = attention_mask.reshape(features.shape[0], features.shape[1], 1).type(torch.FloatTensor).cuda()
-        att = self.att_weights(features) * mask
-        embs = (features * att)[:, 1:, :].sum(dim=1) / sent_a_length
-        x = torch.cat((x, embs), dim=1)
-        #x = torch.cat((x, features[:, 1:, :].mean(dim=1)), dim=1)
-        x = self.dropout(x)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
-
-    
-class RobertaClassificationHeadVoting(nn.Module):
-    """Head for sentence-level classification tasks."""
-
-    def __init__(self, config):
-        super(RobertaClassificationHeadVoting, self).__init__()
-        self.dense = nn.Linear(config.hidden_size, config.hidden_size)
-        self.att_weights = nn.Sequential(
-            nn.Linear(config.hidden_size, config.hidden_size),
-            nn.Tanh(),
-            nn.Linear(config.hidden_size, 1)
-        )
-        
-        self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
-
-    def forward(self, features, attention_mask, **kwargs):
-        mask = attention_mask.reshape(features.shape[0], features.shape[1], 1).type(torch.FloatTensor).cuda()
-        att = self.att_weights(features) * mask
-        x = self.dropout(features)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        x = (x * att).sum(dim=1)
-        return x

@@ -48,7 +48,6 @@ from transformers import (WEIGHTS_NAME, BertConfig,
                                   RobertaTokenizer,
                                   XLMConfig, XLMForSequenceClassification,
                                   XLMTokenizer, XLNetConfig,
-                                  XLNetForSequenceClassification,
                                   XLNetTokenizer,
                                   DistilBertConfig,
                                   DistilBertForSequenceClassification,
@@ -59,6 +58,7 @@ from transformers import (WEIGHTS_NAME, BertConfig,
                                 )
 
 from .modeling_roberta import RobertaForSequenceClassification
+from .modeling_xlnet import XLNetForSequenceClassification
 
 from transformers import AdamW, get_linear_schedule_with_warmup
 
@@ -157,9 +157,21 @@ def train(args, train_dataset, model, tokenizer):
             if args.model_type != 'distilbert':
                 inputs['token_type_ids'] = batch[2] if args.model_type in ['bert', 'xlnet'] else None  # XLM, DistilBERT and RoBERTa don't use segment_ids
             if args.use_length:
-                inputs['lengths'] = (batch[1] - batch[2]).sum(dim=1, keepdim=True).float()
+                if args.model_type == 'roberta':
+                    inputs['lengths'] = (inputs['attention_mask'] - inputs['token_type_ids']).sum(dim=1, keepdim=True).float()
+                if args.model_type == 'xlnet':
+                    mask = inputs['attention_mask'] - inputs['token_type_ids']
+                    mask[mask < 0] = 0
+                    inputs['lengths'] = mask.sum(dim=1, keepdim=True).float()
             if args.use_matchings:
                 inputs['matchings'] = batch[4]
+            if args.join_embeddings:
+                if args.model_type == 'roberta':
+                    inputs['embeddings_mask'] = inputs['attention_mask'] - inputs['token_type_ids']
+                if args.model_type == 'xlnet':
+                    mask = inputs['attention_mask'] - inputs['token_type_ids']
+                    mask[mask < 0] = 0
+                    inputs['embeddings_mask'] = mask
             outputs = model(**inputs)
             loss = outputs[0]  # model outputs are always tuple in transformers (see doc)
 
@@ -271,9 +283,21 @@ def evaluate(args, model, tokenizer, prefix=""):
                 if args.model_type != 'distilbert':
                     inputs['token_type_ids'] = batch[2] if args.model_type in ['bert', 'xlnet'] else None  # XLM, DistilBERT and RoBERTa don't use segment_ids
                 if args.use_length:
-                    inputs['lengths'] = (batch[1] - batch[2]).sum(dim=1, keepdim=True).float()
+                    if args.model_type == 'roberta':
+                        inputs['lengths'] = (batch[1] - batch[2]).sum(dim=1, keepdim=True).float()
+                    if args.model_type == 'xlnet':
+                        mask = inputs['attention_mask'] - inputs['token_type_ids']
+                        mask[mask < 0] = 0
+                        inputs['lengths'] = mask.sum(dim=1, keepdim=True).float()
                 if args.use_matchings:
                     inputs['matchings'] = batch[4]
+                if args.join_embeddings:
+                    if args.model_type == 'roberta':
+                        inputs['embeddings_mask'] = inputs['attention_mask'] - batch[2]
+                    if args.model_type == 'xlnet':
+                        mask = inputs['attention_mask'] - inputs['token_type_ids']
+                        mask[mask < 0] = 0
+                        inputs['embeddings_mask'] = mask
                 outputs = model(**inputs)
                 tmp_eval_loss, logits = outputs[:2]
 
@@ -334,10 +358,12 @@ def get_matchings(span, train_examples, ps):
     inverse_mapping = {b:a for (a, b) in mapping.items()}
     
     matchings = np.zeros(len(mapping))
-    clear_span = " ".join(ps.stem(word) for word in word_tokenize(span.lower()))
+    clear_span = " ".join([ps.stem(word) for word in word_tokenize(span.lower())])
     if len(clear_span) > 0:
         for class_label in train_examples.get(clear_span, set()):
             matchings[inverse_mapping[class_label]] += 1
+    if np.sum(matchings) != 0:        
+        matchings /= np.sum(matchings)
     return matchings
 
 
@@ -379,9 +405,13 @@ def load_and_cache_examples(args, task, tokenizer, evaluate=False, mode=None):
                                                 pad_token_segment_id=4 if args.model_type in ['xlnet'] else 0,
         )
         if args.use_matchings:
-            assert len(features) == len(examples)            
-            with open(os.path.join(args.data_dir, 'train_instances'), 'rb') as f:
-                train_examples = pickle.load(f)
+            assert len(features) == len(examples) 
+            if args.do_eval or args.do_train:
+                with open(os.path.join(args.data_dir, 'train_instances_train'), 'rb') as f:
+                    train_examples = pickle.load(f)
+            if args.do_predict:
+                with open(os.path.join(args.data_dir, 'train_instances'), 'rb') as f:
+                    train_examples = pickle.load(f)
             ps = PorterStemmer()
             for i in range(len(features)):
                 features[i].matchings = get_matchings(examples[i].text_a, train_examples, ps)

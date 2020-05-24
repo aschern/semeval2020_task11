@@ -1,8 +1,9 @@
 ---------------dataset params---------------
 
 train_data_folder: datasets/train-articles
-test_data_folder: datasets/test-articles
+test_data_folder: datasets/dev-articles
 labels_path: datasets/train-task1-SI.labels
+gold_annot_file: results/dev-task-SI.labels
 propaganda_techniques_file: tools/data/propaganda-techniques-names-semeval2020task11.txt
 data_dir: cached_datasets/SI/
 train_file: train.tsv
@@ -16,8 +17,8 @@ overwrite_cache: False
 ----------------model params----------------
 
 use_crf: True
-output_file: SI_output_test.txt
-predicted_labels_files: [model_checkpoints/ner_roberta_large_uncased_crf_7700/test_predictions.txt, model_checkpoints/ner_roberta_large_uncased_crf_9800/test_predictions.txt]
+output_file: SI_output_dev.txt
+predicted_labels_files: [model_checkpoints/si_roberta_crf/test_predictions.txt]
 
 
 -------------transformers params------------

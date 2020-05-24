@@ -2,6 +2,23 @@ import os
 from transformers import DataProcessor, InputExample
 from sklearn.metrics import f1_score
 from unidecode import unidecode
+import string
+import random
+from autocorrect import Speller
+
+
+def generate_misspelling(phrase, p=0.5):
+    new_phrase = []
+    words = phrase.split(' ')
+    for word in words:
+        outcome = random.random()
+        if outcome <= p:
+            ix = random.choice(range(len(word)))
+            new_word = ''.join([word[w] if w != ix else random.choice(string.ascii_letters) for w in range(len(word))])
+            new_phrase.append(new_word)
+        else:
+            new_phrase.append(word)
+    return ' '.join(new_phrase) 
 
 
 def simple_accuracy(preds, labels):
@@ -51,11 +68,17 @@ class PropProcessor(DataProcessor):
     def _create_examples(self, lines, set_type):
         """Creates examples for the training and dev sets."""
         examples = []
+        spell = Speller(lang='en')
         for (i, line) in enumerate(lines):
             if i == 0 or line == []:
                 continue
             guid = "%s-%s" % (set_type, i)
-            text_a = line[3]
+            text_a = line[3] # generate_misspelling(line[3])
+            #try:
+            #    text_a = spell(text_a)
+            #except:
+            #    pass
+            
             text_b = line[4]
 
             #pos = text_b.find(text_a)

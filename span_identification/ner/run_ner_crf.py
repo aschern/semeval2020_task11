@@ -40,6 +40,7 @@ from transformers import AdamW, get_linear_schedule_with_warmup
 from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer
 from transformers import RobertaConfig, RobertaForTokenClassification, RobertaTokenizer
 from transformers import DistilBertConfig, DistilBertForTokenClassification, DistilBertTokenizer
+from transformers import XLNetConfig, XLNetForTokenClassification, XLNetTokenizer
 from transformers import CamembertConfig, CamembertForTokenClassification, CamembertTokenizer
 from scipy.special import softmax
 
@@ -54,6 +55,7 @@ MODEL_CLASSES = {
     "roberta": (RobertaConfig, RobertaForTokenClassification, RobertaTokenizer),
     "distilbert": (DistilBertConfig, DistilBertForTokenClassification, DistilBertTokenizer),
     "camembert": (CamembertConfig, CamembertForTokenClassification, CamembertTokenizer),
+    "xlnet": (XLNetConfig, XLNetForTokenClassification, XLNetTokenizer)
 }
 
 
@@ -376,7 +378,8 @@ def transformers_ner_crf(args):
                                         from_tf=bool(".ckpt" in args.model_name_or_path),
                                         config=config,
                                         cache_dir=args.cache_dir if args.cache_dir else None)
-    
+    if not hasattr(config, "hidden_dropout_prob"):
+        config.hidden_dropout_prob = config.dropout
     model = BertLstmCrf(
         bert_model,
         num_labels=num_labels,

@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-based on https://github.com/michael-wzhu/transformers/tree/master/examples/bert_crf
+based on
+@File: bert_lstm_crf.py
+@Copyright: 2019 Michael Zhu
+@License：the Apache License, Version 2.0
+@Author：Michael Zhu
 """
 
 # coding=utf-8

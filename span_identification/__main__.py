@@ -1,7 +1,12 @@
-from .ner import transformers_ner_crf, transformers_ner
-from .dataset import load_data, get_train_dev_files, get_test_file, create_subfolder
-from .submission import get_submission_format
-
+try:
+    from .ner import transformers_ner_crf, transformers_ner
+    from .dataset import load_data, get_train_dev_files, get_test_file, create_subfolder
+    from .submission import get_submission_format
+except:
+    from ner import transformers_ner_crf, transformers_ner
+    from dataset import load_data, get_train_dev_files, get_test_file, create_subfolder
+    from submission import get_submission_format
+    
 import configargparse
 import spacy
 import logging
@@ -46,12 +51,17 @@ def Main(args):
             
     if args.do_eval_spans:
         logger.info("Evaluating file %s with competition metrics", args.output_file)
-        get_submission_format(args.predicted_labels_files, test_articles_id, test_articles_content, nlp, args.output_file)
-        gold_annot_file = next(tempfile._get_candidate_names())
-        get_submission_format([test_file_path], test_articles_id, test_articles_content, nlp, gold_annot_file)
-        cmd = "python tools/task-SI_scorer.py -s {} -r {}".format(args.output_file, gold_annot_file)
+        output_file = os.path.join('results', args.output_file)
+        get_submission_format(args.predicted_labels_files, test_articles_id, test_articles_content, nlp, output_file)
+        if args.gold_annot_file is None:
+            gold_annot_file = next(tempfile._get_candidate_names())
+            get_submission_format([test_file_path], test_articles_id, test_articles_content, nlp, gold_annot_file)
+        else:
+            gold_annot_file = args.gold_annot_file
+        cmd = "python tools/task-SI_scorer.py -s {} -r {}".format(output_file, gold_annot_file)
         subprocess.run(cmd, shell=True)
-        os.remove(gold_annot_file)
+        if args.gold_annot_file is None:
+            os.remove(gold_annot_file)
     
     if args.create_submission_file:
         if not os.path.exists('results'):
@@ -95,8 +105,10 @@ def main():
     parser.add_argument("--random_state", default=42, type=int, help='Random state for the dataset splitting.')
     parser.add_argument("--do_eval_spans", action="store_true", 
                         help="Whether to run eval on the dev set with the competition metrics.")
+    parser.add_argument("--gold_annot_file", default=None, type=str, help="Gold annotation file.")
 
     parser.add_argument("--use_crf", action="store_true", help="Use Conditional Random Field over the model")
+    parser.add_argument("--use_quotes", action="store_true")
     
     MODEL_CLASSES = ["bert", "roberta", "distilbert", "camembert"]
     parser.add_argument("--model_type", default=None, type=str, required=True,
