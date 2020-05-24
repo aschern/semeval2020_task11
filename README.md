@@ -49,7 +49,7 @@ All commands are run from the root directory of the repository.
     ```bash
     python -m span_identification --config configs/si_config.yml --create_submission_file
     ```
-6. In case you have the correct markup in the `test_file` or have gold `--gold_annot_file` (source competition format), you can run the evaluation competition script.
+6. In case you have the correct markup in the `test_file` or gold `--gold_annot_file` (source competition format), you can run the evaluation competition script.
     ```bash
     python -m span_identification --config configs/si_config.yml --do_eval_spans
     ```
@@ -77,14 +77,14 @@ Here you need almost the same commands and settings as in the SI task.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --do_predict --join_embeddings --use_length
     ```
-5. Create the submission file `output_file`. It will combine the predictions `predicted_logits_files` with coefficients specified in `--weights` and apply some post-processing.
+5. Create the submission file `output_file`. It will combine predictions from the list `predicted_logits_files` with coefficients specified in `--weights` (optional) and apply some post-processing.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --create_submission_file
     ```
-6. In case you have the correct markup in the `test_file` or have gold `--test_labels_path` (source competition format), you can check your accuracy (micro f1-score) and f1-score per classes.
+6. In case you have the correct markup in the `test_file` or gold `--test_labels_path` (source competition format), you can check your accuracy (micro f1-score) and f1-score per classes.
     ```bash
     python -m technique_classification --config configs/tc_config.yml  --eval_submission
     ```
 7. Use `visualization_example/visualization.ipynb` if you want to visualize labels.
 
-Our pretrained RoBERTa-CRF (SI task) and RoBERTa-Joined (TC task) models are available in [google drive](https://vk.com/away.php?to=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1Gph7FKMaxOBJdkrk0nM72uFpCGgn-2kC%3Fusp%3Dsharing).
+Our pretrained RoBERTa-CRF (SI task) and RoBERTa-Joined (TC task) models are available in [Google Drive](https://vk.com/away.php?to=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1Gph7FKMaxOBJdkrk0nM72uFpCGgn-2kC%3Fusp%3Dsharing).
