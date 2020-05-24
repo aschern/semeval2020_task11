@@ -69,6 +69,10 @@ Here you need almost the same commands and settings as in the SI task.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --do_train --do_eval
     ```
+    or distributed
+    ```
+    CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node 4 technique_classification --config configs/tc_config.yml --do_train --do_eval
+    ```
 4. Apply the trained model to the `test_file` specified in the config. It will be created based on the `test_data_folder` folder and `test_template_labels_path` file in case of missing or if the flag `--overwrite_cache` is specified.
     ```bash
     python -m technique_classification --config configs/tc_config.yml --do_predict --join_embeddings --use_length
