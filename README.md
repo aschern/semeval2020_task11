@@ -5,7 +5,7 @@ This repository provides code for the SemEval-2020 Task 11 competition (Detectio
 
 The competition webpage: https://propaganda.qcri.org/semeval2020-task11/
 
-The description of the architecture of models can be found in our paper [aschern at SemEval-2020 Task 11: It Takes Three to Tango: RoBERTa, CRF, and Transfer Learning]().
+The description of the architecture of models can be found in our paper [Aschern at SemEval-2020 Task 11: It Takes Three to Tango: RoBERTa, CRF, and Transfer Learning](https://www.aclweb.org/anthology/2020.semeval-1.191/).
 
 ## Requirements
 ```
@@ -88,3 +88,22 @@ Here you need almost the same commands and settings as in the SI task.
 7. Use `visualization_example/visualization.ipynb` if you want to visualize labels.
 
 Our pretrained RoBERTa-CRF (SI task) and RoBERTa-Joined (TC task) models are available in [Google Drive](https://vk.com/away.php?to=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1Gph7FKMaxOBJdkrk0nM72uFpCGgn-2kC%3Fusp%3Dsharing).
+
+## Citation
+
+If you find this repository helpful, feel free to cite our publication [Aschern at SemEval-2020 Task 11: It Takes Three to Tango: RoBERTa, CRF, and Transfer Learning](https://www.aclweb.org/anthology/2020.semeval-1.191/):
+```
+@inproceedings{chernyavskiy-etal-2020-aschern,
+    title = "Aschern at {S}em{E}val-2020 Task 11: It Takes Three to Tango: {R}o{BERT}a, {CRF}, and Transfer Learning",
+    author = "Chernyavskiy, Anton  and
+      Ilvovsky, Dmitry  and
+      Nakov, Preslav",
+    booktitle = "Proceedings of the Fourteenth Workshop on Semantic Evaluation",
+    month = dec,
+    year = "2020",
+    address = "Barcelona (online)",
+    publisher = "International Committee for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.semeval-1.191",
+    pages = "1462--1468"
+}
+``` 
