@@ -12,7 +12,7 @@ spacy==2.2.3
 Unidecode==1.1.1
 tqdm==4.43.0
 pandas==1.0.1
-ipython==7.13.0
+ipython==7.16.3
 ptvsd==4.3.2
 scikit_learn==0.22.2.post1
 tensorboardX==2.0
