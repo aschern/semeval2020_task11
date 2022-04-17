@@ -10,3 +10,5 @@
 #SBATCH --gpus=1
 
 srun python -m span_identification --config configs/si_config.yml --do_train --do_eval --model_name_or_path roberta-large --use_crf --overwrite_output_dir
+
+kaka
