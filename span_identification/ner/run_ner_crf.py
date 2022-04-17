@@ -135,7 +135,11 @@ def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):
             if args.model_type != "distilbert":
                 inputs["token_type_ids"] = batch[2] if args.model_type in ["bert", "xlnet"] else None  # XLM and RoBERTa don"t use segment_ids
 
+            logger.info("step batch\n")
+            logger.info(batch)
             outputs = model(**inputs)
+            logger.info("step outputs\n")
+            logger.info(outputs)
             loss = outputs[0]  # model outputs are always tuple in pytorch-transformers (see doc)
 
             if args.n_gpu > 1:
@@ -243,6 +247,9 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
             preds.extend(predicted_tags)
             out_label_ids = np.append(out_label_ids, inputs["labels"].detach().cpu().numpy(), axis=0)
 
+    print("outputs")
+    print(outputs)
+    
     eval_loss = eval_loss / nb_eval_steps
     #preds_logits = softmax(preds, axis=2)
     #preds = np.argmax(preds, axis=2)
@@ -257,6 +264,11 @@ def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""
             if out_label_ids[i, j] != pad_token_label_id:
                 out_label_list[i].append(label_map[out_label_ids[i][j]])
                 preds_list[i].append(label_map[preds[i][j]])
+
+    logger.info("out_label_list")
+    logger.info(out_label_list)
+    logger.info("preds_list")
+    logger.info(preds_list)
     
     results = {
         "loss": eval_loss,

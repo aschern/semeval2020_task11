@@ -1,4 +1,4 @@
-torch==1.7.1
+torch==1.2.0
 transformers==2.3.0
 scipy==1.4.1
 numpy==1.16.4
@@ -6,7 +6,7 @@ joblib==0.13.2
 nltk==3.4.5
 ConfigArgParse==1.0
 sklearn_crfsuite==0.3.6
-apex==0.9.10.dev0
+apex==0.1
 seqeval==0.0.5
 spacy==2.2.3
 Unidecode==1.1.1
