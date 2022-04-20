@@ -1,0 +1,9 @@
+Daz Disley has announced that all whiteLABEL plugins are now available as donationware.
+
+From late 2008 until 2015 I published a number of VST plugins for Windows under the whiteLABEL brand – studio tools for musicians and producers. Whilst they were reasonably popular and regularly went out on coverdiscs (ComputerMusic, MusicTech and TechFocus Magazines) they were never any great commercial success. Over the years I made ‘beer-money’ from them at best, but a change in European VAT regulations in 2015 effectively put me out of business as I have neither time nor resource to administer the back-end accountability processes required of VATMOSS (effectively putting me on equal-footing with the likes of Google and Amazon vis-à-vis reporting and record-keeping, and I’m a one-man-band folks …).
+
+Having said that, between downloads and magazine placements there are probably in-excess of 300,000 units “in-the-wild” – many of them having found useful homes in studios around the world, ranging from hobbyist’s bedrooms to commercial radio facilities, and every now-and-then I still get reports of them having been used on remixes for well-known artist x,y or z etc … and that’s not counting the Japanese and Russian warez-sites or the pirate dvd compilations …
+
+I’d like to offer my heartfelt thanks and best wishes to the hundreds of customers who paid me the modest amounts I charged for the full versions : it’s been a delight to get to know some of you and your support, encouragement, testing and feedback over the years has been a real help to my development as a coder, and further as artist in the broader fields of “digital” and “visuals” …
+
+And now : in order to squeeze the last drops of usefulness from them as the studio-world completes the transition to full 64-bit workflows I’ve decided to re-release them as freeware / donationware – the full products available from this website, gratis.

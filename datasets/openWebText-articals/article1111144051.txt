@@ -1,0 +1,68 @@
+‘I’m being deleted from Wikipedia, which feels like I’m famous,’ Sarah Tuttle tweeted in early May. The astrophysicist’s Wikipedia page was flagged for deletion just weeks after a fierce – and prominent – battle over the page of superheavy element chemist Clarice Phelps.
+
+Phelps, who works at Oak Ridge National Laboratory, US, is quite possibly the first female African–American scientist to be part of a team that discovered a superheavy element, tennessine – a feat, some might argue, that means she should be featured on the world’s largest encyclopaedia. But Wikipedia editors disagreed.
+
+Arguing whether Phelps met Wikipedia’s notability standards – rules that govern whether a person should have a page or not – editors first deleted her page, then restored it, then deleted it again. Her page has been deleted a total of three times. With every deletion, the discussion became more heated.
+
+The deletion battle received considerable media attention. Some outlets accused Wikipedia of discrimination and systemic bias against anyone who isn’t a straight white man.
+
+Critics point to stats that they claim show that Wikipedia is biased against women and female scientists in particular. Only 18% of the 1.6 million biographies in the English Wikipedia are about women. The figure is lower for people tagged as scientists – 16% of almost 150,000 articles.
+
+But the encyclopaedia can only serve as a mirror of society, a long-time Wikipedia contributor who preferred to remain anonymous points out. The existing gender gap is simply replicated in the articles found on Wikipedia. Taha Yasseri from the University of Oxford, UK, who has investigated gender bias on Wikipedia agrees. ‘The gap we observe is not limited to Wikipedia. It’s a reflection of a bigger inequality that exists in academia.’
+
+Disputed deletions
+
+Jessica Wade, a physical chemist at Imperial College London, UK, who created both Phelps’ and Tuttle’s page, says out of the 600 articles she has written so far about female, black, minority ethnic or LGBTQ+ scientists, six have been deleted as they weren’t deemed notable. But almost every single one is being scrutinised – particularly those on ethnic minority women, Wade says.
+
+‘When you make a page and it is disputed for deletion, it is not only annoying because your work is being deleted,’ she says. ‘It’s also incredibly intrusive and degrading to have someone discuss whether someone’s notable enough to be on Wikipedia – a website that has pages about almost every pop song, people who are extras in films no one has ever heard of and people who were in sports teams that never scored.’
+
+Women academics are twice as likely to be nominated for deletion as you would expect David Eppstein, University of California, Irvine
+
+Phelps’ case is not the first to highlight Wikipedia’s diversity problem. Before winning the 2018 physics Nobel prize, Donna Strickland didn’t have an entry. Both of her male laureates who shared the prize with Strickland had profiles. A draft was created for Strickland, prior to winning the prize, but rejected for failing to meet the general notability criteria. Since she hadn’t received significant coverage in multiple, reliable and independent sources, Strickland didn’t qualify for an article.
+
+However, how exactly the notability criteria are interpreted is up to Wikipedia’s 100,000 volunteer editors and 1000 administrators. ‘In theory, everybody on Wikipedia is equal,’ explains Wikipedian and freelance consultant Andy Mabbett. ‘There is no editorial board, there is nobody with veto over anybody else.’
+
+Known knowns
+
+‘[Notability is] a very, very difficult subject,’ says Roger Bamkin, co-founder with Rosie Stephenson-Goodknight of Women in Red, a Wikipedia project that aims to increase the number of women’s biographies. ‘When editors are arguing against notability, people will say, “Well, it’s men who are rejecting women as subjects” – and that may be true. Nine out of 10 editors are men.’
+
+The percentage of female Wikipedia editors is somewhere between 9 and 16%. This gender gap might be one of the reasons why men’s and women’s biographies are presented differently. A 2016 study1 found that articles about women tend to stress the fact that they are about women, containing words like ‘woman’ or ‘female’. Articles about men, on the other hand, didn’t contain equivalent words. Moreover, women’s biographies were more likely to contain words related to relationship status or family.
+
+Yasseri recently found that female physicists were 19% less likely to have a Wikipedia page than male physicists with the same h-index.2 The h-index is a measure of a researcher’s productivity and citation impact based on their published work.
+
+‘We assume Wikipedia is a natural emergence of what the public recognises,’ says Yasseri. ‘Lots of scholars are on Wikipedia not necessarily for the excellence of the work, but because they were considered notable by the Wikipedia community. The good news is that with large h-index – very prominent scientists – the gap starts to close.’
+
+Erasing women?
+
+While it is clear that there are fewer female than male biographies on Wikipedia, establishing that women face an uphill notability struggle is more complicated.
+
+Chipping in on a recent discussion on notability rules, University of California, Irvine, computer scientist David Eppstein said: ‘Women academics are twice as likely to be nominated for deletion as you would expect from the proportion of women among Wikipedia biographies.’
+
+If an article is nominated for deletion, editors can justify why they think it should be kept or deleted. The discussion should arrive at what is called community consensus, the anonymous editor explains. Although the word gives the impression of a collegial decision by the entire community, they say, ‘in general, it’s simply the opinion of those users who happen to drop by or who happen to be interested’.
+
+In Phelps’ case, her name didn’t appear in the articles announcing tennessine’s discovery. She wasn’t profiled by mainstream media. Most mentions of her work are on her employer’s website – a source that’s not classed as independent by Wikipedia standards and therefore not admissible when it comes to establishing notability. The community consensus was that her biography had to go.
+
+University College London librarian Andrew Gray, who has trawled through all the biographies of living people on the English Wikipedia, tentatively agrees with Eppstein. ‘Articles on women do appear to be nominated for deletion at a higher rate than those on men.’ However, they are also more likely to be retained after discussion, he says.
+
+Out of articles created between 2009 and 2015, 3.5–4% of those on women were nominated for deletion. For men, it was between 2.5–3% of articles. The gap seems to be closing, however. For articles created since late 2016, the percentage of nominated women’s profiles dropped sharply. Since then, nomination rates for both genders has been steadily decreasing, to less than 2% for articles created in the first half of 2019. However, Gray points out, his analysis has a caveat: it only finds pages that survived deletion nominations since data for articles that have been deleted after discussions is not easy to come by.
+
+‘We have some aggregate numbers on overall deletion rates, so we can say that overall it’s likely articles on women are both nominated and retained more frequently than those for men, while the actual deletions are not as heavily skewed,’ he says. ‘However, we don’t – yet – have any solid numbers on whether the gender breakdown of actual deletions has varied over time.’
+
+‘One could not argue that even if deletion rates are the same for male and female, there could be many more pages created for not very notable men, and therefore, they get deleted,’ Yasseri points out. ‘But for women, their pages might not be even created in the first place.’
+
+‘A lot of people get excited about the fact that one particular article has been deleted,’ says Bamkin. ‘But we’ve got thousands and thousands to write. I think if people feel there is a problem they should get involved.’ He recommends getting involved in local edit-a-thons as becoming a Wikipedia editor isn’t easy.
+
+Byzantine bureaucracy
+
+‘We have an onboarding problem – getting people from basic editing to being a confident part of the community,’ says John Lubbock, communications coordinator at Wikimedia UK. The Wikimedia Foundation and its affiliated non-profit organisations support Wikipedia, but have no oversight over its content.
+
+‘The user experience on the site needs improving,’ Lubbock admits. He says it takes years to understand the complex bureaucracy Wikipedia has accumulated over the 18 years of its existence. ‘I think that these issues can definitely affect women more, who may have less free time to devote to volunteering than men.’
+
+Some of the issues Wade encountered creating Phelps’ biography, he says, are ‘representative of how much harder it is to create articles for women than for men, because there are fewer citations to use, as people write less about the achievements of women’.
+
+‘Notability rules for academics are notoriously byzantine, to say it kindly,’ the anonymous editor says. They hope the push to reform the guidelines will help compensate for the historic underrepresentation of women and minorities, since it’s not just women who find their path into Wikipedia blocked. ‘A lot of prejudice is unconscious and intersectional,’ says Lubbock. ‘Wikipedia is dealing not just with a gender inequality issue, but also racial and geographical inequalities.’
+
+While projects like Bamkin’s Women in Red have played a big part in increasing the fraction of women’s biographies from 15% to 18% over the last four years, ‘some of the people who have been used to monopolising the conversation will be annoyed that they are not being listened to as much as before’, Lubbock says. ‘I think that this is the kind of backlash we are seeing in regard to those who harass women online, whether on Wikipedia or elsewhere.’
+
+Correction: John Lubbock’s affiliation was updated on 4 July 2019. Andrew Gray’s affiliation was updated on 5 July 2019.
+

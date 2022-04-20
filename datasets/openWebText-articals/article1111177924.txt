@@ -1,0 +1,11 @@
+AMD has announced the availability of its new 16.6.1 Radeon Crimson Edition hotfix driver and 16.6.1 FirePro Liquid VR beta package, which should improve overall gaming experience and stability, and are compatible with Microsoft’s Windows 7, 8.1, and 10 platforms.
+
+While the 16.6.1 FirePro Liquid VR beta update is only intended for Virtual Reality (VR) with head-mounted displays like Oculus Rift and HTC Vive, the other release includes several more changes.
+
+Specifically speaking, the Crimson Edition 16.6.1 Hotfix adds support for Mirror's Edge Catalyst and Paragon titles, includes a new AMD Crossfire profile for Dark Souls III, and increases performance for DiRT Rally on some tracks with rainy/night scenes.
+
+Moreover, the update resolves various flickering or corruption issues experienced when playing videos in a web browser, Fallout 4 in AMD Crossfire technology mode, or when using the Oculus Rift headsets with multiple displays that have different resolutions.
+
+In addition to that, AMD fixes the missing HDMI display scaling options in Radeon Settings, corrects AMD Crossfire technology mode behavior when using Origin or uPlay applications, and removes the bug that caused Radeon additional settings page to fail.
+
+With this in mind, download AMD Radeon Crimson Graphics Driver 16.6.1 Hotfix or download AMD FirePro Liquid VR Driver 16.6.1 Beta depending on which one you need, apply it, and perform a reboot so that changes take effect.

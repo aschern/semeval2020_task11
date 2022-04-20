@@ -1,0 +1,45 @@
+New Civil Asset Forfeiture Tool Makes Bitcoin Even More Powerful
+
+The Electronic Recovery and Access to Data machine (ERAD), is a piece of new civil asset forfeiture technology that allows law enforcement to seize money directly from bank accounts by swiping a suspect’s debit or credit cards.
+
+Also read: 21 Inc. Open Sources Bitcoin Computer Software Library
+
+This new addition to the cops’ arsenal of notorious civil asset forfeiture weapons has only strengthened the case for using bitcoin.
+
+Civil Asset Forfeiture Enters the 21st Century With ERAD
+
+By swiping a debit, credit or prepaid card through the machine, police can view the suspect’s account information, and freeze or transfer money in the account associated with the card.
+
+According to RT America, the Oklahoma Highway Patrol bought 16 ERAD machines and began using them in May 2016, taking money from people without warrants.
+
+Local Oklahoma news station KWTV reports that Highway Patrol officers can use the ERAD to freeze or confiscate money whenever there is “probable cause.” However, as with all civil asset forfeiture policies, police are not required to obtain a warrant or charge the suspect with a crime to take their funds.
+
+Patrolman LT. John Vincent insists that these devices are meant to combat identity theft, not taking cash.
+
+“I know that a lot of people are just going to focus on seizing the money,” Vincent says. “That’s a very small thing that’s happening now. The largest. . .benefit has been the identity theft.”
+
+Vincent assures that “If you can prove that you have a legitimate reason to have that money it will be given back to you.”
+
+ERAD Group Inc., the company supplying the ERAD machines, are getting a cut of the funds seized by Oklahoma Highway Patrol. In addition to the $5,000 USD the law enforcement agency is paying for the software and scanners, ERAD Group gets 7.7 percent of all cash seized with the devices.
+
+Civil asset forfeiture has been a controversial law enforcement policy for several years. Police departments across the United States seize millions of dollars in cash and physical assets every year, which often don’t get returned to their owners.
+
+Despite attempts from lawmakers to rein in civil asset forfeiture, police officers across the country continue to seize wealth from citizens.
+
+Protect Funds With Bitcoin
+
+These ERAD devices highlight the insecure nature of bank and prepaid cards. With the right equipment, law enforcement — or a thief — can steal your money with a single swipe.
+
+When using fiat, your money is never safe, it is out in the open for anyone to take.
+
+With Bitcoin, though, your wealth is protected by an immutable blockchain and unbreakable encryption.
+
+If you’re pulled over by a police officer and he or she sees that you have a hardware bitcoin wallet with you, they will not be able to access your coins without the private key. They may physically confiscate your wallet, but your money will be safe as long as you’re able to keep your password hidden.
+
+By simply refusing to divulge your private key, or by “forgetting” it, no one can steal your bitcoins. And although authorities may eventually get your key, either by obtaining a warrant or forcefully taking it from you, you could still buy enough time to move your coins to a different wallet, making the confiscated device worthless to would-be thieves.
+
+Be it local cops, federal authorities, or a common criminal, Bitcoin makes your wealth far more secure than any kind of fiat currency or physical store of value.
+
+What do you think about the new ERAD devices? Let us know in the comments below!
+
+Featured image courtesy of Xplore.

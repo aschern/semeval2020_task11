@@ -1,0 +1,15 @@
+have full network access Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.
+
+run at startup Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the phone and allow the app to slow down the overall phone by always running.
+
+prevent phone from sleeping Allows the app to prevent the phone from going to sleep.
+
+modify or delete the contents of your shared storage Allows the app to write the contents of your shared storage.
+
+view network connections Allows the app to view information about network connections such as which networks exist and are connected.
+
+view Wi-Fi connections Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.
+
+run foreground service Allows the app to make use of foreground services.
+
+pair with Bluetooth devices Allows the app to view the configuration of the Bluetooth on the phone, and to make and accept connections with paired devices.

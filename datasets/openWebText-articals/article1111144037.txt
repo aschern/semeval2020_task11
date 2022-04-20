@@ -1,0 +1,19 @@
+Home News > Sustainable sand gives pollution a one-two punch
+
+Sustainable sand gives pollution a one-two punch
+
+UC Berkeley engineers have developed a mineral-coated sand that can soak up toxic metals like lead and cadmium from water. Along with its ability to destroy organic pollutants like bisphenol A, this material could help cities tap into stormwater, an abundant but underused water source.
+
+The team’s findings were published recently in the journal Environmental Science: Water Research & Technology.
+
+Researchers knew that the naturally occurring minerals they coated onto sand could react with organic contaminants like pesticides in stormwater. However, the ability of the coated sand to also remove harmful metals during filtration could unlock urban water supplies that had been written off. Cities with Mediterranean climates, like Los Angeles, could store stormwater underground during wet winters, where it could serve as an inexpensive, local supply during the dry season. But this resource has gone mostly untapped because stormwater picks up toxic chemicals as it runs through streets and gutters.
+
+“The pollutants that hold back the potential of this water source rarely come one at a time,” said study lead author Joe Charbonnet, who conducted this research as a graduate student in civil and environmental engineering. “It makes sense that we fight back with a treatment technology that has these impressive double abilities to take out both toxic metals and organics. We suspected that the mineral-coated sand was special, but the way it continues to impress us with multiple capabilities is rather extraordinary.”
+
+Cities often discard stormwater as pollution because it picks up contamination like lead particles left behind from decades of leaded gasoline emissions or pesticides from lawns. Exposure to these chemicals is associated with slow neurological development in children and some types of cancer. However, researchers say that their coated sand material could be installed in rain gardens in places like parking lots where stormwater can be collected and cleaned. They estimate that this material could remove metals from stormwater for over a decade in a typical infiltration system, which would convey runoff into underground aquifers. The researchers see this material turning pollution into a solution for strained water supplies, particularly in parched cities that pay to import water.
+
+“Rainwater used to percolate into the soil and recharge aquifers,” said David Sedlak, professor of civil and environmental engineering and co-author of the paper. “That changed when we covered city landscapes with hard surfaces like roads and buildings. As water-stressed cities try to figure out how to get urban stormwater back into the ground, we have serious concerns about the quality of that water. Our coated sands can remove not one, but two major classes of contaminants that threaten groundwater quality during stormwater infiltration.”
+
+To make the filtration media, the scientists coated sand particles with manganese oxide, a naturally-occurring nontoxic mineral commonly found in soil. Work has already begun to investigate how well this material performs at large scales. Researchers have deployed large test columns of the mineral-coated sands to treat stormwater at sites in Los Angeles and Sonoma, California.
+
+This research was supported by the National Science Foundation (NSF) through the Engineering Research Center for Re-Inventing the Nation’s Water Infrastructure (ReNUWIt) and the NSF Graduate Research Fellowship.

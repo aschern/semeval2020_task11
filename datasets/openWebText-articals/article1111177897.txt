@@ -1,0 +1,29 @@
+Days after hackers started openly selling inexpensive databases of hundreds of millions of LinkedIn and MySpace passwords, users of other services are complaining that someone has drained their bank accounts.
+
+Users of a German service called TeamViewer, which allows customers to log into their computers remotely, have recently complained that someone else had taken control of some of their most private and valuable accounts: their email, bank, and PayPal accounts.
+
+@TeamViewer My TeamViewer was hacked not once but twice. The second time I caught them on red handed trying to use my paypal to buy ITunes. — Aiden Raccoon (@AidenRaccoon) June 2, 2016
+
+Thank god for @PayPal customer service. But you guys must be getting tired of reversing charges related to @TeamViewer — Rhett Roy (@rhettroy) June 2, 2016
+
+TeamViewer strongly denies that it’s seen any evidence the company was actually hacked, though it hasn’t yet committed to an internal audit. Instead, it’s pushing a different theory, based on the fact that some people unwisely use the same username and password for multiple sites. In recent weeks, hackers have been spotted aggressively selling enormous caches of hacked, verified passwords from some of the biggest sites of recent years: at least 117 million LinkedIn passwords and 111 million MySpace accounts.
+
+If their TeamViewer login information is the same as used on LinkedIn or MySpace or any of the other recently hacked sites, that gives hackers a way around knowing passwords to more sensible sites.
+
+“People are trading bits of data from hacks elsewhere from data breaches with LinkedIn, with myspace,” Axel Schmidt, a spokesperson from TeamViewer, told Vocativ. “It happens way too many times that users use the same account credential for multiple accounts with different services.”
+
+Schmidt added that he had noticed an uptick in complaints from TeamViewer users that attackers had hijacked their accounts. He checked the email addresses of four of the complainants on the website haveibeenpwned.com, a site run by Microsoft researcher Troy Hunt, which checks email addresses against those known to have been involved in a data breach. The site includes emails associated with both the LinkedIn and MySpace hacks. According to the site, all four TeamView customers’ emails were confirmed to have been involved in a data breach at some point, Schmidt said. He declined to share how many customers have recently made complaints, or which hack his customers had been a part of, citing Germany’s strict data privacy laws.
+
+Some recent TeamViewer victims indicated that’s what happened.
+
+“It’s amazing that they thought to use TeamViewer to attack. Smart, in all honesty,” a victim named Chad, whose computer purchased a $100 iTunes gift card while he was asleep, told Vocativ.
+
+“[M]y LinkedIn and TeamViewer may share the same password,” he admitted. When Chad checked haveibeenpwned at Vocativ’s suggestion he saw that his LinkedIn account was indeed among those compromised.
+
+The method could certainly work. Even if you use a totally unique password for your bank account, if it’s stored in your browser and someone else can remotely access that computer, they can then access your bank just the same.
+
+“The perpetrator [stole] my details that were saved within the Chrome browser,” another TeamViewer user, who was previously hacked in April, told Vocativ. “I could see in the logs and browsing history how he was transferring money (presumably to himself) through PayPal, and purchasing Amazon Gift Cards. It was going on until my bank decided to block the activities as they seemed out of the ordinary.”
+
+Software developer and TeamViewer user Tim Oliver describes the a similar scenario in his blog. By remarkable coincidence, he writes, he actually noticed a different “Tim Oliver” sign into his account and access his computer via TeamViewer. He quickly terminated the session and changed the password before any damage was done. As the service lets users track where logins come from, he could quickly tell that this unwanted visitor was from Russia. And yes, he used the same login information as his old LinkedIn account, and yes, his was among those affected by that breach.
+
+On Wednesday, TeamViewer went offline, fueling speculation that it had been hacked. But that was a separate issue, Schmidt said: An unknown attacker had hit the service with a larger than usual DDoS attack, in which a hacker directs scores of visits to a site at the same time, overwhelming it with traffic.

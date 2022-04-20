@@ -1,0 +1,387 @@
+While looking for ways to activate the developer menus left over in Animal Crossing, including the NES emulator game selection menu, I found an interesting feature that exists in the original game that was always active, but never used by Nintendo. In addition to the NES/Famicom games that can be obtained in-game, it was possible to load new NES games from the memory card. I was also able to find a way to exploit this ROM loader to patch custom code and data into the game, allowing for code execution via the memory card.
+
+Introduction - The NES console items
+
+The normal NES games that you could obtain in Animal Crossing each came as an individual furniture piece that appeared as an NES console with a single game box on top of it. When you placed the item in your house and interacted with it, it would only play that one game. Pictured below are the Excitebike and Golf items.
+
+There was also a generic “NES Console” item that did not feature any of the built-in games. You could buy this item from Redd, or sometimes obtain it through random events such as town bulletin-board message stating that one has been buried in a random location in town.
+
+This item appeared as the NES console with no game boxes on top of it.
+
+The problem with this item is that it was thought to be unplayable. Every time you interacted with it, you would just see a message indicating that you didn’t have any software to play.
+
+It turns out that this generic console item actually attempts to scan the memory card for specially constructed files that contain NES ROM images! The NES emulator used to play the built-in games is apparently a complete, generic NES emulator for the GameCube, and it’s capable of playing most games thrown at it.
+
+Before demonstrating these features, I’ll explain the process of reverse engineering them.
+
+Finding the memory card ROM loader
+
+Looking for dev menus
+
+My original intention was to find code that activates the various developer menus, such as the map select menu or NES emulator game select menu. The “Forest Map Select” menu, which makes it easy to instantly load directly into different locations in the game, was easy enough to locate just by searching for the “FOREST MAP SELECT” string that appears at the top of the screen (as seen in various videos and screenshots online).
+
+The “FOREST MAP SELECT” had a data cross-reference to a function called select_print_wait , which lead to a bunch of other functions that also had the select_* prefix, including one called select_init . These happen to be the functions that handle the map select menu.
+
+The select_init function lead to another interesting function called game_get_next_game_dlftbl . This one ties together all the other menus and “scenes” that can run: the Nintendo logo screen, the title screen, the map select menu, the NES (Famicom) emulator menu, and so on. It runs early in the main procedure of the game, looks up which scene initialization function it should run, and finds its entry in a table data structure called game_dlftbls . This table holds references to the different scene handling functions, as well as some other data.
+
+A close up of the first block of the function shows that it loads the “next game init” function, and then starts comparing it to a series of known init functions:
+
+first_game_init
+
+select_init
+
+play_init
+
+second_game_init
+
+trademark_init
+
+player_select_init
+
+save_menu_init
+
+famicom_emu_init
+
+prenmi_init
+
+One of the function pointers it checks for is famicom_emu_init , which is responsible for starting up the NES/Famicom emulator. By forcing the result of game_get_next_game_init to be famicom_emu_init or select_init in the Dolphin debugger, I can get the special menus to display. The next step is to figure out how these pointers would normally be set during runtime. All the game_get_next_game_init function does is load a value at offset 0xC of the first argument to game_get_next_game_dlftbl .
+
+Tracking how these values got set across various data structures was a bit tedious, so I’ll just cut to the chase. The main things I found were:
+
+When the game starts up normally, it goes through this sequence: first_game_init second_game_init trademark_init play_init
+
+player_select_init will set the next init to select_init . This screen is supposed to allow for player selection just before map selection, but didn’t seem to be working correctly.
+
+There was also one unnamed function that would set the emulator init function, but nothing appeared to set the init function to the player or map select inits.
+
+At this point I realized I had another silly issue with how I loaded function names into IDA, where I was missing any function names that began with a capital letter due to the regular expression I used to cut out lines in the debug symbol file. The function that would set up famicom_emu_init looked related to scene transitions, and indeed its name turned out to be Game_play_fbdemo_wipe_proc .
+
+Game_play_fbdemo_wipe_proc handles scene transitions such as screen wipes and fades. Under certain conditions, the screen transition leads from normal gameplay into the emulator display. That’s what will set the emulator init function.
+
+Console furniture handling
+
+What causes the screen transition handler to switch over to the emulator is actually the furniture item handler functions for the NES consoles. aMR_FamicomEmuCommonMove is called when a player interacts with one of the consoles.
+
+When this function is called, r6 holds an index value corresponding to the numbers seen in the filenames of the NES games in famicom.arc :
+
+01_nes_cluclu3.bin.szs
+
+02_usa_balloon.nes.szs
+
+03_nes_donkey1_3.bin.szs
+
+04_usa_jr_math.nes.szs
+
+05_pinball_1.nes.szs
+
+06_nes_tennis3.bin.szs
+
+07_usa_golf.nes.szs
+
+08_punch_wh.nes.szs
+
+09_usa_baseball_1.nes.szs
+
+10_cluclu_1.qd.szs
+
+11_usa_donkey3.nes.szs
+
+12_donkeyjr_1.nes.szs
+
+13_soccer.nes.szs
+
+14_exbike.nes.szs
+
+15_usa_wario.nes.szs
+
+16_usa_icecl.nes.szs
+
+17_nes_mario1_2.bin.szs
+
+18_smario_0.nes.szs
+
+19_usa_zelda1_1.nes.szs
+
+( .arc is a proprietary file archive format.)
+
+When r6 is non-zero, it’s passed along in a call to aMR_RequestStartEmu . This eventually triggers the emulator transition.
+
+However, if r6 is zero, a function named aMR_RequestStartEmu_MemoryC is called instead. Setting the value to zero in the debugger, I got the “I don’t have any software” message. I didn’t recall the generic “NES Console” item right away to see if that’s what would cause r6 to be zero, but it is - index zero is used for the generic console item.
+
+While aMR_RequestStartEmu just stores the index value to some data structure, aMR_RequestStartEmu_MemoryC does something much more complex…
+
+That third code block calls aMR_GetCardFamicomCount and checks for a non-zero result, or else it will short-circuit past most of the interesting stuff on the left side of the function graph.
+
+aMR_GetCardFamicomCount calls into famicom_get_disksystem_titles , which then calls into memcard_game_list , which is where things start to get really interesting.
+
+memcard_game_list will mount the memory card and start looping through its file entries, checking some values on each one. By tracing through it in the debugger, I could see what it was comparing the values to on each of my memory card files.
+
+Whether or not the function decides to load in a file depends on a few string comparison checks. First, it checks for the presence of the strings “GAFE” and “01”, which are the game ID and company ID, respectively. The 01 refers to Nintendo, “GAFE” refers to Animal Crossing. My guess is that it’s short for “GameCube Animal Forest English”.
+
+Then it checks for the strings “DobutsunomoriP_F_” and “SAVE”. In this case, the first string should match, but not the second. “DobutsunomoriP_F_SAVE” happens to be the name of the file that stores save data for the built-in NES games. So, any file besides that with the “DobutsunomoriP_F_” prefix will be loaded.
+
+By using the Dolphin debugger to skip over the “SAVE” string comparison and trick the game into thinking my “SAVE” file was OK to load, I got this menu to show up when I used the NES console:
+
+I answered yes and attempted to load the save file up as a game, and got the built-in crash screen for the first time:
+
+Cool! Now that I know it is in fact trying to load games from the memory card, I can start figuring out the format for the save files to see how to load up a real ROM.
+
+One of the first things I tried to do was find out where the game name was being read from in the memory card file. By searching for the string “FEFSC” that appears in the “Would you like to play <name>?” message, I found the offset where it was being read from in the file: 0x642 . By copying the save file, changing the filename to “DobutsunomoriP_F_TEST”, setting the bytes at offset 0x642 to “TESTING”, and re-importing the edited save, I could get the desired title name to display in the menu.
+
+Adding multiple files in this format resulted in more options being added to the menu, as seen here:
+
+Booting a ROM file
+
+If aMR_GetCardFamicomCount returned non-zero, some memory is allocated on the heap, famicom_get_disksystem_titles is called again directly, and then a bunch of random offsets in a data structure get set. Instead of deciphering where all these values were going to be read, I started looking at the list of famicom functions.
+
+famicom_rom_load turned out to be the right place to look. It handles ROM loading, whether from a memory card or the internal game resources.
+
+The most significant thing in the “memory card load” block is that it calls memcard_game_load . This mounts the file on the memory card once again, reads it in, and parses it. The most important features of the file format become apparent here.
+
+Checksum value
+
+The first thing that happens after the file is loaded is a checksum calculation. The calcSum function is called, which is a very simple algorithm that sums up the values of all the bytes in the memory card data. The low eight bits of the result must be zero. So, to pass this check, you have to sum up the values of all the bytes in your original file, figure out what value to add to that sum to cause the low eight bits to be zero, and then set a checksum byte in your file to that value.
+
+If the check fails, you get a message stating that the memory card couldn’t be read correctly, and nothing happens. During the debugging process, all I have to do is skip over this check.
+
+Copying the ROM
+
+Down near the end of memcard_game_load , another interesting thing happens. There are some more interesting code blocks between this and the checksum, but none of them will result in a branch that skips over this behavior.
+
+If a certain 16-bit integer read from the card is non-zero, a function will be called to check for a compression header on a buffer. It checks for some proprietary Nintendo compression formats by looking for “Yay0” or “Yaz0” at the beginning of the buffer. If one of these is found, a decompression function is called. Otherwise, a simple memory copy function is performed. Either way, a variable called nesinfo_data_size is updated afterwards.
+
+Another context clue here is that the ROM files for the built-in NES games use “Yaz0” compression, and have that string in their file header.
+
+By observing the value that’s checked for zero and the buffer that’s passed to the compression check functions, I can quickly identify where in the memory card file the game is reading from. The zero-check is performed against part of a 32 byte buffer that’s copied from offset 0x640 in the file, which is likely a header for the ROM. Other parts of it are also checked throughout this function, and it’s where the game title is located (starting from the third byte of the header).
+
+With the specific code path I hit, the ROM buffer is located immediately after this 32 byte header buffer.
+
+This is enough information to attempt to construct a valid ROM file. I simply took one of the other Animal Crossing save files and edited it with a hex editor to change the name of the file to DobutsunomoriP_F_TEST and clear out the areas where I needed to insert data.
+
+I used the Pinball ROM that’s already present in the game for this test run, and copied its content in after the 32 byte header for a test. Instead of calculating the checksum value, I also set some breakpoints so that I could just skip over calcSum , as well as observe the results of other checks that might cause a branch that skips past loading the ROM.
+
+Finally, I imported the new file through the Dolphin memory card manager, restarted the game, and went to try it out on the console.
+
+It worked! There were some graphical quirks caused by Dolphin settings that affect the graphics mode used by the NES emulator, but the game played just fine. (In newer Dolphin builds it should work by default.)
+
+To be sure that other games would work, I tried out some more ROMs that weren’t already present in the game. Battletoads would start up, but not continue past the intro text (with some more tweaking later on, it did become playable). Mega Man, on the other hand, worked perfectly:
+
+To be able to generate more ROM files that could load without any debugger intervention I’d have to start writing code and dig into the file format parsing some more.
+
+The external ROM file format
+
+Most of the critical file parsing happens in memcard_game_load . There are six main sections to the parsing code blocks in this function:
+
+Checksum
+
+Save file name
+
+ROM file header
+
+Unknown buffer that’s copied without any processing
+
+Text comment, icon, and banner loader (for new save file creation)
+
+ROM loader
+
+Checksum
+
+The low eight bits of the sum of all the byte values in the save file must be zero. Here’s some simple Python code that generates a checksum byte that can achieve that:
+
+checksum = 0 for byte_val in new_data_tmp : checksum += byte_val checksum = checksum % ( 2 ** 32 ) # keep it 32 bit checkbyte = ( 256 - ( checksum % 256 )) % 256 new_data_tmp [ - 1 ] = checkbyte
+
+There’s probably a designated location to store the checksum byte, but just placing it in empty padding space at the very end of the save file works fine.
+
+File name
+
+Just to reiterate, the save file name must begin with “DobutsunomoriP_F_” and end with something other than “SAVE”. This filename is copied a couple of times, and in one case the letter “F” is replaced with “S”. This will be the name of save files for the given NES game (“DobutsunomoriP_S_NAME”).
+
+ROM header
+
+A direct copy of the 32 byte header is loaded into memory. A few of the values in this header are used to determine how to handle the upcoming sections. It mainly includes some 16-bit size values and packed setting bits.
+
+If you trace the pointer that the header is copied to all the way to the beginning of the function and figure out its argument position, the function signature below reveals that its type is in fact MemcardGameHeader_t* .
+
+memcard_game_load(unsigned char *, int, unsigned char **, char *, char *, MemcardGameHeader_t *, unsigned char *, unsigned long, unsigned char *, unsigned long)
+
+Unknown buffer
+
+A 16-bit size value from the header is checked. If it’s non-zero, that number of bytes will be directly copied from the file buffer into a new block of allocated memory. This advances a data pointer in the file buffer so that copying can resume from the next section later on.
+
+Another size value is checked in the header, and if it’s non-zero the compression check function is called. If necessary the decompression algorithm will run, and then SetupExternCommentImage is called.
+
+This function handles three things: a “comment”, a banner image, and an icon. For each one there’s a code in the ROM header that indicates how it should be handled. The options are:
+
+Use a default value Copy from the ROM file banner/icon/comment section Copy from an alternate buffer
+
+The default value code will cause the icon or banner to be loaded from an on-disk resource, and the save file name and comment (a text description of the file) to be set to “Animal Crossing” and “NES Cassette Save Data” respectively. This is how it would look:
+
+The second code value will just copy the game name from the ROM file (some alternative to “Animal Crossing”), and then attempt to find the string “] ROM” in the file comment and replace it with “] SAVE”. Presumably, the files Nintendo intended to release would have a name format like “Game Name [NES] ROM”, or something similar.
+
+For the icon and banner it would attempt to figure out the format of the image, get a fixed size value according to that format, and then copy the image over.
+
+For the last code value, the file name and description would be copied from another buffer without any changes, and the icon and banner would be loaded from the alternate buffer as well.
+
+ROM
+
+If you look carefully at the memcard_game_load screenshot of the ROM copying, the 16-bit value that’s checked for zero is left shifted by 4 bits (multiplied by 16) and then used as the size for the memcpy function when no compression is detected. This is another size value present in the header.
+
+If the size is non-zero, the ROM data is checked for compression and then copied over.
+
+The unknown buffer and the search for bugs
+
+While getting new ROMs to load up was pretty cool, one of the most interesting things about this ROM loader to me was that it’s virtually the only thing in the game that accepts variable-size user input and copies it to different places in memory. Almost everything else uses fix-sized buffers. Things like names and letter text might seem like they’re variable in size, but the empty space is basically filled with space characters. Null-terminated strings are not used often, preventing some common memory corruption bugs such as using strcpy on a buffer that’s too small for the string being copied over to it.
+
+I was really interested in finding a save file based exploit in the game, and this seemed like the best bet.
+
+Most of the ROM file handling described above also used fixed-size copies, except for the unknown buffer and ROM data. Unfortunately, the code that handles this buffer allocates just as much space as is needed to copy it, so there’s no overflow, and setting really large ROM file sizes wasn’t very useful.
+
+Still, I wanted to know what was going on with that buffer that would be directly copied without any handling.
+
+The NES Info Tag processors
+
+Revisiting famicom_rom_load , a few functions are called after a ROM gets loaded from the memory card or disk:
+
+nesinfo_tag_process1
+
+nesinfo_tag_process2
+
+nesinfo_tag_process3
+
+By tracing where the unknown buffer was copied to, I verified that it was being operated on by these functions. These start by calling nesinfo_next_tag , which goes through a simple algorithm:
+
+Check if the given pointer matches the pointer in nesinfo_tags_end . If it’s less than nesinfo_tags_end , or nesinfo_tags_end is zero, it checks if the string “END” is present at the head of the pointer. If “END” has been reached, or the pointer has advanced up to or past nesinfo_tags_end , the function returns zero (null). Otherwise, the byte at offset 0x3 of the pointer is added to 4 and the current pointer, and that value is returned.
+
+. If it’s less than , or is zero, it checks if the string “END” is present at the head of the pointer.
+
+This suggests a tag format of some three letter name, a data size value, and data. The result is a pointer to the next tag, as the current tag will be skipped over ( cur_ptr + 4 skips the three byte name and one byte size, and size_byte skips over the data).
+
+If the result is non-zero, the tag processing function then goes through a series of string comparisons to figure out what tag to handle. Some of the tag names checked for in nesinfo_tag_process1 are VEQ, VNE, GID, GNO, BBR, and QDS.
+
+If a tag is matched, some handler code is executed. Some of the handlers do nothing but print the tag to a debug message. Others have more complex handlers. After a tag is processed, the function attempts to get the next tag and continue processing.
+
+Luckily, there are a bunch of descriptive debug messages that get printed out when these tags are found. They’re all in Japanese, so they have to be Shift-JIS decoded and translated first. The messages for QDS, for example, can say “Load Disk Save Area” or “Since it is the first play, keep the disk save area”. The messages for BBR say “battery backup load” or “because it is the first play, clear”.
+
+Both of these codes also load some values from their tag data section and use them to calculate an offset into the ROM data and then perform copy operations. It’s apparent that they’re responsible for designating parts of the ROM memory that are related to saving state.
+
+There’s also an “HSC” tag that has a debug message indicating that this handles high scores. It takes an offset into the ROM from its tag data, as well as an initial high score value. These tags can be used to mark where high score values are kept in the NES game’s memory, probably so that it can be saved and restored later.
+
+These tags provide a fairly complex system for loading metadata about the ROMs. Even better, many of them result in memcpy calls based on values provided in the tag data.
+
+Bug hunting
+
+Most of the tags that caused memory manipulation weren’t going to be very useful for exploits, because they all had maximum offset and size values represented by 16-bit integers. This is all that would be needed to handle the 16-bit address space of the NES, but doesn’t provide much range for writing over useful targets such as function pointers or return addresses on the stack in the 32-bit address space of the GameCube.
+
+However, there were a few cases where offsets or size values passed to memcpy could exceed 0xFFFF .
+
+QDS
+
+QDS actually loads a 24-bit offset from its tag data, as well as a 16-bit size value.
+
+The good thing is that the offset is used to calculate the destination of a copy operation. The base address for the offset is the beginning of the loaded ROM data, the source of the copy is in the memory card ROM file, and the size is the given 16-bit size value from the tag.
+
+A 24-bit offset has a maximum value of 0xFFFFFF , which is well above what’s needed to write outside the boundary of the loaded ROM data. There are some problems, though…
+
+The first is that even though the maximum size value is 0xFFFF , it’s initially used to zero out a section of memory. If the size value is too high (not much more than 0x1000 ), this will actually zero out the “QDS” tag in the game’s code.
+
+This is a problem because nesinfo_tag_process1 actually gets called twice. The first time, it will collect some information about space it needs to set up for save data. The QDS and BBR tags are not fully processed on the first run. After the first run, some space is set up for save data, and the function is called again. This time the QDS and BBR tags would be fully processed, but it’s impossible to match the tags again if the tag name strings have all been cleared out of memory!
+
+So, setting a smaller size value can avoid that. The other problem is that the offset value can only go forwards in memory, and the NES rom data is located on the heap fairly close to the end of usable memory.
+
+There are only a few heap entries that come after it, none of which had anything super useful like obvious function pointers.
+
+Normally it might be possible to use this for a heap overflow exploit, but the malloc implemenation used for this heap actually adds a load of sanity check bytes into the malloc blocks. It’s possible to write over pointer values in the subsequent heap blocks. Without the sanity checking, this could be used to write an arbitrary value to an arbitrary location in memory when free is called on the affected heap block.
+
+However, the malloc implementation used here will check for a specific byte pattern ( 0x7373 ) at the beginning of the next and previous blocks it’s going to manipulate upon the call to free . If it doesn’t find those bytes, it calls OSPanic and the game stops.
+
+Without being able to influence those bytes to be present at some target location, it’s not possible to write there. In other words, you can’t write something to an arbitrary location without already being able to write something right next to that location. There could be some way to get the value 0x73730000 to be stored on the stack right before a return address, and the location referenced by the value you want to write to the destination address (it will also be checked as if it’s a pointer to a heap block), but it’d be difficult to find and exploit.
+
+Another function involving the QDS, BBR, and HSC tags is nesinfo_update_highscore . The QDS, BBR, and OFS (offset) tag size values are used to calculate an offset to write to, and an HSC tag triggers a write to that location. This function runs for every frame processed by the NES emulator.
+
+The maximum offset value per tag in this case, even for QDS, is 0xFFFF . However, during the tag processing loop, size values from BBR and QDS tags actually get accumulated. This means that multiple tags can be used to calculate just about any offset value. The limit is the number of tags that can be fit in the ROM tag data section of the memory card file, which has a maximum size of 0xFFFF as well.
+
+The base address that the offset gets added to is 0x800C3180 , the save data buffer. This is at a much lower address than the ROM data, providing more freedom in choosing where to write to. Writing over the function’s return address on the stack at 0x812F95DC , for example, would be fairly easy.
+
+Unfortunately, this doesn’t work either. nesinfo_tag_process1 happens to also figure out the accumulated size of the offsets from these tags, and uses that size to initialize some space like this:
+
+bzero ( nintendo_hi_0 , (( offset_sum + 0xB ) * 4 ) + 0x40 )
+
+With the offset value I tried to calculate, this resulted in 0x48D91EC (76,386,796) bytes of memory getting wiped out, causing the game to crash spectacularly.
+
+The PAT tag
+
+It was starting to look hopeless, as all of the tags that made unsafe calls to memcpy would end up causing a crash before they could be useful. I decided to switch over to just documenting the purpose of each tag, and eventually reached the tags in nesinfo_tag_process2 .
+
+Most of the tag handlers in nesinfo_tag_process2 will never run because they only work when the pointer nesinfo_rom_start is not null. Nothing in the code ever sets that pointer to be non-null. It gets initialized to zero, and never gets used again. Only nesinfo_data_start is set when a ROM gets loaded, so this looks like a piece of dead code.
+
+There is one tag that can still operate when nesinfo_rom_start is null, though: PAT. This is the most complex tag in the nesinfo_tag_process2 function.
+
+It still uses nesinfo_rom_start as a pointer, but never performs a null check on it. The PAT tag will read through its own tag data buffer, processing codes that calculate offsets. Those offsets are added to the nesinfo_rom_start pointer to calculate a destination address, and then bytes are copied from the patch buffer into that location. This copy is performed with load and store byte instructions, rather than memcpy , which is why I hadn’t noticed it sooner.
+
+Each PAT tag data buffer has an 8-bit type code, 8-bit patch size, and 16-bit offset value, followed by the patch data.
+
+If the code is 2, the offset value is added to the current offset sum.
+
+If the code is 9, the offset is shifted up 4 bits and added to the current offset sum.
+
+If the code is 3, the offset sum is reset to 0.
+
+The largest size an NES info tag can have is 255, so the largest possible PAT entry patch size is 251 bytes. Multiple PAT tags are allowed, though, so it’s possible to patch more than 251 bytes, as well as patch non-contiguous locations.
+
+So long as there’s a series of code 2 or code 9 PAT sub-tags, the destination pointer offset continues to accumulate. It will be reset to zero when patch data gets copied, but using a patch size of zero avoids this. Writing this now, it’s clear that this could be used to calculate some arbitrary offset against the null pointer in nesinfo_rom_start by using lots of PAT tags.
+
+However, there are two more code value checks…
+
+If the code is between 0x80 and 0xFF , it gets added to 0x7F80 and then shifted up 16 bits. Finally, this is added to the 16-bit offset value and used as the destination address to patch.
+
+This allows setting any address in the range 0x80000000 to 0x807FFFFF as the destination for the patch! That’s where a bunch of the code for Animal Crossing lives in memory. This means its possible to patch Animal Crossing’s code itself using the ROM metadata tags from a file on the memory card.
+
+With a small loader patch, it’d be possible to easily load even larger patches to any address from the memory card.
+
+For a quick test, I set up a patch that would turn on “zuru mode 2” (the game’s developer mode, described in my last blog post) when the user loads a ROM from the game card. It turns out that the button cheat combo only activates “zuru mode 1”, which doesn’t have access to all the same features that mode 2 has. With this patcher, it’s now possible to get full access to developer mode on real hardware using a memory card.
+
+The patch tags will be processed as the ROM is loaded up.
+
+After the ROM loads, exit the NES emulator to see the result.
+
+It works!
+
+Patcher info tag format
+
+The info tags in the save file that performs this patch look like this:
+
+000000 5a 5a 5a 00 50 41 54 08 a0 04 6f 9c 00 00 00 7d >ZZZ.PAT...o....}< 000010 45 4e 44 00 >END.<
+
+ZZZ \x00 : An ignored beginning tag. 0x00 is the size of its data buffer: zero.
+
+: An ignored beginning tag. is the size of its data buffer: zero. PAT \x08 \xA0 \x04 \x6F\x9C \x00\x00\x00\x7D : Patches 0x80206F9C to 0x0000007D . 0x08 is the size of the tag buffer. 0xA0 , when added to 0x7F80 , is 0x8020 , the upper 16 bits of the destination address. 0x04 is the size of the patch data ( 0x0000007D ). 0x6F9C is the lower 16-bits of the destination address. 0x0000007D is the patch data.
+
+: Patches to . END \x00 : The end marker tag.
+
+If you want to experiment with creating patcher or ROM save files yourself, I have some simple code at https://github.com/jamchamb/ac-nesrom-save-generator for generating the files. A patch like the one above can be generated with the following command:
+
+$ ./patcher.py Patcher /dev/null zuru_mode_2.gci -p 80206F9c 0000007D
+
+Arbitrary code execution
+
+With this tag it’s possible to gain arbitrary code execution in Animal Crossing.
+
+There’s one last hurdle: using patches against data works fine, but something’s wrong with patching code instructions.
+
+While the patches do get written, the game continues to execute the old instructions that were there before. It seems like a caching issue, and in fact it is. The GameCube CPU had instruction caches, as seen in https://en.wikipedia.org/wiki/Nintendo_GameCube_technical_specifications.
+
+To figure out how the cache could be cleared, I started looking up cache related functions in the GameCube SDK documentation, and found ICInvalidateRange . This function will invalidate cached blocks of instructions at a given memory address, allowing modified instruction memory to execute with the updated code.
+
+Without a way to get initial code to run, it’d still be impossible to call ICInvalidateRange , though. Getting successful code execution will require one more trick.
+
+While looking over the malloc implementation to figure out if a heap overflow exploit was possible, I learned that the malloc implementation functions could be switched out dynamically through a data structure and function named my_malloc . my_malloc would load a pointer to the current malloc or free implementation function from a static location in memory, and then call that function while passing along whatever arguments were given to my_malloc .
+
+The NES emulator used my_malloc heavily to allocate and free memory for NES ROM-related data, so I knew it would be triggered multiple times around the same time that the PAT tags get processed.
+
+Because my_malloc would load a pointer from memory and then branch to it, I could alter the control flow of the program just by overwriting the pointer for the current malloc or free functions. Instruction caching would not prevent this from running, as none of the instructions in my_malloc need to be changed.
+
+Cuyler, the developer of the Dōbutsu no Mori e+ fan translation project, implemented a loader in PowerPC assembly and demonstrates using it to inject new code in this video: https://www.youtube.com/watch?v=BdxN7gP6WIc. (Dōbutsu no Mori e+ was the last iteration of Animal Crossing on GameCube, which has the most updates and was only released in Japan.) After being injected with PAT tags, the loader can read much larger patches from the memory card, bypassing the size restrictions of the tag info section in ROM files. In the demonstration video it loads in some code that allows the player to spawn any object by typing its ID into a letter and then pressing the Z button.
+
+With that, it will be possible to load mods, cheats, and homebrew using a regular copy of Animal Crossing on a real GameCube.
+
+Update: The previous video has been taken down, so here’s another example of injecting custom code that prints text to the screen and in-game debug console:

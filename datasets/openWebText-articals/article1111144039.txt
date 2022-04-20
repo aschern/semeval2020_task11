@@ -1,0 +1,13 @@
+Nearly a year ago, HEXUS covered the news about the VIA and Zhaoxin x86 processor collaboration. These Chinese x86 processors will become very much more important in the light of a recent reported announcement. Specifically, news sites like the FT reported that Beijing has ordered that all foreign software and computers are replaced in government offices and public institutions within 3 years.
+
+Zhaoxin's newest x86 processors, codenamed LuJiaZu, max out at 8 physical cores and are represented by the KX-6000 series for client mobile and desktop computers, and the KX-30000 series for servers and networking device. These 16nm processors feature an integrated GPU within the SoC.
+
+Zhaoxin KX-6000 SoC
+
+Last week Zhaoxin unveiled its plans for client and server processors for 2021. Looking at the client computing update first, the new KX-7000 series will use a new PCU microarchitecture design and be fabricated at 7nm. TSMC will be doing the honours on its N7 process. WikiChip says that the timescale is expected to be 2021 for this release - if all goes to plan. The source notes that "the company's current SoC and core design is still rather weak in terms of IPC and power efficiency," but there is reasonable hope for this next gen to push forward on both fronts.
+
+Not a lot of technical detail is provided / known about the KX-7000 series. However, the roadmap slide shows it supports DDR5 and PCIe 4.0. This SoC will integrate a new GPU with DX12 support too.
+
+Conversely Zhaoxin's new KH-40000, also being readied for launch in 2021, will continue to use TSMC's 16nm process. Zhaoxin says it will use an enhanced microarchitecture and quadruple the number of cores available to purchasers of the series. The KH-30000 offered a maximum of 8-cores but this will be 32-cores in the KH-40000 series. With dual socket support designs already available for KH-30000 the new series will offer up to 64-cores per node. KH-40000 will continue to utilize DDR4 memory and PCIe Gen 3.
+
+Bits and Chips recently added a bit of further information to the above. It Tweeted that the KX-7000 is almost ready, and is in debugging right now, with speeds of 3.5GHz+. After DDR5 supply comes online (2H2020) and affordable PCIe 4.0 devices proliferate the SoCs will be ready for mass production / consumption. Thus, it adds, both AMD and VIA will be selling 7nm x86 processors before Intel.
