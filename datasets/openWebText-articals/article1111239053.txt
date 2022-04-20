@@ -1,0 +1,41 @@
+Google is preparing to seize control of Android with its own proprietary closed-source version of the mobile operating system, an analyst claims.
+
+Technology analyst Richard Windsor says that a highly confidential internal project is underway to rewrite the ART runtime, removing any lingering dependencies from the freely downloadable open source AOSP (Android Open Source Project) code base.
+
+This is a long-standing theme for Windsor, who most recently raised it here.
+
+In contrast to Apple, which can rapidly update its installed base of iPhones with new features, it takes years to update the Android market to new features. Windsor said he believes Google could use a court decision in the "Googacle" case next year as its cue, and says that should that occur, OEMs would have little choice but to accept the All New Android.
+
+For years, Google has been adding functionality not to the open source AOSP code base, but to its own proprietary binary libraries, specifically the ever-expanding GMS (Google Mobile Services). Phone makers must pass a compatibility test to receive the GMS.
+
+The mobile industry’s failure to build an alternative stack to Google’s services means that today, a vanilla AOSP Android phone today lacks even the most basic location services, for example, which in Google-compliant Android devices are provided by GMS. So the clean break is merely the next natural step – albeit a big step – in Google's strategy. Vanilla AOSP phones are only really commercially viable in China, where many people buy a Google-free phone and download the Chinese services they need; in the rest of the world, a Google-free phone isn’t competitive.
+
+Why risk annoying the fanbois?
+
+Google’s problem is that for all the innovation it does with each annual release, updates only reach the users very slowly. For example, it took two years for its launch of the 2014 version of Android (L) to overtake the 2013 version (K).
+
+“Google won’t admit this a problem. Internally they’re aware it’s a problem,” claims Windsor.
+
+Windsor thinks that Oracle’s likely victory over Google in the “Googacle” Java case will provide Google just the excuse it needs. Last month Google surprised many by successfully arguing a “fair use” defence of its copying of Java without a licence, based on careful instructions from the judge. But next year, the case will return to the much more IP-friendly Federal appeals court, which has already slapped down Judge Alsup and rejected many of Google’s arguments.
+
+This is the court that affirmed in 2014 affirmed the “copyrightability” of APIs – it's a rightsholder-friendly court. An Oracle win next year isn’t nailed down, but since Google now seems to be clean out of arguments, it’s a decent bet.
+
+“The beautiful part of it is that in 2017 at Google I/O Google will be able to stand up and say 'We’re going to have to take it proprietary'. Their response to the inevitable accusations that they ‘closing down Android’ is the argument that the ‘we were forced to do it’," Windsor told us.
+
+“Google has no choice because they have to take back control of the APIs,” Windsor thinks. “It’s much more important to Google to maintain control of Android than it is to lose two months' cash flow,” he says, referring to the $9bn in damages Oracle is seeking.
+
+Samsung no longer has the market share to take the industry with it, Windsor says. “Samsung was working on an entire ecosystem that included not just maps but browser and search, but they took a huge step back and handed control of it to Google,” he explains. “If one day was their ‘Nokia moment’, that was it: the 26th January, 2014.”
+
+That day Samsung and Google announced a 10-year patent agreement. Samsung agreed to scrap the UI it had teased a few days before at CES, along with much other work. "Android is becoming more like an uber-Google experience than an underlying operating system topped with a selection of apps," Re/Code reflected.
+
+Windsor thinks Google’s hand has been forced by the glacial pace of updates and reluctance of OEMs to provide timely Google updates.
+
+“Firstly, handset makers don’t want to update their phones; they worry people won’t buy a new one. Secondly, they can’t. Android is brutally competitive. A cent on the Bill of Materials makes a big difference. To go from Android 4 to Android 5, you need more memory, RAM and storage, which increases the BoM costs, so no one’s done it,” he explains.
+
+“There is no updating going on at all, really. New phones are replacing old phones – that’s how new platform software is coming into the market.”
+
+With an even greater control over Android, Google will be still vulnerable to penny-pinching OEMs, certifying the hardware as “upgradeable” for example.
+
+Taking Android proprietary will send ripples beyond the mobile industry. Facebook is rewriting its apps to reduce its dependence on Google, notes Windsor. Anyone who can afford to (and many can’t) should be thinking of doing the same.
+
+We have contacted Google and queried the assertions about closed-source Android, as well as Windsor's claims that it had a "highly confidential internal project" on the go to make it happen, but it had not responded at the time of publication. We'll update if we hear more. ®

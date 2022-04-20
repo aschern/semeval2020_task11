@@ -1,0 +1,7 @@
+I am happy to announce that Qt 5.7.0 Release Candidate is now available!
+
+We are planning to release Qt 5.7.0 final release within coming weeks so please try RC now. All feedback is welcome! Please report new bugs to bugreports.qt.io. You can also send e-mail to Qt Project mailing lists or contact us via IRC.
+
+More information about Qt 5.7.0 release can be found from Qt 5.7.0 new features page, Qt 5.7 Beta blog post or from the Qt Documentation snapshot.
+
+If you have existing online installation, you can update Qt 5.7.0 RC by using maintenance tool. You can also download new installers (online or offline) from the Qt Account (for commercial users) or from download.qt.io.

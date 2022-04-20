@@ -1,0 +1,41 @@
+Facebook says that it does use handsets' microphones, but only to help them out – and there’s an easy way of turning it off
+
+Facebook is listening in on people’s conversations all of the time, an expert has claimed.
+
+The app is using people’s phones to gather data on what they are talking about, it has been claimed.
+
+Facebook says that its app does listen to what’s happening around it, but only as a way of seeing what people are listening to or watching and suggesting that they post about it.
+
+The feature has been available for a couple of years, but recent warnings from Kelli Burns, mass communication professor at the University of South Florida, have drawn attention to it.
+
+Professor Burns has said that the tool appears to be using the audio it gathers not simply to help out users, but to listen in to discussions and serve them with relevant advertising. She says that to test the feature, she discussed certain topics around the phone and then found that the site appeared to show relevant ads.
+
+The claim chimes with anecdotal reports online that the site appears to show ads for things that people have mentioned in passing.
+
+Facebook has not yet responded to a request for comment.
+
+At the moment, the feature is only available in the US.
+
+When it was first introduced, in 2014, Facebook responded to controversy by arguing that the phone isn’t “always listening” and that it never stores the “raw audio” when it is listening.
+
+Read more
+
+Read More
+
+Facebook says explicitly on its help pages that it doesn’t record conversations, but that it does use the audio to identify what is happening around the phone. The site promotes the feature as an easy way of identifying what you are listening to or watching, to make it easier and quicker to post about whatever’s going on.
+
+If people want to use the feature that way, then they can start writing a post in the normal way. If it’s turned on, then it will start identifying what is being listened to or watching – at which point a little face with some soundwaves next to it will appear.
+
+If it identifies the sound successfully, then it will show a little “1” next to the face instead – users can then click that, select the thing they are watching or listening to, and then write the rest of the update.
+
+“If your phone's microphone has trouble matching what you're listening to or watching, the room you're in may be loud or a commercial may be on,” according to Facebook’s help page. “If this happens, tap, drag and release your screen to try a new match.”
+
+Turning off the microphone in a phone’s settings is relatively easy, and since it can be done at the level of the operating system, doing so will mean that Facebook can’t turn it on even if it wanted to. It’s done on an iPhone by heading to the app’s settings, clicking through to privacy and switching the slider for microphone; on Android phones, head to settings and then privacy, and change the permissions that the Facebook app is given.
+
+The claims come after Belgian police warned citizens not to use Facebook's Reactions tool if they valued their privacy.
+
+Independent
+
+Video: Jacob Applebaum: To Protect And Infect
+
+More on privacy and surveillance

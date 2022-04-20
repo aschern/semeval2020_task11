@@ -1,0 +1,19 @@
+iStock Images
+
+The decommissioning of coal-fired power plants in the continental United States has reduced nearby pollution and its negative impacts on human health and crop yields, according to a new University of California San Diego study.
+
+The findings published this week in Nature Sustainability use the U.S. transition in recent years from coal towards natural gas for electric power generation to study the local impacts of coal-fired unit shutdowns. While the shift from coal to natural gas has reduced carbon dioxide emissions overall, it has also changed local pollution levels at hundreds of areas around the country. In particular, the burning of coal creates particulate matter and ozone in the lower atmosphere—often experienced as “smog” —which can affect humans, plants and regional climate. These pollutants (aerosols, ozone and other compounds) from coal burning can wreak havoc on human health when inhaled, and also have damaging effects on plant life. They also alter local climate by blocking incoming sunlight.
+
+The author, Jennifer Burney, associate professor of environmental science at the UC San Diego School of Global Policy and Strategy, combined data from the Environmental Protection Agency (EPA) on electric power generation with satellite and surface measurements from the EPA as well as NASA to gauge changes in local pollution before and after coal-fired unit shut-downs. She also studied changes in county-level mortality rates and crop yields using data from the Centers for Disease Control and the U.S. Department of Agriculture.
+
+Burney found that between 2005 and 2016, the shutdown of coal-fired units saved an estimated 26,610 lives and 570 million bushels of corn, soybeans and wheat in their immediate vicinities. The inverse calculation, estimating the damages caused by coal plants left in operation over that same time period, suggests they contributed to 329,417 premature deaths and the loss of 10.2 billion bushels of crops, roughly equivalent to half of year’s typical production in the U.S.
+
+Jennifer Burney, associate professor of environmental science at the UC San Diego School of Global Policy and Strategy
+
+“The unique contribution of this study is its scope and the ability to connect discrete technology changes—like an electric power unit being shut down — to local health, agriculture and regional climate impacts,” Burney said. “We hear a lot about the overall greenhouse gas and economic impacts of the transition the U.S. has undergone in shifting from coal towards natural gas, but the smaller-scale decisions that make up this larger trend have really important local consequences. The analysis provides a framework for communities to more thoroughly and accurately assess the costs and benefits of local investments in energy infrastructure.”
+
+Burney added that although there are considerable benefits of decommissioning older coal-fired units, the newer natural gas units are not entirely benign. Natural gas units are associated with increased pollution levels; although different than the pollutant mix from coal-fired units, and more research is required to fully understand their impacts.
+
+Burney concludes that “policymakers often think about greenhouse gas emissions as a separate problem from air pollution, but the same processes that cause climate change also produce these aerosols, ozone, and other compounds that cause important damages. This study provides a more robust accounting for the full suite of emissions associated with electric power production. If we understand the real costs of things like coal better, and who is bearing those costs, it could potentially lead to more effective mitigation and formation of new coalitions of beneficiaries across sectors.”
+
+The full study, “The downstream air pollution impacts of the transition from coal to natural gas in the United States,” can be found on the Nature Sustainability website.

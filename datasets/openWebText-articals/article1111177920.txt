@@ -1,0 +1,45 @@
+Disabling effects of stroke
+
+Consequently, only a small fraction of patients benefit from treatment during the stroke’s acute phase. The great majority of survivors end up with enduring disabilities. Some lost functionality often returns, but it’s typically limited. And the prevailing consensus among neurologists is that virtually all recovery that’s going to occur comes within the first six months after the stroke.
+
+“There are close to 7 million chronic stroke patients in the United States,” Steinberg said. “If this treatment really works for that huge population, it has great potential.”
+
+For the trial, the investigators screened 379 patients and selected 18, whose average age was 61. For most patients, at least a full year had passed since their stroke — well past the time when further recovery might be hoped for. In each case, the stroke had taken place beneath the brain’s outermost layer, or cortex, and had severely affected motor function.
+
+“Some patients couldn’t walk,” Steinberg said. “Others couldn’t move their arm.”
+
+Into these patients’ brains the neurosurgeons injected so-called SB623 cells —mesenchymal stem cells derived from the bone marrow of two donors and then modified to beneficially alter the cells’ ability to restore neurologic function.
+
+No immune rejection
+
+Mesenchymal stem cells are the naturally occurring precursors of muscle, fat, bone and tendon tissues. In preclinical studies, though, they’ve not been found to cause problems by differentiating into unwanted tissues or forming tumors. Easily harvested from bone marrow, they appear to trigger no strong immune reaction in recipients even when they come from an unrelated donor. In fact, they may actively suppress the immune system. For this trial, unlike the great majority of transplantation procedures, the stem cell recipients received no immunosuppressant drugs.
+
+During the procedure, patients’ heads were held in fixed positions while a hole was drilled through their skulls to allow for the injection of SB623 cells, accomplished with a syringe, into a number of spots at the periphery of the stroke-damaged area, which varied from patient to patient.
+
+Afterward, patients were monitored via blood tests, clinical evaluations and brain imaging. Interestingly, the implanted stem cells themselves do not appear to survive very long in the brain. Preclinical studies have shown that these cells begin to disappear about one month after the procedure and are gone by two months. Yet, patients showed significant recovery by a number of measures within a month’s time, and they continued improving for several months afterward, sustaining these improvements at six and 12 months after surgery. Steinberg said it’s likely that factors secreted by the mesenchymal cells during their early postoperative presence near the stroke site stimulates lasting regeneration or reactivation of nearby nervous tissue.
+
+No relevant blood abnormalities were observed. Some patients experienced transient nausea and vomiting, and 78 percent had temporary headaches related to the transplant procedure.
+
+Motor-function improvements
+
+Substantial improvements were seen in patients’ scores on several widely accepted metrics of stroke recovery. Perhaps most notably, there was an overall 11.4-point improvement on the motor-function component of the Fugl-Meyer test, which specifically gauges patients’ movement deficits.
+
+“This wasn’t just, ‘They couldn’t move their thumb, and now they can.’ Patients who were in wheelchairs are walking now,” said Steinberg, who is the Bernard and Ronni Lacroute-William Randolph Hearst Professor in Neurosurgery and Neurosciences.
+
+“We know these cells don’t survive for more than a month or so in the brain,” he added. “Yet we see that patients’ recovery is sustained for greater than one year and, in some cases now, more than two years.”
+
+We thought those brain circuits were dead. And we’ve learned that they’re not.
+
+Importantly, the stroke patients’ postoperative improvement was independent of their age or their condition’s severity at the onset of the trial. “Older people tend not to respond to treatment as well, but here we see 70-year-olds recovering substantially,” Steinberg said. “This could revolutionize our concept of what happens after not only stroke, but traumatic brain injury and even neurodegenerative disorders. The notion was that once the brain is injured, it doesn’t recover — you’re stuck with it. But if we can figure out how to jump-start these damaged brain circuits, we can change the whole effect.
+
+“We thought those brain circuits were dead. And we’ve learned that they’re not.”
+
+A new randomized, double-blinded multicenter phase-2b trial aiming to enroll 156 chronic stroke patients is now actively recruiting patients. Steinberg is the principal investigator of that trial. For more information, please e-mail stemcellstudy@stanford.edu.
+
+The ongoing work is an example of Stanford Medicine’s focus on precision health, the goal of which is to anticipate and prevent disease in the healthy and precisely diagnose and treat disease in the ill.
+
+Other Stanford co-authors of the study are Neil Schwartz, MD, PhD, clinical associate professor of neurology and neurological sciences and of neurosurgery; and former neurosurgery fellow Jeremiah Johnson, MD, now at the University of Texas Health Science Center in San Antonio.
+
+The SB623 cells were provided by SanBio Inc., a biotechnology company based in Mountain View, California. SanBio also funded and helped in designing the trial, but did not participate in its execution.
+
+Stanford’s Department of Neurosurgery also supported the work.

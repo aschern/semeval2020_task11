@@ -1,0 +1,47 @@
+Vulnerabilities in a federal cell phone subsidy program could be exposing taxpayers to hundreds of millions of dollars in fraud, a leading regulator revealed on Wednesday.
+
+Cell phone carriers that participate in the Lifeline program, which subsidizes cell phone service for low-income Americans, have bypassed fraud safeguards for millions of their customers, Federal Communications Commissioner Ajit Pai revealed.
+
+Those customers have claimed $476 million per year in subsidies that bypassed a single safeguard designed to reduce duplicate subsidies for a single customer, Pai said in a letter to Lifeline administrators, raising concerns about the scale of fraud in the program.
+
+The FCC is currently relying on the carriers themselves to verify that Lifeline customers are not receiving more than one subsidy from the program. But the commission leaves it entirely up to the carriers to verify that information.
+
+"The carrier essentially, on its own say-so, tells the FCC … ‘we pinky swear that this is a legitimate subscriber,’" Pai explained to reporters in a Wednesday briefing.
+
+Recent revelations regarding the scale of fraud in the Lifeline program suggest that carriers routinely fudge that information, and Pai said that taxpayers could be on the hook for nearly half a billion dollars as a result.
+
+Lifeline was dubbed the "Obamaphone" program early in the Obama administration after YouTube videos of beneficiaries thanking the president for their cell phones went viral. In fact, Lifeline began under President Ronald Reagan, when it subsidized landline use.
+
+The program has long been criticized for its susceptibility to fraud due to its use of other federal programs, such as food stamps, that are also vulnerable to fraud to satisfy eligibility criteria.
+
+According to data shared with reporters on Wednesday, nearly half of all Lifeline subscribers have bypassed fraud protections by "overriding" measures to weed out duplicate or fraudulent subsidy applications.
+
+The overrides are designed to continue service to a subsidy recipient that sets of a red flag such as listing an address that is not on file with the Postal Service, a common problem for customers in rural areas or on Indian reservations.
+
+However, the increasing use of one override in particular has Pai concerned about the potential scale of fraud in the program.
+
+According to his letter, Lifeline carriers in the 46 states that participate in a data-reporting program for the service enrolled nearly 4.3 million customers, more than a third of all Lifeline subsidy recipients in those states, despite flagging concerns that suggested they might be receiving more than one subsidy.
+
+The "independent economic household" (IEH) override allows carriers to deliver services to multiple customers at a single address. It’s designed for places such as homeless shelters, where more than one Lifeline beneficiary might legitimately live.
+
+However, carriers are not required to review any customer documentation or provide any verification to the FCC beyond checking a box that certifies the supposed legitimacy of the IEH override.
+
+The FCC’s ongoing investigations into large-scale Lifeline fraud have Pai concerned that carriers are routinely fabricating IEH overrides in order to steer subsidies to their customers.
+
+His Wednesday letter comes on the heels of a $51 million fine levied in April against Total Call Mobile, a large Lifeline service provider, for widespread fraud that Pai said merited an even greater penalty.
+
+According to Pai, 99.8 percent of TCM’s enrollments bypassed fraud safeguards. That included widespread use of the IEH override, according to his Wednesday letter.
+
+"We saw in the Total Call Mobile case how unscrupulous carriers could regularly register duplicate subscribers by fraudulently using the address of a local homeless shelter, altering a person’s name, and using fake Social Security numbers to evade detection," he wrote.
+
+Pai revealed to reporters on Wednesday that TCM employees had learned many of their fraudulent tactics from employees of other Lifeline carriers, suggesting that those tactics are widespread.
+
+Overriding fraud safeguards has become an integral part of Lifeline carriers’ business models, Pai said.
+
+"Given what happened in the Total Call Mobile case … it seems pretty clear to me that there are substantial problems with the way the program is being administered now and unscrupulous actors have no problem filling the vacuum so to speak when the enforcement mechanism isn’t robust," he told reporters on Wednesday.
+
+Large-scale Lifeline fraud is a problem in itself, Pai said, but it also hinders the mission of the Universal Service Fund, the federal program behind Lifeline.
+
+"If we’re talking about $476 million each and every year that is being siphoned illegitimately just through the IEH override process, that’s $476 million that gets detracted from the overall universal service mission, which is to connect people with digital opportunity."
+
+"I would hope that the agency … would embrace the need to ensure that [the FCC] is taking every possible step to ensure that this kind of thing does not persist," Pai said. "We need to get to the bottom of it and we need to root out the waste, fraud, and abuse that’s persisted in the program."

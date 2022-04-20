@@ -1,0 +1,291 @@
+In our year-end round table series, the Goonhammer crew are talking about the various games we play, how things have gone over the past year, where things are headed, and what we’d like to see. It’s been about a year and a half since the launch of Kill Team and with the release of the Kill Team 2019 Annual, and in many ways we have more questions than answers when it comes to the 40k skirmish game.
+
+The Authors
+
+Robert “TheChirurgeon” Jones
+
+Liam “Corrode” Royle
+
+NovemberMike
+
+Alfredo “Bonds0097” Ramirez
+
+Andrew “Pendulin” Haywood
+
+Chucat
+
+Garrett “John Condit” Severson
+
+Ben “Thundercloud” Rubery
+
+Greg “ANAmal.net” Chiasson
+
+Shane Watts
+
+How do you feel about Kill Team? Is it a success? How does Kill Team fit in with other GW games?
+
+TheChirurgeon: I’ve got mixed feelings about Kill Team. I loved it conceptually when it first launched, but having played a couple dozen games of it, a lot of that lustre has worn off. Kill Team feels like it’s trying very hard to be multiple games: An intro game designed to get players into 40k at smaller scales, a fast, small-scale version of 40k for players who want to play games in under an hour, a highly narrative game with lots of storytelling, and a tightly-balanced competitive game using small teams of models. And while I think Arena does a good job accomplishing that last bit, Kill Team really doesn’t work for any of the others.
+
+Condit: I’m probably a bit of the odd one out here, but I really enjoy Kill Team, even in spite of its (admittedly many) flaws. I definitely think it could be better, and that it fails at several of the goals its designers likely set out to achieve, but it succeeds in one: it gives something for players to do with their models while they’re still building out their force. I started a new army this year, and being able to try them out before I was done with them was amazing. I’ve also had a few friends who’ve started building toward a full 40k army using Kill Team as an excuse to get game time in while they’re still building and painting.
+
+On balance, though, I agree that it’s a failure. It makes gestures in so many directions, but fails to deliver. It adds a bit more crunch in specialists and flesh wounds, but they wind up being more of a pain to keep track of than they are actual value added to the game. Gaining experience and levelling up your models feels like more of a punishment due to the increased cost than a bonus for surviving long enough to take advantage of them. And even competitive matched play, arguably Kill Team’s strongest point, suffers from the underlying problems with the system itself. While Kill Team is great as “something to do while you’re building a Real Army,” it’s not that noteworthy on its own merits.
+
+TheChirurgeon: I think that “in spite of its flaws” bit is key for me. I don’t dislike Kill Team – but when I have fun playing it, it often seems like that happens in spite of its rules. Which is a shame, because I love the idea of taking a Kill Team instead of a whole army when I travel, and playing with that.
+
+Chucat: There’s two metrics of ‘success’ here. The first one is “Does Kill Team succeed in what I think GW set out for it to do?”, which is essentially function as a gateway drug into 40k, and in that case, the answer is a resounding “No, unless you really like one of four factions in 40k”. To clarify, I imagined Kill Team as a game where you buy the big box, buy a couple of boxes of squads together and just mash models together, and then add to your Kill Teams with the expansions and further boxes, and then you just add a vehicle (or two) and then you suddenly have a nice little army. However, with the exception of Tau(????), no faction really fits this, going from something like Harlequins (where it starts off promising: You buy a box, you have a Kill Team, and you get absolutely nothing in Elites, and trust me, you can’t run a 40k army with 5 Players and a Troupe Master), to Eldar, where if you want to be able to field every available option in Kill Team, you end up with a subpar army, and you could have just spent all the money on a bunch of Knights instead (and let’s not even get into just how screwed you’d be with a box of Guardians vs a box of Grey Knights).
+
+On the second measure of success, which I take to be “Is it popular where I play?”, then once again, it’s a no, the game fell off pretty hard after the first campaign, with most players gravitating back to 40k, where you could spend double the length of time to play a full-fledged game, instead of a weird, extremely swingy version of 40k. On the other hand though, it is good for when I want to play something and not have to lug a ton of models somewhere.
+
+As for how I feel about it, I really, really like it, in theory. In practice though, the botched execution, combined with just how much they seemed to hate Eldar until Elites really, really rubbed me the wrong way. That and just how much variance there is in the game, that bugs me too.
+
+Novembermike: I think I mostly agree with everyone else. I like Kill Team a lot, but there’s a fair amount that only works when you understand the non-intuitive bits. Lots of things are trap options, some things are much better than they initially look (like multi-damage weapons) and the book missions are almost all bad.
+
+They also didn’t make it easy to build a good team, most factions run into either the “multiple boxes” problem where you want a few models from a bunch of boxes (I’m looking at Eldar with their Exarchs here) or the “special weapons” problem where you want 5 plasma guns but you get a single one per box of 10 models. This works against Kill Team as an introductory product. At bare minimum they should have been shipping things like an Ad Mech Kill Team Upgrade Sprue with extra Skitarii weapons.
+
+The game itself works well but it’s got a bunch of useless stuff tacked on like the scouting phase that should really just go away. There’s a real opportunity for a great game to come out of Kill Team 2.0.
+
+Thundercloud: I think now the initial hype and excitement is gone there’s a clear lack of significant support going forward. It’s an adaption of the 8th ed rules with some distinct improvements, but you can tell it was developed before Warcry, which is a more modern rules set that isn’t tied to the AoS rules (because good luck finding someone deeply attached to the AoS rules whereas with 40k that’s a real issue) and I feel this is actually the biggest weakness of the rules.Kill Team needs to be more than 8th with one figure squads and a 4+++ on every model’s last wound.
+
+
+
+What Kill Team needed was to be different to 40k, and GW needed to allow the designers to get let loose a little. There are a number of small scale games (Blitz Bowl being an obvious example) where the designer has been given some space and produced a great game. Aeronautica Imperialis is the same, the 2nd edition is a massive improvement over the first and has real potential as a competitive game once the scenarios are produced that support it (though Specialist seem to firmly believe it is a narrative game).
+
+Kill Team needs a 2nd edition that isn’t afraid to turn it into a proper introduction to the 40k universe, with simpler rules and which is closer to the fluff. Marines/Chaos Marines should chew through guard like the Cookie Monster on amphetamines, but they don’t and 50% of the time they’ll put a flesh wound on them even if they wound them. Kill Team suffers now that GW have produced Warcry and we’ve seen a more ‘modern’ set of mechanics applied to a skirmish wargame. I say modern, single unit/model 2 stage activations were in Starship Troopers (2005) written by Andy Chambers suspiciously soon after he left GW in 2004, but GW has been IGOUGO in their mainline games for 30 years, and the modern mechanics are coming out in the Specialist Games side (and Specialist is much better for embracing game mechanics developed after the fall of the Berlin Wall).
+
+
+
+As a commercial product the initial starter and the Killzones were a big success, and I say this as a retailer. The starter box sold out in half the time GW thought it would. In terms of the supplements, Commanders and Rogue Trader were meh, even though the minis in Rogue Trader were great, and Elites and Arena were pretty great, though it’s obvious there are some issues with the playtesting of Elites, and GW didn’t anticipate HODORism in Arena. White Dwarf support has been reasonable. The faction boxes really suffer from being the same secondary sprue in the Killzone released at the same time plus a unit you don’t necessarily want plus a small number of exclusive cards. Warcry with its decks for existing factions was a massive improvement as a retailer. The release model has been problematic. The pricing for the commander boxes was problematic. The Space Marine Librarian was £5 cheaper than the standard model, the Commissar £8 more expensive. Having a £15 and £20 price point would have been better, though even better would be what they did with the GSC and Admech boxes and putting the command cards and a commander in a box with a squad of models that were useful in building a Kill Team. Also as an intro product suddenly you’ve got a squad and character to start your army.
+
+GW also took the attitude of re-releasing models, when new models is what drives some of the purchases and veterans already have a ton of stuff. The new terrain sold the starter box, the new character models pushed the Ad Mech and GSC boxes hard. A solid codex of Imperial Agents and Weirdos that the Rogue Trader, Blackstone and Imperial Assassin models could drop into would have pushed those lines harder.
+
+However for a product that was meant to be an intro product and was to be supported in the schools league, GW Retail then failed to include it in their sales targets, and a GW employee is targeted on intro box sales and it falls completely outside of those targets which disincentivises them pushing it.
+
+It’s part of something I think GW need to look at harder, which is how to introduce kids to the game, and I strongly feel a box with a board, some terrain, and two factions of a dozen models is a really solid retail option. Making those models EZbuilds, and having some snap fit EZbuild terrain would be a solid idea (and the newer start collecting seem to be going that way) and would to my mind be the perfect starter product. It’d also need to be the right price point, and £95 intro boxes are too much, just too much. Aeronautica gets it with a £55 starter set with everything you need including enough to play reasonable sized missions.
+
+I feel it doesn’t do the job as an intro product, but is faster to play than 40k and less uneven in terms of balance. The target audience was meant to be kids but the product isn’t really suitable (another thing Warcry does better) and it’s been picked up by veterans who already have decent sized collections.
+
+TheChirurgeon: Oh man I didn’t even touch on the retail strategy. All those huge boxes packing terrain and faction kits sat on my FLGS’ shelves for so long. GW overdid it with boxed games this year and Kill Team made the problem exponentially worse. I think everyone was glad that Elites was just a book.
+
+Chucat: Mentioning the school league thing is actually really interesting (my store also ran one of these). Since it sort of just shows how broken the idea of marketing Kill Team to kids is. In theory it’s meant to be a thing where kids get into hobbying and build up a Kill Team and have fun playing each other. In practice though, Sarah is going to be playing Grey Knights and be happy with her single box that she’s able to paint up with 4 colours. Meanwhile Tommy is playing Harlequins with their single box and plotting murder because they’re painting diamonds. Meanwhile Adrian and Jess want to play Guard and Eldar and have a single box of Guardsmen and Guardians and go 0-X. There’s a fundamental sense of unfairness when looking at army effectiveness vs cost and access (why does the Eldar player have to work with Resin upgrade kits?!?).
+
+Thundercloud: Release exhaustion is real, and GW’s love of a big box every month is just too much for a lot of customers. For the ‘whales’ the issue is now the size of backlog, and when backlog reaches a certain critical mass you are living in a hoarder house and there is a clear and present danger of loved ones, pets and visitors being crushed under a pile of unopened boxes.
+
+Hence GW launching Contrast as a way to get collections out of boxes and on to tables sooner.
+
+For someone who has a limit to how much they want to spend, because they have responsibilities, it means skirmish games are the way forward. The whole dynamic in the industry is shifting from mass battle games to more easily collectable and paintable skirmish games. Hence Specialist Games and Kill Team and Warcry.
+
+Corrode: Yeah, the release strategy is probably my number one bugbear with Kill Team. I can’t ever really tell what it’s for, and almost every decision taken about what to release and when to release it has been baffling. We got what, the Kill Team starter set which was a really good product, and then… Rogue Trader? Then Commanders? Which was a weird way around to put those two things. And then Arena and then Elites a bit later, but there were like 4-5 releases in a very short space of time and none of them seemed to set a clear direction for the game. And then those team boxes with exclusive cards in and weird half-bits of terrain and also models I already own 30 of, not a single one of which was an actual functional way to put a Kill Team on the table. There didn’t seem to be any clear vision for the game or what it was meant to be or how it was meant to be supported, and my store still has boxes from 2018 sitting around not getting bought.
+
+That’s not even to mention the White Dwarf content, which although frequent often seems pretty lazy – either because the teams just aren’t very good (Kroot) or the kind of editing mistakes that get your shiny new character the entirely wrong statline (Eisenhorn).
+
+Pendulin: I love Kill Team despite itself. That’s a weird thing to say about a game I play every couple weeks. It’s great fun to pick a handful of troops, place them in a ragtag team, and send them out to die in bloody skirmishes. Rolling that clutch 6 to win the game is as exalting as it is heartbreaking to roll triple 1’s when my Combat-specialized Fulgurite Electro-Priest whiffed the entire melee phase last week. I’ve laughed at the ridiculousness of the game, I’ve cheered the great plays of my opponents, and I find myself wishing that the rules for Kill Team got out of the way of these fun moments.
+
+Instead, I find myself cracking open the rulebook to see if my Grey Knight can target his Psybolt on an Intercessor if only the tip of his gun barrel is visible, and if so, what modifiers apply and when. I find myself placing a single tiny Hormagaunt in a doorway to body-block an entire Deathwatch kill team for a round. And I find myself looking at the rulebook for the deadly combinations you can create with leveled up Commanders and sadly realizing that there is no non-contrived circumstance under which I could play a 195-point Tech-Priest Dominus.
+
+That all being said, is it a successful game? Depends on how you look at it. It’s certainly got more than a couple people I know interested in the hobby, myself included. Back in early 2018, I only had a couple minis painted, but the promise of a casual 45-minute skirmish game was a huge driving force for me dive right in. And once I got drawn in, I branched out, met cool people, and had a lot of fun. So sure, it’s a success because it gets more people interested in the hobby.
+
+But on the other hand, when you tell a casual player that they’ll need another four or five boxes of minis for their Space Marine team to be competitive, you can watch that spark of interest die. When you promise an hour-long demo game but have to spend 5 minutes explaining the proper use of multicharges, you can just watch their eyes glaze over.
+
+Kill Team’s biggest success is that it’s an amazing game, despite being a mediocre game.
+
+It feels like Kill Team was supposed to be a player’s stepping-stone on their way to 40k. But because of the overly complicated rules and level of investment required, instead of marketing 40k as a bigger Kill Team, Games Workshop instead turned Kill Team into a smaller 40k.
+
+So how does Kill Team fit in with other GW games? It fits in the same way as a wrench fits into a plate of spaghetti. Technically you can do it, but I don’t know how to finish this metaphor just like I don’t know how GW planned to draw Kill Team players into 40k.
+
+Thundercloud: Yeah, for all my complaining about the rules and release model I do love the game. But I love it in a way that I can see it’s potential and want it to be better. I feel a 2nd edition that severs the link to the 40k rules set and learns the lessons of Kill Team 1st edition and Warcry and evolves further would push this game over the top.
+
+Greg: I don’t think I “get” Kill Team. It’s supposed to be a quick entry point into 40k, but you have to have a fairly deep bitz box to build a competitive team. It’s supposed to be a fun quick game, but then they whack in Commanders and up the points level until a 200 point Kill Team game takes about as long as just playing a small game of 40k. It’s supposed to be a skirmish game with a campaign system, but then Necromunda exists. Anything it does, other games kind of do better? The Goonhammer Approved Zone Mortalis rules do a better job of re-creating Space Hulk, and Necromunda does better if you want a confusing disaster of a game where half the rules don’t work. That said, I still like Kill Team, but I couldn’t tell you why, other than my inexplicably being kind of good at it.
+
+My other Old Man Take on this is that there are too many stratagems, and the way they packed the cards (or didn’t even have cards for some of them) into random boxes, some of which went out of production almost immediately, is bordering on legitimately criminal.
+
+Corrode: Oh yeah the stratagems are a whole thing. I legitimately lost interest in the game when there started being stratagems in random boxes that completely changed the way teams played, and then events limited them from being used because not everyone even got a box before they dropped that release model. I think everything was gathered together in the Kill Team Annual this year, but that has a strong band-aid feel and that book has its own issues.
+
+Alfredo: Like Pendulin, I ultimately like Kill Team and particularly with the Arena ruleset, I think it provides a tight gameplay experience in a short timeframe. The caveat there is that it can get boring very quickly unless you’re playing in an event where your match-ups rotate through and you have to adapt your team to face a variety of opponents and strategies. Trying to do a game night with a buddy and just playing Space Marines vs. Ad Mech over and over again gets stale pretty quickly, the game really benefits from formats that leverage the Command Roster. Unfortunately, the game lacks a strong narrative element to potentially provide a different way to play for a game night and the “campaign” system in the game is laughable.
+
+I agree with sentiments expressed by others and hope that a 2nd Edition can get more creative, establish its own identity and cut its rules ties with 40k, much like Apocalypse did. Additionally, given the narrative context of Kill Team and the scale at which it’s played, I’d love to see it flesh out its narrative elements better and take some inspiration from Necromunda on how to create interesting arcs and campaigns that lead to fun and memorable gaming experiences.
+
+Shane: I really enjoy Kill Team. I mostly focus on the competitive side and truly enjoy it. I feel it is mostly balanced and needs a few tweaks here and there. As a 40k player, it is really easy to get into since I already own the models.
+
+As far as the box releases, they did ok with it. I agree that they missed the mark some.
+
+How good is Kill Team for Matched/Tournament Play?
+
+Novembermike: Kill Team is amazing for Tournament Play. Games realistically fit into 45 minute to 90 minute rounds so you can finish 4-5 rounds in a reasonable amount of time, the roster system really works to let you tailor your list each round and the rules create genuinely interesting decisions every turn.
+
+The original missions that came with the books were terrible but the tournament packets that were used at the major tournaments (LVO, Adepticon, NOVA, Socal Open) that focus on objective primaries with mission specific secondaries were a lot better, even if they incentivize hordes a bit too much. There’s a new mission packet coming out for LVO 2020 that basically has ITC style primaries (hold 1/more, kill 1/more) and secondaries, and I am very excited after running play tests because it pushes elite teams a bit more and gives Custodes and Grey Knights an opportunity to shine while still keeping the horde factions viable.
+
+Kill Team is also a much, much much much much better viewing experience than the full sized games. The condensed round and smaller number of models means that everything is much more legible on a viewing stream and players respond to each other much more quickly. Killteamstream had a really great stream of the Socal Open and it’s one of the few times I’ve enjoyed watching Warhammer be played.
+
+Thundercloud: Having played it competitively, it’s ok. Arena suffers from the HODOR play style, but is the best mainline GW attempt at a competitive game that they’ve done, because 40k is an absolute nightmare to balance competitively.
+
+40k as whole is terribly balanced (though it has vastly improved), the tournament meta normally revolves around finding the most broken crap available and taking that.
+
+For a proper competitive wargame you need to create a walled garden of available units for the purpose of balance. Space Marines currently have eight datasheets and they’re still mediocre because Marines themselves are mediocre, but building a Marine Kill Team has become pretty complicated.
+
+It’s much quicker to play, though GW need to calm down with their five games in a day tourney format because there’s only so many KT games you can play in a day before it starts stressing you out.
+
+The presence of two formats, Arena and Annihilation, mean there are two entirely different metas in operation, though it still suffers from the rules exploits and crap you get in regular 40k.
+
+Kill Team is runnable as a competitive game, especially Arena, but you can’t take it too seriously. You can’t even stick to the core book units to enforce some balance, as some factions only got decent stuff in Elites.
+
+TheChirurgeon: I agree that Arena seems to come down too often to door control but I think the tight quarters and doors do a lot to shore up balance problems with the game that would otherwise make super-elite teams too strong. Otherwise I think it’s fun as a competitive game, though my experience there is limited.
+
+Greg: Arena, to me, is the Good way to play this game competitively. Symmetrical table layouts, balanced missions, no ledges to get shot off of and die. I give a disapproving wag of the finger to hiding your leader behind stuff to protect his warm, soft, CP-stuffed innards, but I do really love screwing around with the doors. I still don’t think it’s as good as Zone Mortalis, but it’ll do.
+
+Pendulin: There’s both good and bad here. The meta has changed several times as players discover new and powerful combinations, and a living breathing meta seems like a key indicator of a healthy game. There’s new content released somewhat frequently, and a supportive community to help you learn.
+
+On the other hand, official rulings on rule clarifications take ages, some factions are so bad that they will never be competitive, while other factions were forgotten about the moment Games Workshop released them. And while these complaints aren’t exclusive to Kill Team, as any Games Workshop fan is well aware of, it’s disappointing nonetheless when you realize the faction you love is destined to lose competitively unless you follow their one solid on-meta build.
+
+My final ruling on Matched/Tournament play: It’s good enough to make me wish it was better.
+
+Alfredo: I think matched play, or competitive play specifically, is where Kill Team shines. Door shenanigans aside, a competitive event provides the best format to leverage Kill Team’s Command Roster and team-building structure by giving players a series of different opponents to play against and adapt to. Like I mentioned earlier, I think the game gets stale pretty quickly when you’re facing the same opponents over and over again and a competitive event counters that nicely. That said, it would be nice to see the format flesh out the whole Zone Mortalics/CQC ruleset better, add a bit of crunch to it and find ways to counter the HODOR game. It was actually a bit baffling that in the transition from Rogue Trader to Arena, Kill Teams lost the ability to remotely operate doors, which added a whole separate element of tactics.
+
+Thundercloud: I think a new Arena/Zone Mortalis format that’s properly balanced for CQC would be amazing, and I do really like Arena. But I’d love to see Kill Team 2nd ed launch with Killzone: Zone Mortalis.
+
+Shane: I really like Kill Team in competitive play the games go fast which is great. Being able to choose what models to use from your roster adds another tactical layer which is cool and allows different armies to be flexible depending on the match up.
+
+I am more than likely biased if not just from the fact that I TO for events out in my area, and I am working with another TO to try and make larger scale events on the East Coast.
+
+I am glad that Kill Team Academy has chosen to add the Kill primaries to his LVO mission pack. I think a lot of the competitive concerns can be addressed with the mission pack. Mission primary and secondary objectives are something that I have been discussing with some of the other TOs in depth and it is nice to see him leading the charge at LVO. (This upcoming Sunday, January 5th, at Super MAGfest I will be one of 2 TOs running a similar mission set.)
+
+How good is Kill Team for Narrative Play?
+
+TheChirurgeon: Oh man, it’s awful. I think Kill Team works well for matched play if you play Arena or completely write new missions for it, but the gap between Kill Team and say, Necromunda is huge. It looked like they were starting to go the narrative route with Kill Team with the Rogue Trader expansion, but that turned out so bad Games Workshop seems hellbent on pretending it doesn’t exist. Which is a shame, because I’d have really liked to see Kill Team’s narrative mode be more akin to a 28mm Inquisitor. But in order to do that, it would need to actually encourage the creativity and customization that GW likes to show off when they show their team’s custom kill teams and not force people to build what comes in boxed sets.
+
+They also need to completely rethink how they write narrative missions/scenarios. So much of the Battlezone stuff they’ve put out and the narrative missions are conceptually very cool but just an executional failure. Fighting in Deathworld forests should be cool as hell, but it somehow ends up being boring.
+
+Condit: I mean, come on: Necromunda was right there. For a company that creates narrative opportunities like Necromunda, Blood Bowl, or even Warcry, it’s honestly a little impressive that they managed to make playing in a campaign as uninteresting as they have here.
+
+Chucat: Okay, this is where it gets weird. Kill Team (at least to me), is designed as a game where you yell at a random person “Hey, you wanna play Kill Team?!” and they shout back “Yeah sure!” and then you just get your models out and play a quick game of it. The structure of how the game should work flies completely and utterly in the face of a long-term campaign. However, let’s assume you do want to play a long-form campaign of Kill Team using the default rules, how good/bad is it?
+
+It’s real bad.
+
+Missions: Missions are randomly determined, and to say these missions are not very fair, or not very well designed, would be the understatement of the century. Recover Intelligence and Sweep and Clear are the two standouts in actually being sensible to play. Assassinate is silly at best, Terror Tactics had a group of us staring at the rulebook trying to work out what happens if an entire player’s Kill Team just runs off the board. Ambush is a sick joke. Feint might as well be called “The Attacker only makes 1CP a turn, otherwise they lose”, and Take Prisoners is the worst mission ever created in the history of man. If you roll a bad mission and your FACTION can’t handle it, you’re just screwed.
+
+Specialisms: When you level up your specialists, you can get extra abilities for them. These abilities run the gamut from ‘broken’ (-1LD for the entire enemy Kill Team), to ‘horrendous garbage’ (You pass Dangerous Terrain tests). Levelling up increases the cost of the specialist, which makes sense in a way, so you can’t just stomp a newbie into the ground, but it does mean you’d have to start making cuts unless you’re playing an escalation campaign, which is just…weird. Or you go for the alternate plan which is every time anyone in your Kill Team levels up you just murder them, which is self-evidently shit.
+
+Post-game Shit: After each game of Kill Team you play, any model that has suffered a flesh wound has a 5% chance to completely die. Gone, removed from the game forever, dead, tear up their card and light it on fire and scatter the ashes at a crossroads, dead. Think about how fun that doesn’t sound. Additionally, if you do really well and level up your Fire Team, you can give all non-specialists of the same type a buff that you determine by… rolling on a table. For some reason, they have weighed +1” movement and re-roll 1s to hit or wound as the same cost, so that’s swell.
+
+The absolute most damning part of the campaign ever: Right, this is the big one, the thing that put me off Kill Team campaigns.
+
+You win a Kill Team campaign by being the last player standing, which involves not having any of your resources hit 0. If you have read the rulebook, you’ll notice two things:
+
+Every mission you play only makes it so that the loser loses resources, the winner doesn’t gain anything. There is no way to gain resources apart from some questionable Level 3 specialist abilities.
+
+This means that the best way to win a Kill Team narrative campaign is to not play any games of it at all. There is only risk incurred by playing games and absolutely no reward.
+
+How the hell did they do this?
+
+Greg: This actually rules, as you can tell from those well-known statements about bravery such as “who refuses to dare, wins” and “nothing ventured, nothing lost”, which clearly informed the game design.
+
+Corrode: I’ll be honest I hadn’t really read the campaign rules before, just heard Chucat rant about them, and now that I know this about them I can’t stop laughing. WarGames hours right here in the Kill Team campaign, where the only winning move is not to play.
+
+Thundercloud: For narrative play you need to approach it from the right mindset. It isn’t Necromunda or Inquisitor 28, and having a narrative campaign using the Kill Team rules as is strikes me as a way to rub yourself the wrong way hard.
+
+Using it with a narrative campaign you created, for one day events, where the results of games ties together in a positive or negative way would be the way to go, but then you’ve got to find a game group into that.
+
+TheChirurgeon: But see that’s where I think the fault is in the game rules. Kill Team should absolutely be able to support narrative campaigns over long periods of time in a way that makes them similar to Inquisitor or Necromunda. Yeah if you try and use the current campaign rules and missions, it’s a total dumpster fire, but that’s not on the players, that’s on the designers.
+
+Condit: I have to agree here. Running a narrative campaign that’s fun takes work in 40k, but I don’t think you have to spend as much effort fighting against the rules as you do in Kill Team. You could certainly dispose of the rules in the book and build your own system, but then you’re obsoleting several of the higher-level abilities for specialists, so you’ll either have to just remove them or come in behind and write your own versions. It’s one thing to not include a narrative campaign structure in your game, but it’s an entirely different matter to build one into the core framework and have it wind up like this.
+
+Corrode: Yeah I don’t think “you just have to ignore all the rules printed in the book you paid money for” is really the right attitude. I can ignore any rules printed anywhere and make my own stuff up, but that’s not why I bought the book.
+
+NovemberMike: Nothing in the rules really supports narrative play. Upgrading things is a bad idea and the campaign rules are nonsense. Even Commanders don’t help since you don’t really have options to customize them.
+
+Corrode: Every time this comes up Greg longs for the days of Shadow War and all the weird little upgrades and things that could go in there, which might legitimately feel more like “your dudes” than the current set-up of only taking the five things on the datasheet, but I guess that doesn’t fit the modern policy of “only make rules for things in the box we sell” (which is a whole other can of worms that I am ready to rant on any time and any place).
+
+Pendulin: I come from a tabletop RPG background, and when I hear “narrative play,” I think of a rules-light game that knows when to step back and just facilitate the players telling a fun, engaging, and powerful story together. To me, that’s narrative play.
+
+If your narrative game is mechanically identical to your competitive game, then it’s not a narrative game; it’s your competitive game with a marketing rebrand. It’s your designers shrugging their shoulders and saying: “I guess just change a few rules or whatever”. If your narrative missions have victory conditions phrased like “… and then the attacker wins” then that’s just lazy.
+
+Narrative play should feel like my cohort of Skitarii are a small bastion of light struggling to reach their objective, trapped amongst the dark forces of Chaos holding onto their own territory with deranged furor. Instead, it feels like matched play but with less playtesting.
+
+Novembermike: Yeah, GW has a bad habit of hearing “narrative” and designing bad missions. I almost feel like narrative play should be more of a collaborative effort like improv or certain types of roleplaying.
+
+Greg: This question drove me into a deep figurative well of misery and also a literal well, where I was swarmed by bats in the dark and left rabid and howling. They had the easiest alley-oop in the history of 40k, just by making a mission where a normal Kill Team goes up against a single Dreadnought or Helbrute, and they never did it. Even here in the cistern, where I’m becoming hydrophobic and frothing, I can sketch that mission out. Clawing the rules into the stone down here is the only thing keeping me going while the EMTs at the top are debating whether to fill the well with concrete or just plug it up with dirt. Still, I guess being able to run an entire campaign in an afternoon is a selling point, even if that campaign is a meaningless exercise that comes down to W-L records. Anyway, my torch is sputtering out, and I need to fight off the bats again, so that’s it for me.
+
+TheChirurgeon: I’ve run that mission for our campaign and it’s fun as hell. Having a lone Reiver attempting to hold of a Helbrute for as long as possible while the rest of his team made a mad dash to rescue an imprisoned Inquisitor was just incredibly epic. I’ll probably publish rules for some scenarios around this as Goonhammer Approved missions at some point in the future.
+
+Alfredo: What’s funny about this is that GW has actually made interesting missions for games like Underworlds or Blackstone Fortress where you do the ‘raid boss’ scenario and you’d think Kill Team would be ripe for this as well. It’s weird because the Core Manual comes with these fun name generators and narrative hooks for your team but they mean literally nothing in the game and there’s nothing about ‘narrative play’ missions that might encourage you to think about these things or leverage them in any way.
+
+Corrode: When Underworlds, marketed primarily as “the ultimate competitive miniatures game,” has better narrative play options than your game that has an entire section dedicated to running campaigns, you’ve got it wrong.
+
+Do you expect to play more or less Kill Team in 2020?
+
+Novembermike: I’ll probably be playing more. I’m really excited about the new LVO missions making Elite teams more viable and I’ve got 2-3 opportunities a week to play pick up games while I need to actually make plans if I want to do 40k.
+
+Condit: I’ll honestly probably wind up playing less Kill Team in 2020, but it’s less as a result of the flaws of this game and more that opportunities to play other games around my schedule have grown. In addition to the fact that games in other systems (like Adeptus Titanicus or Marvel: Crisis Protocol) are getting more traction, at least a few of the folks I play Kill Team with are talking about trying to make the jump to “real” 40k, and when they do I don’t know that we’ll go back, except in situations where time doesn’t allow for it. Even at smaller point values, I think we’re likely to move into scenarios like the Goonhammer Approved Zone Mortalis rules rather than playing Kill Team. At least, that’s my plan.
+
+And I think that’s one of the more damning issues here: when given the option, I’m probably likely to opt for other rule sets, despite the fact that I’ve actually had a lot of fun with Kill Team.
+
+Thundercloud: I expect Aeronautica to largely replace Kill Team as my go to casual game, as it’s much better balanced, a really solid fairly modern rules set and it plays much quicker at the 100 points or less level. It needs competitive play scenarios, but I’m working on that.
+
+If they do release the Inquisition stuff I’ll likely dust it off, and someone I play regularly loves it, but I’m not sure Inquisition hasn’t been cancelled because it isn’t like we saw all the faction boxes done.
+
+TheChirurgeon: Probably about the same for me, which is to say a dozen or so games. I’m likely to play Kill Team when I travel, just because it’s so easy to transport minis that way, and so that’s when I’ll get those games in. But any time I’ve got someone over for a few hours, we’re most likely going to be playing 40k. And while that’s more on the fact that I like other games more than Kill Team, it’s also on Kill Team for not making a more compelling case for me to play it. And if I thought I could play Kill Team and the 40k GT at NoVA this year, I’d do both.
+
+Pendulin: Definitely more. I complain a lot, but I still play Kill Team every couple weeks and only plan on playing more this upcoming year. Part of that is moving to within walking distance of my Friendly Local Game Stores, but another part is that I still have several more factions I want to build teams for, roster combinations I want to try, missions I want to play, and homebrew variants I want to type up. As much as the game bugs me in some regards, it has its moments where it shines and that’s what keeps drawing me back.
+
+Greg: I’ll probably play it about the same, which isn’t often. Like everyone else has already said, it’s a good game to travel with, or to windmill-slam Condit’s team into the trash when he’s traveling, but I can’t imagine a scenario where I have the time and space to play 40k and choose Kill Team instead, unless they change one or both games up substantially.
+
+Alfredo: I’m signed up for Kill Team at Adepticon next year but it’s a toss-up whether I’ll actually play. Between getting into new games like Crisis Protocol, Adeptus Titanicus and Necromunda, I’m not sure that I’ll be prioritizing Kill Team much unless I just really really want to field some Sisters of Battle models in something. This is less a dig on Kill Team and more just that there are some really great skirmish games out there (several of them also from GW) and there’s only so much time available to play.
+
+Corrode: I’ll play more games of KT in 2020 than I did in 2019 because I genuinely don’t remember if I played Kill Team at all in 2019, but I do know that at the time this goes up I will literally be at Warhammer World with some of the Goonhammer crew playing it. That’s basically the game’s place for me – something to bring out when we’re having a meet-up with an undefined number of players of differing levels of play experience. In most other situations I’ll just play full-size 40k, or if I want to mess around with something skirmish level Adeptus Titanicus is right there, and my city has a pretty active Necromunda community too if I don’t want to get the titans out and start measuring fire arcs.
+
+Shane: More for certain. Unless I get wildly successful immediately with running events and then I’ll be too busy running them to play.
+
+What do you want to see happen with Kill Team in 2020?
+
+Condit: I think I speak for most of us here when I say I’d like to see a second edition. I doubt that it’ll happen in 2020, since I think it needs a bit more of a rework rather than just a few patches here and there. Instead, I’d prefer something that moves a bit away from “40k, but every model is a <CHARACTER>” and instead stakes out some design space all its own, sort of like how the 2019 release of Apocalypse created an entirely new core system and, in the process, wound up being a lot of fun. In a game where your model count has a hard cap of 20, you’ve got room to get a lot crunchier, and it’s a bit of a shame that they haven’t taken advantage of that as much as they could.
+
+I’d also like to see a few new boxes dedicated to Kill Team entirely. Rather than just giving us re-casts of the same old kits in different colored plastic, many of the factions could do with bespoke Kill Teams using unique sculpts. To Chucat’s point above, imagine if you could buy an Eldar starter set that came with a full “Exarch Council,” a handful of Guardians, and a heavy weapons platform. I think sets like that could open up some of the customization options to folks who don’t necessarily want to buy an entire 40k army just to field 100 points.
+
+Thundercloud: New models (not even new units but new models) has to be a part of the strategy. I know GW are almost in year 3 of the 10 year cycle to squat smolmarines, but the Space Marine Heroes, Mk III and Deathwatch sets proved how nice they could do smolmarines now if they wanted to.
+
+Could GW do a Primaris tactical squad? Where you get some weapon variety to avoid Sergeant with CCW, 1 Primaris with GL, 3 Primaris with just standard bolt rifles. If Primaris are the core going forward they need some sort of Veterans of the Great Rift squad where Primaris are allowed to pick up a damn heavy bolter and have some customisation beyond slight variation in bolt rifles. Though I believe the next lot of Primaris coming out are our chubby friends in Gravis armour.
+
+Greg: Templates and scatter dice.
+
+Thundercloud: I’d like to see GW have the balls to take all the lessons they’ve learnt from Kill Team, Warcry and Specialist Games, and actually apply them to KT2: Kill Harder.
+
+Ditch the 8th ed rules framework, go with more modern design elements and have a walled garden of unit availability to balance the game competitively, add a legends addendum to allow you to take what you like in narrative. Have Marines play like they do in the fluff (which will involve reworking some core mechanics) and put out an EZbuild starter with models, terrain and a streamlined and fast playing rules set. Then learn the lessons from that and apply it to 10th edition (because who am I kidding 9th is already written).
+
+GW could probably do this with digging out the Series 1 and Series 3 Space Marine Heroes and throwing them into a Zone Mortalis set or adding some EZbuild terrain and a board. I also think any new starter should focus on competitive balance with an additional narrative play book to give the narrative rules space to breathe, and put in campaign rules, developing models between missions, fighting big monsters. Give people a big Necro style campaign book, and then you can add new books for different theatres (the War for Armageddon, the Great Rift, the Badab War, etc) where you can look in detail at narrative settings, with environment rules and specialist factions, and then limit what can be carried over to competitive play but leave a huge field for narrative play to exist in. That gives people the 40K Necro they know they want in the darkest of their dreams.
+
+GW have taken risks with rules in the Specialist Games and they’ve done some great things. I want to see them learn the lessons from that and evolve Kill Team further.
+
+TheChirurgeon: Yeah, I want a second edition, and I want a real attempt at campaign rules/a narrative play expansion. Though honestly, I’m liable to publish my own if they don’t put something out the next few months. I’d really like to see more customization of Kill Team members and models, and if we’re going with real wish listing, I’d love to see Kill Team adopt more of the sensibilities of Underworlds. A Kill Team that repurposes tactics and effects into a deck that players draw from every turn, with the ability to tailor those effects, is something I’d really like to see.
+
+Novembermike: I’m also on the 2.0 train. Kill Team has a good core but there are a lot of small sins that detract from it. I’d like them to figure out what they want from the system, like whether it’s competitive or not, and then make the rules really fit. Apocalypse, Warcry and Adeptus Titanicus have all been great so I think that GW can do it but they need the right focus.
+
+One major complaint I’d like fixed is how worthless your standard Marine is (and other equivalent units). This comes from sticking too closely to 40k stats and rules, but a Tac Marine with a bolter isn’t even that serious of a threat to Guardsmen or Hormagaunts, not for the price you pay. At the smaller scale I want the mechanics of the game to fit the fluff more closely.
+
+Pendulin: Another vote for the Kill Team 2.0 bandwagon, where they sever the ties to the 40k ruleset and distill the game down to what makes it unique and fun. However, that seems unlikely, so let’s go with an FAQ that clarifies some of the weird rules interactions, a well-structured and engaging narrative campaign that feels like I’m doing more than pushing victory point chips around, and supplements for adding novel play modes like capture the flag, respawning hordes, mid-game upgrades, or co-op.
+
+Alfredo: I’d like to see Kill Team get the Apoc treatment. We got some half-assed Apocalypse rules with Chapter Approved 2017 and then a whole new Apocalypse ruleset this year that is totally divorced from 40K rules and a ton of fun to play. I think it’s plausible for Kill Team to follow that trajectory, especially in light of games like BSF, Warcry and Underworlds offering totally distinct ‘skirmish-scale’ experiences already. I would love a world where I can pick some subset of my models and have three great and totally different games to play them in (Kill Team, 40K and Apoc) at different scales.
+
+Corrode: Yeah, 2.0 is the way to go. I think 2020 is probably too early for it to really happen, but a do-over with a more focused vision of what the game is and then a release strategy that clearly supports that vision is vital. GW are often guilty of dropping a big release and then failing to properly follow up (both Warcry and Adeptus Titanicus have had like 2-3 extra books released in a very short space of time and then a long gap with not much coming down the pipe) but KT is the most egregious example to me – even Necromunda is better supported and I’m not clear that the rules for that aren’t some kind of long-form practical joke.
+
+Thundercloud: I think ditching the 40k rules as core opens up the possibilities. I love Rogue Trader, but I’ve now been playing iterations of it for 30 years (and Kill Team now is a lot closer to the RT games I played way back then than say 4th or 5th edition were) and it’s time for something fresh. I want to play a game in 30 minutes like I can with Aeronautica. And I want Marines/Chaos Marines to not suck.
+
+Greg: I think what I really want is more of the customization we saw in Shadow War: Armageddon. I loved the idea of blowing your last couple of points on laser sights and other tacticool nonsense. It gives more opportunities for sweet conversions, and that variety is something you really need in a game where every model is supposed to be a character. Admittedly I run a pretty boring team – six Intercessors, two of them with grenade launchers – but having half the team being indistinguishable Bolter Joes in what is supposed to be a character-based game kind of kills the fantasy of playing a group of high-speed low-drag kinetic operators for me. I want the weird stuff in there, give me a John Woo idiot dual-wielding solid gold bolt pistols with holo sights. The closest I came to this was taking too many Auspexes in a game, which I am told is technically “cheating” and “what the hell dude”.
+
+Chucat: Invent a time machine and go back to when the game came out. Do the following:
+
+Launch Kill Team, run the original big box. However, change the rules so that each faction only requires one or two boxes to be competitive. So either tweak what comes inside of a box, or tweak the rules to balance them out. You want to encourage players to have around 10-20 models, depending on the ‘value’ of their Kill Team. Ditch the big faction boxes, encourage people to buy boxes of troops to create a Kill Team instead (I think the stores did this, but it was just a bit weird). If an army relies on stuff that doesn’t come in troop boxes to run a good Kill Team, then that’s a problem.
+
+Here’s where it gets sneaky. Launch Commanders next (call it Escalation or something), balance the commanders between themselves, each faction gets 1 or 2 of them (offensive and support commanders). Run it in a small box that contains two commander sprues (matching the factions in the big box), the rulebook, some more dice and…the tiny rulebook for 40k. Make Commanders mandatory but free in Kill Team, and now you get the choice between playing a slightly bigger game of Kill Team or a Patrol level game of 40k.
+
+Merge Elites and Arena into another big box. Arena is more of a mission pack and terrain setups, Elites contains everything in the Elites book (maybe not the extra commanders), and a couple of sprues of an elite squad to go with the armies that were plugged before. Have matched play tweak the points limit to 150(ish) Have GW heavily imply at this point that you pretty much only need a vehicle at this point to play ‘proper games’ of 40k.
+
+Roll around in your giant pile of money.
+
+Shane: I want to see the competitive scene increase. Right now most of the larger Kill team events are happening the same time as large 40k events (LVO, SoCal, NOVA, etc) and because of it there are players that could/would play Kill Team but are already playing 40k. Don’t get me wrong, I am happy these events happen, I just believe the game could pull more players if we also had stand alone events.
+
+It is my personal goal to foster the Kill Team community further by holding stand alone events.
+
+Looking Ahead to 2020
+
+Despite its flaws, Kill Team is a game that we still love dearly, and one that we’re looking forward to playing more of in 2020, especially as the community starts to have a better understanding of how to alter the game’s rules and fit it better to tournament and narrative play. We’re already seeing that with the LVO 2020 Kill Team Championship rules – you can read NovemberMike’s write-up of that coming soon – which call for 125-point teams and add a host of new objectives and subfaction rules. Our largest hope however is that Games Workshop continues to support the game, and does so in a way that makes sense for its players. Either way, we’ll continue to write about Kill Team through the next year, and we’ll cover any new releases as they come out.
+
+Have any questions or comments, things we missed, or opinions you’d like to share? Then feel free to drop a note in the comments below, or email us at contact@goonhammer.com.

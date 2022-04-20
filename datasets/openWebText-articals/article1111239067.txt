@@ -1,0 +1,17 @@
+A few short years ago, the Linux Foundation had no networking projects. Now it has six, with the addition of the Open Switch project this week.
+
+Open Switch is a complete network operating system with the Open vSwitch virtual switch at its core. The Open Switch effort originally got its start in October 2015 as a Hewlett Packard (HP) led effort and was announced at the Linux Foundation’s Linuxcon EU 2015 event.
+
+Rather than relying on an existing Linux distribution as the core, Open Switch is built from scratch from upstream kernel sources and leverages a modular, publish-and-subscribe model.
+
+“Transitioning Open Switch to the Linux Foundation is a major step forward and testament to the maturity of Open Switch and realizing the promise of creating stable and agile network infrastructures that can adapt to changing business requirements,” Dominic Wilde, VP/GM, Data Center Networking Business Unit at Hewlett Packard Enterprise, said in a statement. “As a catalyst in creating the source code, HPE will continue to actively participate in the Open Switch community to help make Open Switch the leading open source data center network operating system and the choice for demanding cloud data center business applications.”
+
+While Open Switch was originally just an HP project at the Linux Foundation, there are now multiple participating organizations, including Barefoot Networks; Broadcom; Cavium, Inc.; Extreme Networks; Hewlett Packard Enterprise; LinkedIn; Mellanox; Nephos Inc.; P4.org; Quattro Networks, Inc.; and SnapRoute.
+
+Open Switch is in many respects competitive with other open-source network operating system efforts, including Cumulus Linux, which updated to version 3.0 of its platform this week.
+
+Open Switch now joins the OpenDaylight, ONOS, OPNV, FD.io and IOvisor open-source networking efforts under the Linux Foundation Collaborative Projects umbrella.
+
+“OpenSwitch brings another important ingredient of the open networking stack to The Linux Foundation,” said Jim Zemlin, executive director at The Linux Foundation.
+
+Sean Michael Kerner is a senior editor at Enterprise Networking Planet and InternetNews.com. Follow him on Twitter @TechJournalist.

@@ -1,0 +1,21 @@
+Leaked Intel roadmap reveals Skylake-X CPUs 2017 release
+
+Leaked Intel roadmap reveals Skylake-X CPUs 2017 release
+
+| Source: benchlife Author: Mark Campbell
+
+Leaked Intel roadmap reveals Skylake-X CPUs 2017 release
+
+In a leaked Intel roadmap the company has listed Skylake-X series CPUs for a Q2 2017 release, with Kaby Lake coming in Q4 2016.
+
+The roadmap also shows that Kaby Lake will be arriving on mobile platforms first, coming first to Intel's low power U-series and Y-series of CPUs. The release of Kaby Lake on desktop roughly coincides with the release date MSI has given for their Intel 200-series motherboards.
+
+On the enthusiast end it looks like Intel will be replacing the E with an X for the Skylake-X series of CPUs, though apart from this no clear information is given. At this time we do not know if Intel plans on releasing another 10-core CPU or if they plan on increasing the core count again to 12 or 14. We think it is likely that Intel will release another 10-core CPU but simply release Skylake-X with higher stock clocks.
+
+Right now we have no confirmed information on Intel's Skylake-X platform, though we think it is likely that it will require a new CPU socket and will likely overclock better than Broadwell-E or Haswell-E, at least judging by its existing desktop counterparts.
+
+On this roadmap we can also see listing for Kaby Lake-X, which comes with the same release timeframe as Skylake-X, hinting that Intel may decide to skip Skylake-X and go straight to Kaby lake, though right now information is unclear.
+
+You can join the discussion on Intel's leaked Skylake-X roadmap on the OC3D Forums.
+
+Most Recent Comments

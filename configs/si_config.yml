@@ -27,7 +27,7 @@ model_type: roberta
 config_name: roberta-large
 model_name_or_path: model_checkpoints/ner_roberta_large_uncased_crf_7700
 max_seq_length: 256
-per_gpu_train_batch_size: 8
+per_gpu_train_batch_size: 4
 per_gpu_eval_batch_size: 1
 learning_rate: 2e-5
 save_steps: 700

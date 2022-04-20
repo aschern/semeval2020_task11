@@ -1,0 +1,19 @@
+DNA could be used for computing KTSDESIGN/SCIENCE PHOTO LIBRARY
+
+A computer made from strands of DNA in a test tube can calculate the square root of numbers up to 900.
+
+Chunlei Guo at the University of Rochester in New York state and colleagues developed a computer that uses 32 strands of DNA to store and process information. It can calculate the square root of square numbers 1, 4, 9, 16, 25 and so on up to 900.
+
+The DNA computer uses a process known as hybridisation, which occurs when two strands of DNA attach together to form double-stranded DNA.
+
+Advertisement
+
+To start, the team encodes a number onto the DNA using a combination of ten building blocks. Each combination represents a different number up to 900, and is attached to a fluorescence marker.
+
+The team then controls hybridisation in such a way that it changes the overall fluorescent signal so that it corresponds to the square root of the original number. The number can then be deduced from the colour.
+
+The DNA computer could help to develop more complex computing circuits, says Guo. “DNA computing is still in its infancy, but holds great promise for solving problems that are too difficult or even impossible to handle by current silicon-based computers,” he says.
+
+Guo believes DNA computers may one day replace traditional computers for complex computations.
+
+Journal reference: Small, 10.1002/smll.201903489

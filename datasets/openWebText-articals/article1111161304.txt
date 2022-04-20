@@ -1,0 +1,23 @@
+The computing power needed to replicate the human brain’s relevant activities has been estimated by various authors, with answers ranging from 1012 to 1028 FLOPS.
+
+Details
+
+Notes
+
+We have not investigated the brain’s performance in FLOPS in detail, nor substantially reviewed the literature since 2015. This page summarizes others’ estimates that we are aware of, as well as the implications of our investigation into brain performance in TEPS.
+
+Estimates
+
+Sandberg and Bostrom 2008: estimates and review
+
+Sandberg and Bostrom project the processing required to emulate a human brain at different levels of detail. For the three levels that their workshop participants considered most plausible, their estimates are 1018, 1022, and 1025 FLOPS.
+
+They also summarize other brain compute estimates, as shown below (we reproduce their Table 10). We have not reviewed these estimates, and some do not appear superficially credible to us.
+
+Drexler 2018
+
+Drexler looks at multiple comparisons between narrow AI tasks and neural tasks, and finds that they suggest the ‘basic functional capacity’ of the human brain is less than one petaFLOPS (1015).
+
+Conversion from brain performance in TEPS
+
+Among a small number of computers we compared , FLOPS and TEPS seem to vary proportionally, at a rate of around 1.7 GTEPS/TFLOP. We also estimate that the human brain performs around 0.18 – 6.4 * 1014 TEPS. Thus if the FLOPS:TEPS ratio in brains is similar to that in computers, a brain would perform around 0.9 – 33.7 * 1016 FLOPS. We have not investigated how similar this ratio is likely to be.

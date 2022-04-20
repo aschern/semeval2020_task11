@@ -1,0 +1,53 @@
+What if I told you that our universe was flooded with hundreds of kinds of nearly invisible particles and that, long ago, these particles formed a network of universe-spanning strings?
+
+It sounds both trippy and awesome, but it's actually a prediction of string theory , our best (but frustratingly incomplete) attempt at a theory of everything. These bizarre, albeit hypothetical, little particles are known as axions, and if they can be found, that would mean we all live in a vast "axiverse."
+
+The best part of this theory is that it's not just some physicist's armchair hypothesis, with no possibility of testing. This incomprehensibly huge network of strings may be detectable in the near future with microwave telescopes that are actually being built.
+
+Related: The Biggest Unsolved Mysteries in Physics
+
+If found, the axiverse would give us a major step up in figuring out the puzzle of … well, all of physics.
+
+A symphony of strings
+
+OK, let's get down to business. First, we need to get to know the axion a little better. The axion, named by physicist (and, later, Nobel laureate) Frank Wilczek in 1978, gets its name because it's hypothesized to exist from a certain kind of symmetry-breaking. I know, I know — more jargon. Hold on. Physicists love symmetries — when certain patterns appear in mathematics.
+
+There's one kind of symmetry, called the CP symmetry, that says that matter and antimatter should behave the same when their coordinates are reversed. But this symmetry doesn't seem to fit naturally into the theory of the strong nuclear force. One solution to this puzzle is to introduce another symmetry in the universe that "corrects" for this misbehavior. However, this new symmetry only appears at extremely high energies. At everyday low energies, this symmetry disappears, and to account for that, and out pops a new particle — the axion.
+
+Now, we need to turn to string theory, which is our attempt (and has been our main attempt for 50-odd years now) to unify all of the forces of nature, especially gravity , in a single theoretical framework. It's proven to be an especially thorny problem to solve, due to a variety of factors, not the least of which is that, for string theory to work (in other words, for the mathematics to even have a hope of working out), our universe must have more than the usual three dimensions of space and one of time; there have to be extra spatial dimensions.
+
+These spatial dimensions aren't visible to the naked eye, of course; otherwise, we would've noticed that sort of thing. So the extra dimensions have to be teensy-tiny and curled up on themselves at scales so small that they evade normal efforts to spot them.
+
+What makes this hard is that we're not exactly sure how these extra dimensions curl up on themselves, and there's somewhere around 10^200 possible ways to do it.
+
+But what these dimensional arrangements appear to have in common is the existence of axions , which, in string theory, are particles that wind themselves around some of the curled-up dimensions and get stuck.
+
+What's more, string theory doesn't predict just one axion but potentially hundreds of different kinds, at a variety of masses, including the axion that might appear in the theoretical predictions of the strong nuclear force.
+
+Silly strings
+
+So, we have lots of new kinds of particles with all sorts of masses. Great! Could axions make up dark matter , which seems to be responsible for giving galaxies most of their mass but can't be detected by ordinary telescopes? Perhaps; it's an open question. But axions-as-dark-matter have to face some challenging observational tests, so some researchers instead focus on the lighter end of the axion families, exploring ways to find them.
+
+And when those researchers start digging into the predicted behavior of these featherweight axions in the early universe, they find something truly remarkable. In the earliest moments of the history of our cosmos , the universe went through phase transitions, changing its entire character from exotic, high-energy states to regular low-energy states.
+
+During one of these phase transitions (which happened when the universe was less than a second old), the axions of string theory didn't appear as particles. Instead, they looked like loops and lines — a network of lightweight, nearly invisible strings crisscrossing the cosmos.
+
+This hypothetical axiverse, filled with a variety of lightweight axion strings, is predicted by no other theory of physics but string theory. So, if we determine that we live in an axiverse, it would be a major boon for string theory.
+
+A shift in the light
+
+How can we search for these axion strings? Models predict that axion strings have very low mass, so light won't bump into an axion and bend, or axions likely wouldn't mingle with other particles. There could be millions of axion strings floating through the Milky Way right now, and we wouldn't see them.
+
+But the universe is old and big, and we can use that to our advantage, especially once we recognize that the universe is also backlit.
+
+The cosmic microwave background (CMB) is the oldest light in the universe, emitted when it was just a baby — about 380,000 years old. This light has soaked the universe for all these billions of years, filtering through the cosmos until it finally hits something, like our microwave telescopes.
+
+So, when we look at the CMB, we see it through billions of light-years' worth of universe. It's like looking at a flashlight"s glow through a series of cobwebs: If there is a network of axion strings threaded through the cosmos, we could potentially spot them.
+
+In a recent study , published in the arXiv database on Dec. 5, a trio of researchers calculated the effect an axiverse would have on CMB light. They found that, depending on how a bit of light passes near a particular axion string, the polarization of that light could shift. That’s because the CMB light (and all light) is made of waves of electric and magnetic fields, and the polarization of light tells us how the electric fields are oriented — something that changes when the CMB light encounters an axion. We can measure the polarization of the CMB light by passing the signal through specialized filters, allowing us to pick out this effect.
+
+The researchers found that the total effect on the CMB from a universe full of strings introduced a shift in polarization amounting to around 1%, which is right on the verge of what we can detect today. But future CMB mappers, such as the Cosmic Origins Explorer, Lite (Light) satellite for the studies of B-mode polarization and Inflation from cosmic background Radiation Detection (LiteBIRD), and the Primordial Inflation Explorer (PIXIE) , are currently being designed. These futuristic telescopes would be capable of sniffing out an axiverse. And once those mappers come online, we'll either find that we live in an axiverse or rule out this particular prediction of string theory.
+
+Either way, there's a lot to untangle.
+
+Paul M. Sutter is an astrophysicist at The Ohio State University, host of Ask a Spaceman and Space Radio, and author of Your Place in the Universe.

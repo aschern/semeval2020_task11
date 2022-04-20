@@ -1,0 +1,3 @@
+Trading View Indicators
+
+Trading View indicators which give you the flexibility to explore things on your own. Some indicators are specific for a certain asset, but many of them can be used across various assets.

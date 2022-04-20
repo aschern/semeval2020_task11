@@ -1,0 +1,53 @@
+Cobalt miner operating in the DRC. Credit: University of Sussex
+
+The global low-carbon revolution could be at risk unless new international agreements and governance mechanisms are put in place to ensure a sustainable supply of rare minerals and metals, a new academic study has warned.
+
+The amount of cobalt, copper, lithium, cadmium, and rare earth elements needed for solar photovoltaics, batteries, electric vehicle (EV) motors, wind turbines, fuel cells, and nuclear reactors will likely grow at a rapid pace in the upcoming years. Even if alternatives are found for one metal, there will be reliance on another as the scope of possibilities is inherently limited by physical and chemical properties of elements.
+
+However, with global supplies often heavily monopolized by a single country, confronted by social and environmental conflict, or concentrated in poorly functioning markets, there is a real possibility that a shortage of minerals could hold back the urgent need for a rapid upscaling of low-carbon technologies. In some cases, markets are providing misleading signals to investors that can lead to poor decisions. In other cases, the countries or regions supplying minerals are politically unstable.
+
+An international team of researchers have made a number of recommendations to help manage the demand for such low-carbon technology minerals as well as limiting the environmental and public health damage of their extraction and processing, supporting social benefits, and also ensuring the benefits are shared more universally and equitably, in a new paper published in Science today [January 3].
+
+Benjamin K. Sovacool, Professor of Energy Policy at the University of Sussex, said: "Mining, metals, and materials extraction is the hidden foundation of the low-carbon transition. But it is far too dirty, dangerous, and damaging to continue on its current trajectory.
+
+"The impacts to mining rightfully alarm many environmental campaigners as a large price to pay to safeguard a low-carbon future. But as the extraction through terrestrial mining becomes more challenging, the on-land reserves of some terrestrial minerals dwindle or the social resistance in some countries escalates, even oceanic or even space based mineral reserves will become a plausible source."
+
+Although the new study calls for renewed attention to tackle existing conditions of terrestrial extraction and processing of metals, it also states that there are important prospects of cobalt and nickel on the continental shelf within states' Exclusive Economic Zones as well as on the outer continental shelf regions.
+
+Within international waters, metallic nodules found in the vast Clarion-Clipperton Zone of the Pacific as well as in cobalt and tellurium crusts, found in seamounts worldwide, provide some of the richest deposits of metals for green technologies.
+
+But minerals in more pristine and distinctive ecosystems near hydrothermal vents should remain off-limits for mineral extraction for the foreseeable future, the researchers add.
+
+Graphic showing global distribution of critical metals and minerals. Credit: University of Sussex
+
+Morgan Bazilian, Professor and Director of the Payne Institute for Public Policy, Colorado School of Mines, said: "As the global energy landscape changes, it is becoming more mineral and metal intensive. Thus, the sustainability and security of material supply chains is essential to supporting the energy transition. How we shape that pathway will have important consequences for everything from the environment, to development, and geopolitics."
+
+The study's authors also recommend:
+
+Enhance and coordinate international agreements on responsible mining and traceability in order to establish mineral supply justice.
+
+Greatly expand the recycling and reuse of rare minerals to extend the lifetimes of products and stretch out reserves.
+
+Diversify mineral supply scale to incorporate both small and large-scale operations while allowing miners to have control over mineral revenue through stronger benefit sharing mechanisms and access to markets.
+
+Focus development donor policies to recognize the livelihood potential of mining in areas of extreme poverty rather than just regulating the sector for tax revenues.
+
+Stipulate stronger Extended Producer Responsibility for products that use valuable rare minerals. This can ensure that responsibility for the entire lifespan of a product including at the end of its usefulness shifts from users or waste managers to major producers such as Apple, Samsung, and Toshiba.
+
+Materials security of essential minerals and metals to be actively incorporated into formal climate planning including establishing a list of "critical minerals" for energy security (which is already done to some degree by the European Union and United States).
+
+Saleem Ali, Blue and Gold Distinguished Professor of Energy and the Environment at the University of Delaware, said: "Our analysis is aimed at galvanizing international policy-makers to include mineral supply concerns for green technologies in climate change negotiations. We need to build on the resolution on mineral governance passed at the United Nations Environment Assembly in 2019 and operationalize a clear action plan on supply chain security for a low carbon transition."
+
+Benoit Nemery, Emeritus Professor at the Centre for Environment and Health at KU Leuven, said: "Let's not achieve a low-carbon future at the expense of mineworkers and public health."
+
+Factfile—The expected rising demands for a decarbonized future
+
+Between 2015 and 2050, the global EV stock needs to jump from 1.2 million light-duty passenger cars to 965 million passenger cars
+
+For the same period, battery storage capacity needs to climb from 0.5 gigawatt-hour (GWh) to 12,380 GWh while the amount of installed solar photovoltaic capacity must rise from 223 GW to more than 7100 GW.
+
+Another research study has predicted increases in demand for materials for EV batteries of 87,000%, 1000% for wind power, and 3000% for solar cells and photovoltaics between 2015 and 2060.
+
+Explore further New research exposes extent of mineral demand for renewable energy technologies
+
+More information: Benjamin K. Sovacool et al, Sustainable minerals and metals for a low-carbon future, Science (2020). Journal information: Science Benjamin K. Sovacool et al, Sustainable minerals and metals for a low-carbon future,(2020). DOI: 10.1126/science.aaz6003

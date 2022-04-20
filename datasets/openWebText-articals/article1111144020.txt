@@ -1,0 +1,57 @@
+SQUARE ENIX HOLDINGS
+
+A New Year's Letter from the President
+
+I would like to wish everyone a Happy New Year.
+
+
+
+In 2019, the digital entertainment industry saw the announcement of next-generation consoles like Sony Interactive Entertainment’s PlayStation 5 and Microsoft’s Xbox Series X. Cloud streaming services also came into their own, with the introduction of Google Stadia, NVIDIA GeForce NOW, and the announcement that Microsoft will launch its xCloud platform this year. With the arrival of these new platforms comes the potential for major change in the nature of content platforms and competition between platform providers. Further, as smartphones have begun to offer less in the way of new functionality and grown more mature as gaming devices, expectations have begun to mount for the arrival of new AR glasses.
+
+
+
+
+
+A new era in gaming experiences
+
+While Japan’s mobile gaming market continues to expand, its growth has slowed. Best-selling gaming app sales remained largely unchanged, but it was also a year that clearly illustrated the principle of survival of the fittest as titles offering new experiences were able to make significant market share gains. More so than ever before, people will be looking for “something else”—something original and innovative. The companies that are able to make that a reality will survive in the new era. The HD game space is also poised for change as this new era brings the advent of cloud gaming and the likelihood that games themselves will become more service-based. The very nature of gaming experiences is likely to undergo rapid change as gameplay becomes less of a one-way street and we begin to have more interactions with other players and viewers.
+
+
+
+
+
+Cloud streaming comes into its own with 5G on the horizon
+
+Against this backdrop of change, we are not only making steady progress on developing next-generation console titles, but also actively readying ourselves to support cloud gaming, which we expect to take off with the advent of 5G. The arrival of streaming as a new distribution platform will not only further accelerate the transition from the traditional disk-based sales model to digital sales, but could also drive significant change in business models themselves via the adoption of subscription models, for example. We are especially hopeful about the major potential cloud streaming services possess to expand markets in growing regions such as India and South America, where there has not been significant adoption of traditional game consoles. As telecommunications infrastructure improves, cloud streaming will directly provide customers in such markets with playing environments that eliminate the need for traditional consoles or PCs. From a game development perspective as well, we will strive to create gaming experiences only possible in the cloud, meaning developing cloud-native or cloud-centric games. For cloud streaming to enjoy mass adoption, there will need to be innovation not only in terms of distribution, but also in terms of gaming experiences. We believe that new gaming experiences that would have been impossible on traditional game consoles will be a major driver of cloud gaming adoption. Our efforts to develop cloud-native or cloud-centric titles are already underway, and we will strive to create new gaming experiences. We naturally face a mountain of challenges, including technological hurdles that must be overcome and issues with telecommunications costs. However, we have no doubt that cloud gaming will represent a major trend over the next five years as we enter the age of 5G and that our strategies for flexibly responding to that trend will be key. We intend to stay on top of new developments and leverage cloud gaming to drive new growth.
+
+
+
+
+
+Using technology to create new forms of entertainment
+
+Given advances in the IoT domain, we plan to invest aggressively in the creation of new forms of entertainment that leverages the diverse portfolio of technologies we have built up through our game development efforts. In the case of AI in particular, we will be undertaking a wide range of initiatives that go beyond gaming as we strive to create broader forms of entertainment AI.
+
+
+
+In addition, as the world looks forward to the arrival of new devices like AR glasses, we are continuing our R&D efforts into technologies such as XR. We believe that we will be able to start unveiling the achievements such efforts in some projects as early as this year. Meanwhile, games using blockchain are no longer in their infancy and are gradually coming to represent a more significant presence. Rather than treating blockchain gaming as an opportunity for speculative investment, we believe establishing whether it is capable of bringing something new to our customers’ gaming experiences will be the key to growth.
+
+
+
+
+
+2020 will be a year of major changes for the digital entertainment industry as we stand on the cusp of a new era. We intend to view these changes as opportunities and to take on a variety of new challenges. Please look forward to what we will achieve.
+
+
+
+I thank you for your continued support in the New Year.
+
+
+
+
+
+Yosuke Matsuda
+
+President and Representative Director,
+
+SQUARE ENIX HOLDINGS CO., LTD.

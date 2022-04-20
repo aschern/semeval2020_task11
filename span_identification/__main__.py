@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 def Main(args):
-    nlp = spacy.load("en")
+    nlp = spacy.load("en_core_web_sm")
     if not os.path.exists(args.data_dir):
         os.makedirs(args.data_dir)
     
@@ -189,7 +189,7 @@ def main():
     
     logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
                         datefmt="%m/%d/%Y %H:%M:%S",
-                        level=logging.INFO if args.local_rank in [-1, 0] else logging.WARN)
+                        level=logging.DEBUG if args.local_rank in [-1, 0] else logging.WARN)
     
     Main(args)
     

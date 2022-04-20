@@ -1,0 +1,117 @@
+This article focuses on my opinions and common views about league mapping. Building up the challenge while keeping the map fun to drive isn't always easy, and it requires both experience and creativity, especially if you want to do anything fancier than having a couple of corners that we already saw back in TMN ESWC. Besides that, the challenge can be created in multiple ways, and that's where options often differ between mappers and their styles. In this article I will focus pretty much on tech maps in my examples, but same thoughts and rules work with other styles too.
+
+Koenz about league tracks in general:
+
+What makes a good league track has changed over time. In 2006 - 2009 the ''flow'' everyone is talking about nowadays wasn't there on purpose. Many straights with a sudden corner, big jumps or random poles were no surprises. These tracks were challenging as well and great to drive. The flow aspect of a track seems one of the most important factors right now, nice smooth turns following each other, mixed with obstacles is very important.
+
+Another important aspect is originality, since people training the tracks want to have a new challenge as well and not feeling they constantly train the same kind of map, losing motivation to train in the end. As a builder, you want to keep people motivated to train your track, as well as making them having fun while doing so. Taking care of bugs is another factor taken into account. Maps that have to many bugs on the ''normal'' driving line won't be chosen. Transitions should be smooth as well without a big chance of having a bug. The maps i talk about now are more or less suited to ESWC, ESL, STC and TMM. I think all aspects should be combined to make a whole, including corners with/without visibility and tricks to challenge the driver. Time has changed, and this is the way to go in Trackmania today. (except for the ZrT cup :D)
+
+League tracks over the years have indeed had many forms. Back in 2007 the league track for example in ESWC were totally different. However, the challenge existed, maybe more than ever, as players had to know a lot about releasing throttle and even neoslides. Since then Trackmania has changed a lot (even the car physics), which has led to new kind of maps. Especially innovations such as blockmix or still fresh ESL competition titlepack have had influence in building. Now, let's take a look on the building process itself.
+
+Setting the goal
+
+First step in building is to recognize your goal. The map is expected to fit in certain rules such as length and difficulty, that are often set by tournament admins. It's important to read the mapsearch announcement building rules carefully to avoid spending hours with an improper map. After you know the limits, you can move on and start the building itself.
+
+However, there are more details to think, despite rules might not tell them straight. Especially in online leagues such as ESL and TMM you need to remember that maps are driven by drivers from several skill levels. Therefore hard transitions and jumps can't be driven by everyone and you shouldn't add anything super hard. Meanwhile in ESWC or another such high level LAN tournament all players can be expected to be great drivers, making even harder jumps less problematic for them. Also, if the league rules allow respawning, it's not a bad idea to make sure that respawning and continuing driving actually is possible.
+
+Zerd about differences between mapping for TMM and ESWC:
+
+The thing is TMM is about fun in general, and maps itself are getting easier and easier on those tournaments. ESWC is about fun, but also about crowning the best players with prizes, that means ESWC maps has to be challenging, worthy to competition that is deciding top trackmania drivers. In my opinion map hast to be hard, turns and drifts has to be original, creative, but also smooth. I guess if I will build ESWC styled map and send it to TMM, it won't be picked.
+
+Another issue to consider is the time players have for training. As we know, in True Talent Cups players don't know the maps and builders should make them quite easy. Like Zerd mentions, maps in actual TMM are rather easy as well, which is understandable as they change each week. However, when you are travelling to Paris to race with the best with people watching, you are supposed to train the maps as carefully as possible during the month you have for it.
+
+Tight line created with an obstacle on ESL - KUBINATOR by Kappa, but Carl Jr. seems to have no problem.
+
+Creating the challenge
+
+After knowing what to do, you got to decide how to do it. The challenge of the map is what makes the map unique, fun and also irritating. It's the thing players must beat - or at least get into good terms with - to beat the map. For a mapper, there are several kind of challenging things, and not everyone of them fit in a league map.
+
+At first, we have some certainly no-go challenges. One of them is need to avoid bugs. This should never, ever be a thing in a competitive map, since despite the probability of getting a bug can be reduced with experience a lot, they are still very random and therefore much about luck instead of skill. Second thing to avoid is something I'd call jump aiming: basically, the challenge is to jump precisely in certain direction, surrounded by walls. It gets even worse, if you also need to control the speed to land well. This kind of challenges and obstacle courses works in RPG and Zerator maps, though, but those aren't the kind of maps this article focuses on.
+
+Ruva takes a risky inside pole on his WR run on Tomczan's STC11/NC10 - View From Above.
+
+The second tier of challenges is used very commonly in all kind of league maps. It's the challenge of tight lines, in which I would count driving close the walls, obstacles to avoid and maybe also going over rams. These types of challenge don't have anything bad in them when used correctly, but if the map is hard to master only because of a jungle made of pillars, something is wrong. About pillars, perfect usage of them is when they make the driver wonder whether it's better go inside with tight line or outside with more speed. Naturally obstacles can be used as scenery as well when they are placed outside driving line. That's quite classic way to do scenery to me, at least. Tight lines can be made without pillars too, though. In some turns you must go as close the wall as possible, making the challenge appear in form of precision again. Despite the corner is rather easy to drive, you win time by going closer the risky ram or taking a closer approach with no room for mistakes. Also thin passages like going through checkpoint when approaching it from side is often seen and quite nice way to force the driving line.
+
+TaLa showing a wide line to keep the speed on ESL - Carrots at Pool made by myself.
+
+In general we can say that the map needs some important, difficult turns. Those can be called as deciding factors. They are corners, jumps and tricks that have a huge influence to times and may allow overtakes, and often they also have big risk included. A risky jump is kind of one, but as stated before it's not that fair way to create a decider turn: instead of tight turn, even with risky ram bug possibility is a better way to do it. Such corners are common, and one of the most memorable ones might actually be this one in my ESL map Parrots are cool from four years back. The turn plays a huge role in the map, since you need a lot speed out from it for the wide turn right after it, but the optimal line is very narrow. One or two of these important turns players must go all in to win are brilliant for matches with higher stakes. In GC11, we also had a huge decider turn in map Val'KyR by Kyo. The map overall was very difficult TMUF-styled technical map, but especially this chicane caused a lot problems and needed perfection each round, beginning from the corner before.
+
+Mastering the lines and tricks
+
+Each turn isn't only about going close the borders of the road. Some need more than knowing how to go through those 3-4 blocks as fast as possible. A good mapper can make a challenge continue even after the specific turn by adding a new challenge. Sometimes it's keeping the speed high, often requiring a wider line, and sometimes it's the fact that new turn is already coming and player must think how to approach it, hence changing the line. It might be also just that the fastest line around the corner doesn't need ultra tight line.
+
+Another thing is knowing the basic movement tricks. It's a challenge to know when to drift once and when it's better tap the brake a couple of times more to keep the slide on. It might be even the best to just release the gas a little, although there aren't many this kind of turns in modern stadium tracks. Especially in fullspeed also landing tricks to get the grip as soon as possible after jump or drop play a role when fighting about hundredths. Similar little tricks may also appear when a wallbang is possible: it's also quite rare nowadays, but they can be placed on purpose to make risky alternative lines. Even keeping the grip with some water border or blue ground when driving on grass is a thing that might win a little time, and mappers can place those on purpose.
+
+Landing tilted might win you some hundredths on ESWC 2014 - Aperiko by Roa and OmnipotZ.
+
+However, from the mapper's point of view making tricks is a risky move. The reason is the fact that some tournaments get a lot tracks, and since everyone aren't KarjeN level quicklearners, some tricks may be unnoticed when testers try dozens of tracks in a day. Personally during my maptesting I have done (for ESWC for example) I learn the maps quite quick, and as a mapper I knew that the mapper has tried to do. It still takes a lot time to try maps carefully, so it might be that your cool trick idea gets unnoticed. This is also why providing a replay with map isn't a bad idea, since it gives testers a possibility to look the intended lines.
+
+Railag commented the usage of minor details from map-tester's perfpective:
+
+Very often minor tricks simply go unnoticed during the testing - mostly because there is no time to master 70 to 100 maps in a reasonable amount of time, but they end up mattering a lot - even one small detail such as misunderstanding the correct line in one of the turns, missed wallbang, or so called “geardown” in a crucial part can change the whole perspective on a map, making it that much less enjoyable to play, especially if it’s supposed to be played for more than a week.
+
+Going back to setting the goal chapter, we talked about rules leagues and tournaments ask mappers to note. ESWC has for long had a wish of two finishes, one hard and fast one with one easy "plan b finish". Therefore setting the goal itself can be a part of the challenge, and making the goal one to remember is of course a nice add and kind of catch for the map. I could say that the last 5 seconds are the most important to do carefully, since that's where the scores are given and where the players concentrate the very last seconds. Maps are known from their finishes: many might still remember the talks and line changes a map called Kactours caused back then?
+
+Kappa and driver tween together had this hell of a risky finish built in ESWC 2015 - Cus.
+
+Unintentional tricks
+
+Not every trick found in league maps is intended actually. Sometimes wallbangs, little alternative lines and inside/outside poles happen to be worth trying even when the mapper thought they aren't. All tricks found aren't cuts and therefore allowed in matches. As example we have again Ruva on View From Above, where he and several others take a wider line to get better approach to the corner. The trick is harder than original route, but gives about 0.10-0.15 advantage when done right. Tricks like this can be also built in maps, but in general having alternative risky routes are hard to make right and also risky from the mapper perspective: too easy alternative way can make normal way useless. The original route should always be better to drive as well.
+
+Sometimes a mapper knows a trick such as wallbang is possible, so he builds it hard or impossible to hit to keep the original way better. This is nowadays a lot easier with custom competition titlepack in, but it doesn't always work, as known mapper link found out with his ESL track Netsky just a while ago. However, the bang worked still very fine and the map was enjoyable to drive, making it no problem after all.
+
+This is where your knowledge about blocks and car comes to play a huge role. Blocking cuts and unintended tricks is of course easier if you realize the possibility of them. It also helps you to make new little challenging details in.
+
+link used obstacles to block the wallbang on ESL - Netsky, but players used a bang already on pillar block.
+
+Go with the flow
+
+To make the map fun to drive, it needs more than the challenge. After fulfilling the purpose of the league map with proper challenge, a builder has to finish the map balancing with two views. The first one is flow and smoothness, that make the map easy-going and enjoyable to practice. The catch of a great flow is something you should always mind, especially if you want to gain good feedback from builders, and get your maps picked. The dark side of the flow is that you forget to add the difficulty and map becomes easy and unoriginal, using old but golden turns all the time. Easy-going maps also are picked easier than very hard ones, since of course testers rather select maps they can drive. Naturally league maps are all rather hard, though.
+
+Safran's thoughts about a good league map:
+
+For me, a good map just has to "feel" right. That for me usually has to be a balance between a challenging map and also smooth turns, where everything feels connected.
+
+To make drivers happy you need flow. To please the mappers (and gain some cool pixel awards in MX) you need to make the map original and creative. As you can't use too hard transitions and make some cool press forward starts, you need to make it with slight details. Combining turns in a new way, using easy transitions, making new kind of drifts and inventing totally new way to challenge the drivers are those. Currently ESL's competition titlepack most leagues use is a great opportunity to do that. Well-made blockmix and using new blocks can give fresh ideas, but it's also important to remember that not everyone like too experimental stuff. Personally I tend to have one or two kind of flashy turns or tricks in the map. Unorthodox turns can make the map looks very fresh even without them, if it works.
+
+Some sweet sweet flow in ESWC 2014 - Aperiko.
+
+Looking good
+
+The looks of the map is one last detail in a league map. Basically, the mapper should remember two key things: visibility and proper signs. Visibility is one of the most important details in building, because it makes the track more enjoyable to players and also keeps it competitive when players see what they are facing. Level of visibility should match to amount of training and map purpose, and TMM TTC maps for example should have only little scenery, or at least very clear design. A well made scenery can act as walls as well, making the player see the track movement from scenery too, but it's better to keep areas inside corners clear to see the tightness of the turn. It's also important to remember that all three cameras are used and even though some part is clear with camera 2, camera 3 players might not see the upcoming turn - or the other way around.
+
+Using signs is another detail, which helps a lot at least on first rounds when learning the map. I personally don't watch signs too much, but having some of them with league advert signs to show the way is never bad idea, as sleepy players might find it good to see where to go - especially in leagues where they don't nolife maps all day long. As we see in the clip up there, Aperiko had second to none of signs, and it wasn't a problem as the map was well trained in matches. Placing advert signs is whole another story, of course.
+
+Third thing to concern is something people didn't need to consider much with TMNF: lightning. In TM2, shadows are a lot more powerful (and beautiful) which means track going over or under itself can cause lightning problems. Luckily we have a solution in ESL competition titlepack in form of lights you can place here and there. Darkness isn't that big problem if player has a screen with black equalizer or otherwise bright picture, but especially with laptops it becomes very frustrating. Naturally it isn't a problem after the map is trained.
+
+swoopy about lightning issues and visibility:
+
+Bad vision makes it tougher for one to learn the map, because it's usually the result of not-so-simple turns. Shadows, for example, shouldn't matter much because good player has a good muscle memory, but a very shady and vague map sure is annoying.
+
+Blue lights, suggested by league admins, make the shadows disappear on this still unreleased driving opus by me.
+
+Overall scenery is a lot up to league and the mapper. If you are building your masterpiece for ESWC or even Gamers Assembly where many people see it being played, you might want to give it some good looks as well. There's no need to overthink with scenery in league maps. A simple and clean design is often the best way, but why not to have some own touch. Also, scenery has a job to block potential cuts if you CP placement can't do it.
+
+Some mappers, such as myself, also tend to have kind of themes in scenery. I use to have certain blockset to use for it, like using trees and little structures here and there in the map. I'm not a scenery god to tell you about the looks itself, since my style is pretty much made for league maps, but if scenery is your fetish, try this old yet still cool guide by SapphiroN.
+
+In a nutshell
+
+Building a track is always a challenge, and also very fun in most of cases. Sometimes you rush a map quickly after inspiration, sometimes you try and try blocks to end up editing session with five seconds shroter map than before. When it comes to league mapping, it's a lot about balancing between the interesting difficulty and pleasant flow. The wanted challenge and other rules differ a lot between leagues and especially between styles, but I think there are some general tips to keep in mind when building a track for a league or tournament:
+
+Set the limits: Read the mapsearch rules and plan the map at least a little. Use common sense and don't let the rules limit you too much, though.
+
+Keep it clear: Good visibility is the key to make map easy to approach, no matter how hard it is to master. Signs can help, but too much is too much.
+
+Make it personal: You surely love my tracks, but it better be yourself and keep your own touch in the maps.
+
+Test, test, and test: Make sure you know how your map works, it's a lot easier to make a new corner if you know how players come out from a previous one.
+
+Try be creative: If you track has something fresh in corner combinations or turns itself, it surely stays better in admins' minds and also players might see it interesting.
+
+Make it fun: If you like your map, it's good to go. Everybody might not like it as much or alternatively love it even more, but the worst thing is to send a map that you don't even like yourself.
+
+Remember building the challenge: Who wants the winner be decided only by tightest lines or biggest balls to cut over rams? Create the track have variety in gages it gives to players.
+
+I guess that's about it for now. I remind you that the opinions are my own and not fact-based, but I also think that most of the hints work fine around the game. Basically, to build a good league map you need to know how the car works, and therefore having somewhat alright driving skill is important - but not necessary. Build the map look like you.
+
+Thanks to Koenz, Zerd, Safran, Railag and swoopy for their comments and help with the article and shortz for general help with some details in article.

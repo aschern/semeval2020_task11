@@ -1,0 +1,21 @@
+Over the years, wealthy individuals and organizations have relied on tax havens such as Switzerland, Lichtenstein and Panama to hide income. That's because of these countries' secretive banking and tax laws. But things are changing for these tax havens and wealthy people still want to find ways to shield their income from taxes.
+
+They now have new options: Bitcoin's Zerocash, DarkWallet and similar products. Zerocash and DarkWallet offer Bitcoin clients the ability to process financial transactions with minimum risk of revealing their identities. This comes as banks and their wealthiest clients have come under increased scrutiny for their practices. It is an after-effect of the 2008 financial crisis.
+
+A number of governments from major industrialized countries had to overhaul banking industries that many considered corrupt. Tax evaders and tax havens that helped them were obvious targets.
+
+The U.S. government fined UBS, Switzerland's largest bank, $780 million; Credit Suisse, $2.6 billion; and Julius Baer, $547 million. It also requested that Swiss banks hand out account details of all alleged U.S. tax evaders. Soon, similar pressure was brought to bear by the EU.
+
+Among the end effects: roughly 80 Swiss banks signed a deal with U.S. tax authorities to hand out data on roughly 34,000 accounts of U.S. citizens suspected of tax evasion. Eventually, Switzerland signed a treaty with both the U.S. and EU promising to share data, such as names, addresses and tax Identification.
+
+Bitcoin Succeeds Where Switzerland Fails
+
+The chain of events has created an opening for Bitcoin.
+
+On the surface, Bitcoin seems more transparent than the conventional banking system. Every transaction is documented in the Blockchain, open for all to see. If transactions are done from the same address more than once it becomes simple to track the source, or more accurately, the owner of the account. Some will argue that using a different address for each Bitcoin transfer improves the security and protects your identity. That may be true, but even that is still potentially exposed to investigating tax authorities.
+
+Nevertheless, some Bitcoin Wallets provide higher levels of secrecy. Zerocash allows transfers and payments without disclosing the payment's origin, the amount of the transfer or its destination. Zerocash is not unique; there are a few others, including DarkWallet, Tor Integration and Shared Coin. Each uses a slightly different technology, but all have the same intention: to provide maximum privacy that is difficult to hack.
+
+Because the sovereignty of those technologies is difficult to ascertain it's hard to see how governments can use the same leverage that they used on Swiss banks. This potential trend underscores demand for secretive banking products.
+
+This article is commentary by an independent contributor. At the time of publication, the author held no positions in the stocks mentioned.

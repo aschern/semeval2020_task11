@@ -107,6 +107,9 @@ class BertLstmCrf(nn.Module):
         if "labels" in kwargs_copy:
             kwargs_copy.pop("labels")
 
+        print('kwargs_copy')
+        print(kwargs_copy)
+
         batch_size = kwargs["input_ids"].size(0)
         seq_length = kwargs["input_ids"].size(1)
 
@@ -115,6 +118,7 @@ class BertLstmCrf(nn.Module):
         )
         sequence_output = bert_outputs[1]
 
+        #self.lstm is None
         if self.lstm is not None:
             hidden = self.rand_init_hidden(batch_size)
             if kwargs["input_ids"].is_cuda:
@@ -130,6 +134,13 @@ class BertLstmCrf(nn.Module):
         logits = out.contiguous().view(batch_size, seq_length, -1)
         
         clear_logits, clear_labels, clear_mask = self.clear_subtokens(logits, kwargs['labels'], kwargs["attention_mask"])
+
+        print('clear_logits')
+        print(clear_logits)
+        print('clear_labels')
+        print(clear_labels)
+        print('clear_mask')
+        print(clear_mask)
         
         """
         best_paths = self.crf.viterbi_tags(

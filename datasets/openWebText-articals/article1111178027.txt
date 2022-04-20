@@ -1,0 +1,39 @@
+
+
+7 PaaS Startups To Watch (Click image for larger view and slideshow.)
+
+Ad blocking on mobile devices grew 90% in 2015, according to publishing consultancy PageFair, and was used by 419 million people in March 2016. Approximately 21% of the world's 1.9 billion smartphone users have an ad-blocking browser installed, the company says in its new report, "Adblocking Goes Mobile." (PageFair itself also offers anti-ad-blocking services.)
+
+Most of the mobile ad blocking is occurring in the Asia-Pacific region, where 93% of the ad-blocking mobile browsers can be found. Of all smartphone users in the region, 36% use an ad-blocking mobile browser.
+
+In the US, mobile ad blocking browsers appear on about 1.24% of smartphones. In Europe, that figure is 2.7%. PageFair estimates that there are 2.8 million users of ad-blocking mobile browsers in the US.
+
+PageFair also notes that content-blocking apps have grown. Content blocking is euphemism for ad blocking, if you accept that "sponsored content" and data collection code associated with ads falls under the advertising umbrella. In September, as part of iOS 9, Apple introduced content blocking APIs for blocking content (ads) in its mobile Safari browser and in third-party apps that display web content through an iOS WebView component.
+
+Since then, PageFair says, developers have created at least 229 iOS apps that can be used to block ads in other iOS apps. Though March, there have been 4.5 million downloads of these apps globally.
+
+PageFair's numbers appear to be consistent with the mobile ad blocking numbers reported by Sourcepoint and comScore last year, at least with regard to the US. According to their report, "The State of Ad Blocking," released September 2015, usage of mobile ad blocking was below 0.5% in the US, 7% in China, and 9% in India.
+
+Sourcepoint and comScore predicted that the introduction of iOS 9, released that same month, would increase the usage of mobile ad blocking in the US and Europe.
+
+As PageFair's report suggests, it's not just Apple's acceptance of ad blocking that has driven adoption of the technology. In January, Samsung opened up ad-blocking support in the pre-installed Android browser that comes with its Android Marshmallow distribution. The company says it plans to expand support to its phones with other versions of Android. That same month, Brave launched a mobile browser designed to block ad-tracking mechanisms and replace ads with other ads that the company claims provide a better user experience.
+
+In March, Opera integrated ad blocking into its desktop browser and into Opera Mini, its mobile browser.
+
+Interest in ad blocking has prompted a backlash among publishers and the ad industry. Beyond the Internet Advertising Bureau's statement on the subject, which manages to be both condemnation and mea culpa, publishers have tried to fight ad-blocking technology with countermeasures.
+
+In a paper published earlier this month, "Adblocking and Counter-Blocking: A Slice of the Arms Race," researchers from Stony Brook University, the University of Cambridge, UC-Berkeley, the International Computer Science Institute, Queen Mary University of London, and University College London found that at least 6.7% of the top 5,000 websites (as identified by Alexa) use anti-ad-blocking scripts.
+
+Companies serving such scripts include PageFair, Google, Taboola, Outbrain, Ensighten, Cloudflare, and others, the researchers report.
+
+The makers of ad-blocking software in turn have taken to blocking the scripts that block ad blocking. AdBlock Plus, Ghostery, and Privacy Badger block some of the anti-ad-blocking scripts found on websites. Browser scripting extensions like Tampermonkey also can be used to block ad-blocking countermeasures.
+
+[Read Yahoo Mail Ad-Blocking Move Angers Users.]
+
+Some in the publishing industry have questioned the legality of ad blocking. In Germany, where the matter has actually been litigated, Eyeo GmbH, the maker of AdBlock Plus, has been on a winning streak, though the fight continues.
+
+At the same time, companies using anti-ad-blocking scripts may be vulnerable to claims that attempting to circumvent a user's ad-blocking software violates privacy rules, at least in Europe. Last week, privacy campaigner Alexander Hanff sent a cease-and-desist letter to publisher IDG UK demanding that the company "stop the unlawful detection of my use of ad blocking technologies within my web browser on IDG UK websites..."
+
+Ultimately, neither technology nor the law will resolve the situation. Some people just won't accept ads. Trying to force them to do otherwise will only alienate that those people further. Advertisers have to produce content that people want, without surreptitiously harvesting data, attempting to dictate terms, or hindering the viewing experience. Given the difficulty advertisers may have with that challenge, publishers would do well to produce content worth paying for.
+
+(Cover Image: Kagenmi/iStockphoto)

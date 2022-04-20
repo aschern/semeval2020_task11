@@ -1,0 +1,17 @@
+Yesterday, ownCloud co-founder Frank Karlitschek announced he was starting a new open-source, Infrastructure-as-a-Service (IaaS) cloud project and company, Nextcloud. The same day, ownCloud, announced it was closing its US office.
+
+In a statement, ownCloud executives said Karlitschek's annoucement had "consequences for ownCloud, Inc. based in Lexington, MA. Our main lenders in the US have cancelled our credit. Following American law, we are forced to close the doors of ownCloud, Inc. with immediate effect and terminate the contracts of 8 employees. The ownCloud GmbH is not directly affected by this."
+
+special feature Integrating the Hybrid Cloud As far and fast as cloud computing is embedding itself into the enterprise, there remain many cloud-resistant applications and services. Read More
+
+This seems unlikely to me. Nextcloud has just opened its doors. How could the mere announcement of a competitor immediately force a company's backers to shut down their line of credit?
+
+The ownCloud top brass opened by saying that Nextcloud had "poached developers" from the company. It is true that many of ownCloud's best programmers have left the company for Nextcloud.
+
+Never-the-less, the company promises that "ownCloud will continue to deliver software and maintenance to our future and existing customer base. Support, consulting and professional services continue to be available."
+
+The executives also stated that:
+
+One of Frank's criticisms concerned the need to strengthen the Community. In this regard, we have been working on the creation of the ownCloud Foundation, the formation of which we announced earlier this week. The Foundation's board will consist of 7 members, among them developers elected from the GitHub community, community users and one ownCloud representative. This will strengthen the Community in the long term, and ensures the availability of a free, entirely open source version of ownCloud. The Community Edition is and remains the backbone of our company.
+
+Related Stories

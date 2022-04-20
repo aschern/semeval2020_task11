@@ -1,0 +1,33 @@
+Firefly Aerospace has pushed the planned debut launch of its Alpha rocket to April as the company prepares for a very busy 2020.
+
+In particular, figuring out the two-stage rocket's avionics system "gave us fits," Firefly CEO Tom Markusic told Space.com in a recent interview. That's because the company was originally hoping to make Alpha's flight-termination system fully autonomous, he explained.
+
+When the vendor couldn't qualify that advanced system in time, the vendor switched to the usual "human in the loop" system. But waiting for parts pushed back Firefly's December 2019 launch time frame to something closer to March 2020. Firefly then chose to take a little more time for further refinements and is now aiming for April 2020 for the first launch of the 95-foot-tall (29 meters) rocket, Markusic said.
+
+Related: A Private Spaceflight Decade: Commercial Space Soared in the 2010s
+
+Firefly has begun Alpha Stage 1 Qualification testing, the last major milestone of Alpha development. We've installed the stage, which includes four Reaver engines, on Firefly’s TS2. We'll begin hotfire testing soon, culminating in multiple 165 sec full mission duty cycle tests. pic.twitter.com/lUULGH3gHoDecember 30, 2019 See more
+
+The Firefly team is currently working on fully qualifying the Alpha's first stage, with all the components being fitted together on a stand for a test fire that should take place soon. If that goes according to plan, the first Alpha rocket should be ready for shipment to the launch site, California's Vandenberg Air Force Base, in February, Markusic said. If problems are found in qualification, more time will be needed for adjustments.
+
+Firefly is seeking to help fill a launch niche that SpaceX left behind about 10 years ago, when Elon Musk's company traded in its 68-foot-tall (21 m) Falcon 1 rocket for the 230-foot (70 m) Falcon 9 , which now routinely launches satellites to orbit and cargo toward the International Space Station. At the time, SpaceX cited a lack of market interest as a reason for moving on from Falcon 1, according to the NewSpace Journal .
+
+But fast-forward a decade and the space market is a considerably different beast. Now there are dozens of small companies competing for launch opportunities and thousands more that have payloads they want flown into space. Markusic, who used to work for SpaceX, said he now sees a market opportunity to exploit with the Alpha, which is capable of lofting 2,200 lbs. (1,000 kilograms) of payload to low-Earth orbit. (For comparison, another small launcher, Rocket Lab's Electron booster , can get about 500 lbs., or 225 kg, to orbit on each mission.)
+
+Alpha's first flight will include commercial payloads from Benchmark Space Systems and AstroGrams and a satellite provided by another customer whose identity has not been revealed. Firefly will also devote a share of its first rocket space to its Dedicated Research and Education Accelerator Mission (DREAM) program, which aims to give students and small companies a chance to get payloads to space.
+
+The backlog of customer requests is immense, Markusic said, to the extent that the company is building three rockets simultaneously right now. The second mission, targeted for June 2020, will be fully filled with paying customers, as will the third mission that's targeted to fly this fall.
+
+The first stage of Firefly Aerospace's Alpha rocket is powered by four Reaver engines. (Image credit: Firefly Aerospace)
+
+Alpha features composite materials instead of aluminum to save weight, Firefly representatives have said. The rocket's Reaver engines are also simpler than traditional engines, using one combuster instead of the usual two; indeed, Alpha will be the first orbital rocket ever to fly that technology.
+
+"But otherwise, the rocket is a pretty conventional, two-stage, oxygen and kerosene [fuel], proven combination," Markusic said.
+
+In future missions, Firefly plans to incorporate into Alpha an advanced upper stage, called the orbital transfer vehicle (OTV), to boost satellites into higher orbits. "We have to make a lot of progress on OTV next year," he said, referring to 2020. Some parts of the OTV will fly on the debut mission, with others going up on future flights.
+
+Alpha isn't all that Firefly is working on. In late 2018, for example, the company was selected as a participant in NASA's Commercial Lunar Payload Services program . "We hope to have secured a full contract for our first lunar lander in this next year," Markusic said.
+
+And in partnership with Aerojet Rocketdyne, Firefly is working on a 2.5-stage launch vehicle called Beta that can send 8,800 lbs (4,400 kg) to a 125-mile-high (200 km) orbit. That rocket is still in the early stages of design, but 2020 will be the time when at least some of the hardware is developed, Markusic said.
+
+Follow Elizabeth Howell on Twitter @howellspace . Follow us on Twitter @Spacedotcom and on Facebook .

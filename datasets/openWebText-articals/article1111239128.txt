@@ -1,0 +1,21 @@
+The all-powerful Internet search engine company Google says that it is not rigging its system to reduce the visibility of the term “Crooked Hillary.”
+
+Danny Sullivan of Search Engine Land discovered that there is no Automatic Recommendation in the Google Search bar for “Crooked Hillary.” In contrast,”Lying Ted” comes up as a recommendation as soon as people started typing “Lying.”
+
+Is Google, led by chairman and major Clinton booster Eric Schmidt, trying to keep “Crooked Hillary” from going viral in the same damaging way as Trump’s other nicknames? Google defended itself in a statement to Search Engine Land:
+
+Autocomplete predictions are produced based on a number of factors including the popularity of search terms. Our systems are periodically updated to improve Search, and our users’ search activity varies, so the terms that appear in Autocomplete may change over time. Additionally, our systems automatically filter a small set of offensive or inappropriate content from autocomplete predictions. There is no difference between how our removal filters operate among candidates.
+
+It appears that “Lying” was just more commonly associated in the public consciousness, after a while, with “Ted Cruz” than “Crooked” is at this time with “Hillary Clinton.”
+
+Breitbart ran its own test of Google’s policies by typing the two terms “Crooked Hillary’ and “Lying Ted” into the search engine bar. The images below show how many letters had to be typed in before the options appeared.
+
+First, Breitbart typed in just three letters and Google showed the “Lying Ted” option.
+
+Then Breitbart ran the test for “Crooked Hillary.” Even after four letters, there was no “Crooked Hillary.”
+
+With five letters, Google showed “crooked hillary bernie,” but not “Crooked Hillary.”
+
+“Crooked Hillary” appeared only after Breitbart typed “Crooked Hillary” and included two more spaces.
+
+However, Google says its software automatically responds to public searches, and that the “Crooked Hillary” term will appear faster if more people search for it.
